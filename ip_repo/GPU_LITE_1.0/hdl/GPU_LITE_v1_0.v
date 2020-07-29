@@ -15,15 +15,14 @@
 
 		// Parameters of Axi Slave Bus Interface S_BLOCKS_AXI
 		parameter integer C_S_BLOCKS_AXI_DATA_WIDTH	= 32,
-		parameter integer C_S_BLOCKS_AXI_ADDR_WIDTH	= 10,
-
-		// Parameters of Axi Master Bus Interface M_VGA_AXIS
-		parameter integer C_M_VGA_AXIS_TDATA_WIDTH	= 32,
-		parameter integer C_M_VGA_AXIS_START_COUNT	= 32
+		parameter integer C_S_BLOCKS_AXI_ADDR_WIDTH	= 10
 	)
 	(
 		// Users to add ports here
-        
+        input wire vga_clk,
+        output wire hsync,
+        output wire vsync,
+        output wire [11:0] rgb,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -72,16 +71,7 @@
 		output wire [C_S_BLOCKS_AXI_DATA_WIDTH-1 : 0] s_blocks_axi_rdata,
 		output wire [1 : 0] s_blocks_axi_rresp,
 		output wire  s_blocks_axi_rvalid,
-		input wire  s_blocks_axi_rready,
-
-		// Ports of Axi Master Bus Interface M_VGA_AXIS
-		input wire  m_vga_axis_aclk,
-		input wire  m_vga_axis_aresetn,
-		output wire  m_vga_axis_tvalid,
-		output wire [C_M_VGA_AXIS_TDATA_WIDTH-1 : 0] m_vga_axis_tdata,
-		output wire [(C_M_VGA_AXIS_TDATA_WIDTH/8)-1 : 0] m_vga_axis_tstrb,
-		output wire  m_vga_axis_tlast,
-		input wire  m_vga_axis_tready
+		input wire  s_blocks_axi_rready
 	);
 // Instantiation of Axi Bus Interface S_TEXTURES_AXI
 	GPU_LITE_v1_0_S_TEXTURES_AXI # ( 
@@ -137,20 +127,6 @@
 		.S_AXI_RRESP(s_blocks_axi_rresp),
 		.S_AXI_RVALID(s_blocks_axi_rvalid),
 		.S_AXI_RREADY(s_blocks_axi_rready)
-	);
-
-// Instantiation of Axi Bus Interface M_VGA_AXIS
-	GPU_LITE_v1_0_M_VGA_AXIS # ( 
-		.C_M_AXIS_TDATA_WIDTH(C_M_VGA_AXIS_TDATA_WIDTH),
-		.C_M_START_COUNT(C_M_VGA_AXIS_START_COUNT)
-	) GPU_LITE_v1_0_M_VGA_AXIS_inst (
-		.M_AXIS_ACLK(m_vga_axis_aclk),
-		.M_AXIS_ARESETN(m_vga_axis_aresetn),
-		.M_AXIS_TVALID(m_vga_axis_tvalid),
-		.M_AXIS_TDATA(m_vga_axis_tdata),
-		.M_AXIS_TSTRB(m_vga_axis_tstrb),
-		.M_AXIS_TLAST(m_vga_axis_tlast),
-		.M_AXIS_TREADY(m_vga_axis_tready)
 	);
 
 	// Add user logic here

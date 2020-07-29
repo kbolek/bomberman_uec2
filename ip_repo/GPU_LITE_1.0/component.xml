@@ -358,60 +358,6 @@
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>M_VGA_AXIS</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
-      <spirit:master/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TDATA</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_tdata</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TSTRB</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_tstrb</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TLAST</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_tlast</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TVALID</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_tvalid</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TREADY</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_tready</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M_VGA_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
       <spirit:name>S_TEXTURES_AXI_RST</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
@@ -507,54 +453,6 @@
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>M_VGA_AXIS_RST</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>RST</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_aresetn</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_VGA_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>M_VGA_AXIS_CLK</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>CLK</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>m_vga_axis_aclk</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_VGA_AXIS_CLK.ASSOCIATED_BUSIF">M_VGA_AXIS</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_RESET</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_VGA_AXIS_CLK.ASSOCIATED_RESET">m_vga_axis_aresetn</spirit:value>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:memoryMaps>
     <spirit:memoryMap>
@@ -612,7 +510,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d3df8184</spirit:value>
+            <spirit:value>22c3bedb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -628,7 +526,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d3df8184</spirit:value>
+            <spirit:value>22c3bedb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -656,7 +554,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ec245ef5</spirit:value>
+            <spirit:value>e618ceb3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -676,6 +574,62 @@
       </spirit:view>
     </spirit:views>
     <spirit:ports>
+      <spirit:port>
+        <spirit:name>vga_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rgb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
       <spirit:port>
         <spirit:name>s_textures_axi_aclk</spirit:name>
         <spirit:wire>
@@ -1294,105 +1248,6 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_aclk</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_aresetn</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_tvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_tdata</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_VGA_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_tstrb</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_VGA_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_tlast</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m_vga_axis_tready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -1419,18 +1274,6 @@
         <spirit:description>Width of S_AXI address bus</spirit:description>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_BLOCKS_AXI_ADDR_WIDTH" spirit:order="8" spirit:rangeType="long">10</spirit:value>
       </spirit:modelParameter>
-      <spirit:modelParameter spirit:dataType="integer">
-        <spirit:name>C_M_VGA_AXIS_TDATA_WIDTH</spirit:name>
-        <spirit:displayName>C M VGA AXIS TDATA WIDTH</spirit:displayName>
-        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_VGA_AXIS_TDATA_WIDTH" spirit:order="11" spirit:rangeType="long">32</spirit:value>
-      </spirit:modelParameter>
-      <spirit:modelParameter spirit:dataType="integer">
-        <spirit:name>C_M_VGA_AXIS_START_COUNT</spirit:name>
-        <spirit:displayName>C M VGA AXIS START COUNT</spirit:displayName>
-        <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_VGA_AXIS_START_COUNT" spirit:order="12" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
-      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:choices>
@@ -1453,10 +1296,6 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/GPU_LITE_v1_0_M_VGA_AXIS.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/GPU_LITE_v1_0_S_BLOCKS_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1467,15 +1306,11 @@
       <spirit:file>
         <spirit:name>hdl/GPU_LITE_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6ffaa7b3</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_cf353b6d</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>hdl/GPU_LITE_v1_0_M_VGA_AXIS.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
       <spirit:file>
         <spirit:name>hdl/GPU_LITE_v1_0_S_BLOCKS_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
@@ -1526,7 +1361,7 @@
       <spirit:file>
         <spirit:name>xgui/GPU_LITE_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_ec245ef5</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_e618ceb3</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1641,25 +1476,6 @@
       </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
-      <spirit:name>C_M_VGA_AXIS_TDATA_WIDTH</spirit:name>
-      <spirit:displayName>C M VGA AXIS TDATA WIDTH</spirit:displayName>
-      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_VGA_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="11">32</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M_VGA_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
-    </spirit:parameter>
-    <spirit:parameter>
-      <spirit:name>C_M_VGA_AXIS_START_COUNT</spirit:name>
-      <spirit:displayName>C M VGA AXIS START COUNT</spirit:displayName>
-      <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_VGA_AXIS_START_COUNT" spirit:order="12" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
-    </spirit:parameter>
-    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">GPU_LITE_v1_0</spirit:value>
     </spirit:parameter>
@@ -1673,8 +1489,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>GPU_LITE_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-07-29T16:26:04Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-07-29T17:22:19Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2dc3a91a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5c489160_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
@@ -1737,16 +1553,70 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@387c5100_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@32630cc0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@330bfb5f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35615856_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@712d19c0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc23be0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@222f38ea_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7438b4c7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@215da924_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@94e70e1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a54cf5a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55639739_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68510a81_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66a8dd8d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d01b41_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39d519af_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3605562_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e12b477_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cc2d985_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53cb3113_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6431dccf_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35630765_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aeebb96_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@342a5392_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3de1e66a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b59d6cf_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51b41db6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b1b576_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76fc64b7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d97c48d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6629d700_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@214e5bff_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24698720_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ed204c9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fc0ebc6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c799ef_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@116729b3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ed47f50_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f70fd3c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b54b9e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60c77551_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a066376_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@418f7ce3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a61e53f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6982f85c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2196c9a8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@179d856d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40f9184_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@748c7e54_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71730bdd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2857edc1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d000e21_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14cb9751_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d085f59_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f79ca7e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bd945b0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f9dbfeb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_LITE_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c579dfc0"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9661347d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="96f0ff03"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cec5ae3c"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="c3cd8b6e"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d5dd12c1"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="50756d82"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="72b1151c"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="3709869b"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5be21252"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3df87a33"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
