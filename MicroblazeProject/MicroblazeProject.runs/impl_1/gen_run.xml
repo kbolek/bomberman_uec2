@@ -1,57 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1594905790">
-  <File Type="BITSTR-BMM" Name="Main_bd.bmm"/>
-  <File Type="PA-TCL" Name="Main.tcl"/>
-  <File Type="OPT-DCP" Name="Main_opt.dcp"/>
-  <File Type="REPORTS-TCL" Name="Main_reports.tcl"/>
-  <File Type="OPT-HWDEF" Name="Main.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Main_pwropt.dcp"/>
-  <File Type="PLACE-DCP" Name="Main_placed.dcp"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Main_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Main_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Main.bin"/>
-  <File Type="PHYSOPT-DCP" Name="Main_physopt.dcp"/>
-  <File Type="BITSTR-MSK" Name="Main.msk"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Main_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Main_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Main_routed_bb.dcp"/>
-  <File Type="BITSTR-LTX" Name="Main.ltx"/>
-  <File Type="BITSTR-MMI" Name="Main.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="Main.sysdef"/>
-  <File Type="ROUTE-TIMING-PB" Name="Main_timing_summary_routed.pb"/>
-  <File Type="RDI-RDI" Name="Main.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Main_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Main_postroute_physopt_bb.dcp"/>
-  <File Type="BG-BIT" Name="Main.bit"/>
-  <File Type="BITSTR-RBT" Name="Main.rbt"/>
-  <File Type="BITSTR-NKY" Name="Main.nky"/>
-  <File Type="PDI-FILE" Name="Main.pdi"/>
-  <File Type="RCFI_FILE" Name="Main.rcfi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1596044548">
+  <File Type="BITSTR-BMM" Name="GPU_TEST_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="GPU_TEST_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="GPU_TEST_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="GPU_TEST_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="GPU_TEST.tcl"/>
+  <File Type="OPT-TIMING" Name="GPU_TEST_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="GPU_TEST_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="GPU_TEST_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="GPU_TEST_reports.tcl"/>
+  <File Type="OPT-DRC" Name="GPU_TEST_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="GPU_TEST.hwdef"/>
+  <File Type="PWROPT-DCP" Name="GPU_TEST_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="GPU_TEST_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="GPU_TEST_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="GPU_TEST_placed.dcp"/>
+  <File Type="PLACE-IO" Name="GPU_TEST_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="GPU_TEST_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="GPU_TEST_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="GPU_TEST_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="GPU_TEST_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="GPU_TEST_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GPU_TEST_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="GPU_TEST_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GPU_TEST_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="GPU_TEST.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="GPU_TEST_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="GPU_TEST_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="GPU_TEST_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="GPU_TEST.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="GPU_TEST_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="GPU_TEST_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="GPU_TEST_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GPU_TEST_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="GPU_TEST_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="GPU_TEST_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="GPU_TEST_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="GPU_TEST.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="GPU_TEST_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GPU_TEST_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GPU_TEST_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="GPU_TEST_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="GPU_TEST_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="GPU_TEST_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="GPU_TEST_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="GPU_TEST_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="GPU_TEST_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="GPU_TEST_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="GPU_TEST_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="GPU_TEST_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="GPU_TEST_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="GPU_TEST_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GPU_TEST_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GPU_TEST_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="GPU_TEST_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="GPU_TEST_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="GPU_TEST_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="GPU_TEST_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="GPU_TEST_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="GPU_TEST.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="GPU_TEST_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="GPU_TEST.rbt"/>
+  <File Type="BITSTR-NKY" Name="GPU_TEST.nky"/>
+  <File Type="PDI-FILE" Name="GPU_TEST.pdi"/>
+  <File Type="RCFI_FILE" Name="GPU_TEST.rcfi"/>
+  <File Type="CFI_FILE" Name="GPU_TEST.cfi"/>
+  <File Type="RNPI_FILE" Name="GPU_TEST.rnpi"/>
+  <File Type="NPI_FILE" Name="GPU_TEST.npi"/>
+  <File Type="RBD_FILE" Name="GPU_TEST.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="GPU_TEST.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="GPU_TEST.sysdef"/>
+  <File Type="BG-BGN" Name="GPU_TEST.bgn"/>
+  <File Type="BG-DRC" Name="GPU_TEST.drc"/>
+  <File Type="RDI-RDI" Name="GPU_TEST.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="CFI_FILE" Name="Main.cfi"/>
-  <File Type="RNPI_FILE" Name="Main.rnpi"/>
-  <File Type="NPI_FILE" Name="Main.npi"/>
-  <File Type="RBD_FILE" Name="Main.rbd"/>
-  <File Type="BG-BGN" Name="Main.bgn"/>
-  <File Type="BG-DRC" Name="Main.drc"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/TIMING_GEN.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GPU_TEST.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/vga_trunc.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/Main_System/Main_System.bd">
+    <File Path="$PSRCDIR/sources_1/new/CHAR_ROM.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Main.v">
+    <File Path="$PSRCDIR/sources_1/new/BLOCK_GEN.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TEXT_GEN.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FRAME_GEN.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -59,7 +133,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Main"/>
+      <Option Name="TopModule" Val="GPU_TEST"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -93,10 +167,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Main_System_vga_trunc_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Main_System_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Main_System_v_axi4s_vid_out_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Main_System_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>
