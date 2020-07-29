@@ -2,19 +2,11 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="Main_System" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1594903819"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1594903819"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1594903819"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1594903819"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1594905765"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1594905765"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1594905765"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1594905765"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\Main_System_proc_sys_reset_0_0\Main_System_proc_sys_reset_0_0.xci" Type="IP">
-        <Instance HierarchyPath="proc_sys_reset_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\Main_System_v_axi4s_vid_out_0_0\Main_System_v_axi4s_vid_out_0_0.xci" Type="IP">
         <Instance HierarchyPath="v_axi4s_vid_out_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>

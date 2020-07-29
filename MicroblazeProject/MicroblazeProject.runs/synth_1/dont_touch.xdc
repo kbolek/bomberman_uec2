@@ -6,9 +6,6 @@
 # Block Designs: bd/Main_System/Main_System.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Main_System || ORIG_REF_NAME==Main_System} -quiet] -quiet
 
-# IP: bd/Main_System/ip/Main_System_proc_sys_reset_0_0/Main_System_proc_sys_reset_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Main_System_proc_sys_reset_0_0 || ORIG_REF_NAME==Main_System_proc_sys_reset_0_0} -quiet] -quiet
-
 # IP: bd/Main_System/ip/Main_System_v_axi4s_vid_out_0_0/Main_System_v_axi4s_vid_out_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Main_System_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==Main_System_v_axi4s_vid_out_0_0} -quiet] -quiet
 

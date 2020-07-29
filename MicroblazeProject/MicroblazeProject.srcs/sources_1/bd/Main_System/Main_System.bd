@@ -9,7 +9,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "proc_sys_reset_0": "",
       "v_axi4s_vid_out_0": "",
       "v_tc_0": "",
       "v_tpg_0": "",
@@ -75,18 +74,6 @@
       }
     },
     "components": {
-      "proc_sys_reset_0": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "Main_System_proc_sys_reset_0_0",
-        "parameters": {
-          "RESET_BOARD_INTERFACE": {
-            "value": "reset"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
       "v_axi4s_vid_out_0": {
         "vlnv": "xilinx.com:ip:v_axi4s_vid_out:4.0",
         "xci_name": "Main_System_v_axi4s_vid_out_0_0",
@@ -216,8 +203,26 @@
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "xci_name": "Main_System_clk_wiz_0_0",
         "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "254.866"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "297.890"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "65.000"
+          },
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "50.375"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "15.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
           },
           "RESET_BOARD_INTERFACE": {
             "value": "reset"
@@ -249,17 +254,9 @@
       }
     },
     "nets": {
-      "Net": {
-        "ports": [
-          "proc_sys_reset_0/peripheral_aresetn",
-          "v_axi4s_vid_out_0/aresetn",
-          "v_tc_0/resetn"
-        ]
-      },
       "m_axis_mm2s_aclk_0_1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "proc_sys_reset_0/slowest_sync_clk",
           "v_tc_0/clk",
           "v_axi4s_vid_out_0/aclk",
           "v_tpg_0/ap_clk"
@@ -319,19 +316,6 @@
         "ports": [
           "sys_clock",
           "clk_wiz_0/clk_in1"
-        ]
-      },
-      "clk_wiz_0_locked": {
-        "ports": [
-          "clk_wiz_0/locked",
-          "proc_sys_reset_0/dcm_locked"
-        ]
-      },
-      "reset_1": {
-        "ports": [
-          "reset",
-          "proc_sys_reset_0/ext_reset_in",
-          "clk_wiz_0/resetn"
         ]
       },
       "vga_trunc_0_r": {

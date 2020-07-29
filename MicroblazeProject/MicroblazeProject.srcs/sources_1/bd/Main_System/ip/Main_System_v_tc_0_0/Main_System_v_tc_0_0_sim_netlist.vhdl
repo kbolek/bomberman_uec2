@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Jul 16 14:29:49 2020
+-- Date        : Thu Jul 16 15:15:48 2020
 -- Host        : Marysia running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top Main_System_v_tc_0_0 -prefix
---               Main_System_v_tc_0_0_ video_subsystem_v_tc_0_0_sim_netlist.vhdl
--- Design      : video_subsystem_v_tc_0_0
+-- Command     : write_vhdl -force -mode funcsim
+--               d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_v_tc_0_0/Main_System_v_tc_0_0_sim_netlist.vhdl
+-- Design      : Main_System_v_tc_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7a35tcpg236-1
@@ -47,6 +47,8 @@ entity Main_System_v_tc_0_0_tc_generator is
     \time_control_regs[24]\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_control_regs[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Main_System_v_tc_0_0_tc_generator : entity is "tc_generator";
 end Main_System_v_tc_0_0_tc_generator;
 
 architecture STRUCTURE of Main_System_v_tc_0_0_tc_generator is
@@ -4077,6 +4079,8 @@ entity Main_System_v_tc_0_0_video_ctrl is
   attribute C_VERSION_MINOR of Main_System_v_tc_0_0_video_ctrl : entity is 2;
   attribute C_VERSION_REVISION : integer;
   attribute C_VERSION_REVISION of Main_System_v_tc_0_0_video_ctrl : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Main_System_v_tc_0_0_video_ctrl : entity is "video_ctrl";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Main_System_v_tc_0_0_video_ctrl : entity is "yes";
 end Main_System_v_tc_0_0_video_ctrl;
@@ -5879,6 +5883,8 @@ entity Main_System_v_tc_0_0_tc_top is
     \time_control_regs[24]\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_control_regs[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Main_System_v_tc_0_0_tc_top : entity is "tc_top";
 end Main_System_v_tc_0_0_tc_top;
 
 architecture STRUCTURE of Main_System_v_tc_0_0_tc_top is
@@ -6446,6 +6452,8 @@ entity Main_System_v_tc_0_0_v_tc is
   attribute C_S_AXI_CLK_FREQ_HZ of Main_System_v_tc_0_0_v_tc : entity is 100000000;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of Main_System_v_tc_0_0_v_tc : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of Main_System_v_tc_0_0_v_tc : entity is "v_tc";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Main_System_v_tc_0_0_v_tc : entity is "yes";
 end Main_System_v_tc_0_0_v_tc;
@@ -7006,7 +7014,7 @@ entity Main_System_v_tc_0_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of Main_System_v_tc_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of Main_System_v_tc_0_0 : entity is "video_subsystem_v_tc_0_0,v_tc,{}";
+  attribute CHECK_LICENSE_TYPE of Main_System_v_tc_0_0 : entity is "Main_System_v_tc_0_0,v_tc,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Main_System_v_tc_0_0 : entity is "yes";
   attribute x_core_info : string;
@@ -7217,7 +7225,7 @@ architecture STRUCTURE of Main_System_v_tc_0_0 is
   attribute x_interface_info of active_video_out : signal is "xilinx.com:interface:video_timing:2.0 vtiming_out ACTIVE_VIDEO";
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk_intf CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN video_subsystem_m_axis_mm2s_aclk_0, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 65000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of clken : signal is "xilinx.com:signal:clockenable:1.0 clken_intf CE";
   attribute x_interface_parameter of clken : signal is "XIL_INTERFACENAME clken_intf, POLARITY ACTIVE_LOW";
   attribute x_interface_info of hblank_out : signal is "xilinx.com:interface:video_timing:2.0 vtiming_out HBLANK";

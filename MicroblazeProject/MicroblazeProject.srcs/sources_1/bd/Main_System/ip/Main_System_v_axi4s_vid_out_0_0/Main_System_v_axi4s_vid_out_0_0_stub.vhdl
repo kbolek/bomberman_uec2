@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Jul 16 14:29:50 2020
+-- Date        : Thu Jul 16 15:15:16 2020
 -- Host        : Marysia running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top Main_System_v_axi4s_vid_out_0_0 -prefix
---               Main_System_v_axi4s_vid_out_0_0_ video_subsystem_v_axi4s_vid_out_0_0_stub.vhdl
--- Design      : video_subsystem_v_axi4s_vid_out_0_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_v_axi4s_vid_out_0_0/Main_System_v_axi4s_vid_out_0_0_stub.vhdl
+-- Design      : Main_System_v_axi4s_vid_out_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1
 -- --------------------------------------------------------------------------------

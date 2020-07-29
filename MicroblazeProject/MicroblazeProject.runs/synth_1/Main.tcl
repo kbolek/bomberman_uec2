@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
@@ -39,9 +40,6 @@ set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProjec
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/Main.v
 add_files D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/Main_System.bd
-set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_proc_sys_reset_0_0/Main_System_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_proc_sys_reset_0_0/Main_System_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_proc_sys_reset_0_0/Main_System_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_v_axi4s_vid_out_0_0/Main_System_v_axi4s_vid_out_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_v_axi4s_vid_out_0_0/Main_System_v_axi4s_vid_out_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/Main_System/ip/Main_System_v_tc_0_0/Main_System_v_tc_0_0_clocks.xdc]

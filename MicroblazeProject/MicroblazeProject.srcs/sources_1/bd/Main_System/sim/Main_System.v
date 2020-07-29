@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Jul 16 14:50:17 2020
+//Date        : Thu Jul 16 15:22:45 2020
 //Host        : Marysia running 64-bit major release  (build 9200)
 //Command     : generate_target Main_System.bd
 //Design      : Main_System
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Main_System,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Main_System,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Main_System.hwdef" *) 
+(* CORE_GENERATION_INFO = "Main_System,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Main_System,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Main_System.hwdef" *) 
 module Main_System
    (reset,
     sys_clock,
@@ -26,10 +26,7 @@ module Main_System
   output vid_hsync;
   output vid_vsync;
 
-  wire [0:0]Net;
-  wire clk_wiz_0_locked;
   wire m_axis_mm2s_aclk_0_1;
-  wire reset_1;
   wire sys_clock_1;
   wire v_axi4s_vid_out_0_vid_active_video;
   wire [23:0]v_axi4s_vid_out_0_vid_data;
@@ -51,7 +48,6 @@ module Main_System
   wire [3:0]vga_trunc_0_r;
   wire [0:0]xlconstant_0_dout;
 
-  assign reset_1 = reset;
   assign sys_clock_1 = sys_clock;
   assign vgaBlue[3:0] = vga_trunc_0_b;
   assign vgaGreen[3:0] = vga_trunc_0_g;
@@ -61,19 +57,11 @@ module Main_System
   Main_System_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clock_1),
         .clk_out1(m_axis_mm2s_aclk_0_1),
-        .locked(clk_wiz_0_locked),
-        .resetn(reset_1));
-  Main_System_proc_sys_reset_0_0 proc_sys_reset_0
-       (.aux_reset_in(1'b1),
-        .dcm_locked(clk_wiz_0_locked),
-        .ext_reset_in(reset_1),
-        .mb_debug_sys_rst(1'b0),
-        .peripheral_aresetn(Net),
-        .slowest_sync_clk(m_axis_mm2s_aclk_0_1));
+        .resetn(1'b0));
   Main_System_v_axi4s_vid_out_0_0 v_axi4s_vid_out_0
        (.aclk(m_axis_mm2s_aclk_0_1),
         .aclken(xlconstant_0_dout),
-        .aresetn(Net),
+        .aresetn(1'b1),
         .fid(1'b0),
         .s_axis_video_tdata(v_tpg_0_m_axis_video_TDATA),
         .s_axis_video_tlast(v_tpg_0_m_axis_video_TLAST),
@@ -99,7 +87,7 @@ module Main_System
         .gen_clken(v_axi4s_vid_out_0_vtg_ce),
         .hblank_out(v_tc_0_vtiming_out_HBLANK),
         .hsync_out(v_tc_0_vtiming_out_HSYNC),
-        .resetn(Net),
+        .resetn(1'b1),
         .vblank_out(v_tc_0_vtiming_out_VBLANK),
         .vsync_out(v_tc_0_vtiming_out_VSYNC));
   Main_System_v_tpg_0_0 v_tpg_0
