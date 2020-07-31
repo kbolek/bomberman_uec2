@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -39,6 +42,9 @@ update_ip_catalog
 set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v
 }
