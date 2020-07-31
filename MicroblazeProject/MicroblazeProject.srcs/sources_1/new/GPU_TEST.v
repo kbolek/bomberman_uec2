@@ -115,14 +115,14 @@ wire [2:0] char_color_clocked;
 
 CLOCKER #(.WIDTH(6)) number_clocker
 (
-    .clk(clk),
+    .clk(disp_clk),
     .in(char_number),
     .out(char_number_clocked)
 );
 
 CLOCKER #(.WIDTH(3)) color_clocker
 (
-    .clk(clk),
+    .clk(disp_clk),
     .in(char_color),
     .out(char_color_clocked)
 );

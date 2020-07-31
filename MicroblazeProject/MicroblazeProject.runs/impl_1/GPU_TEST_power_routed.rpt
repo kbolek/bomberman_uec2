@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Fri Jul 31 22:07:24 2020
+| Date             : Sat Aug  1 01:35:08 2020
 | Host             : Marysia running 64-bit major release  (build 9200)
 | Command          : report_power -file GPU_TEST_power_routed.rpt -pb GPU_TEST_power_summary_routed.pb -rpx GPU_TEST_power_routed.rpx
 | Design           : GPU_TEST
@@ -38,7 +38,7 @@ Table of Contents
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
 | Junction Temperature (C) | 26.0         |
-| Confidence Level         | Low          |
+| Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -59,7 +59,7 @@ Table of Contents
 |   Register              |    <0.001 |      107 |     41600 |            0.26 |
 |   LUT as Shift Register |    <0.001 |        2 |      9600 |            0.02 |
 |   Others                |     0.000 |       12 |       --- |             --- |
-| Signals                 |     0.002 |      532 |       --- |             --- |
+| Signals                 |     0.002 |      528 |       --- |             --- |
 | MMCM                    |     0.120 |        1 |         5 |           20.00 |
 | I/O                     |     0.008 |       16 |       106 |           15.09 |
 | Static Power            |     0.072 |          |           |                 |
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |
 | Vccaux    |       1.800 |     0.080 |       0.067 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -92,17 +92,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                                       |                                                                                                            |
-| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
-| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
-| Device models               | High       | Device models are Production                           |                                                                                                            |
-|                             |            |                                                        |                                                                                                            |
-| Overall confidence level    | Low        |                                                        |                                                                                                            |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -126,13 +126,13 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------------------------+------------------------------------+-----------------+
-| Clock                   | Domain                             | Constraint (ns) |
-+-------------------------+------------------------------------+-----------------+
-| clk_65M_clk_wiz_0       | clk_wizard/inst/clk_65M_clk_wiz_0  |            15.4 |
-| clk_wizard/inst/clk_in1 | clk_IBUF                           |            10.0 |
-| clkfbout_clk_wiz_0      | clk_wizard/inst/clkfbout_clk_wiz_0 |            10.0 |
-+-------------------------+------------------------------------+-----------------+
++--------------------+------------------------------------+-----------------+
+| Clock              | Domain                             | Constraint (ns) |
++--------------------+------------------------------------+-----------------+
+| clk                | clk                                |            10.0 |
+| clk_65M_clk_wiz_0  | clk_wizard/inst/clk_65M_clk_wiz_0  |            15.4 |
+| clkfbout_clk_wiz_0 | clk_wizard/inst/clkfbout_clk_wiz_0 |            10.0 |
++--------------------+------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -147,7 +147,7 @@ Table of Contents
 | GPU_TEST          |     0.134 |
 |   clk_wizard      |     0.121 |
 |     inst          |     0.121 |
-|   frame_generator |     0.003 |
+|   frame_generator |     0.004 |
 +-------------------+-----------+
 
 
