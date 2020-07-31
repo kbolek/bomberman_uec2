@@ -42,8 +42,11 @@ update_ip_catalog
 set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v
+  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v
   D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v

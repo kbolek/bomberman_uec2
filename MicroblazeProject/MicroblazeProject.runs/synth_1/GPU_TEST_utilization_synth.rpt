@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Jul 31 19:10:38 2020
+| Date         : Fri Jul 31 22:06:33 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : report_utilization -file GPU_TEST_utilization_synth.rpt -pb GPU_TEST_utilization_synth.pb
 | Design       : GPU_TEST
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  255 |     0 |     20800 |  1.23 |
-|   LUT as Logic             |  253 |     0 |     20800 |  1.22 |
+| Slice LUTs*                |  670 |     0 |     20800 |  3.22 |
+|   LUT as Logic             |  668 |     0 |     20800 |  3.21 |
 |   LUT as Memory            |    2 |     0 |      9600 |  0.02 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    2 |     0 |           |       |
-| Slice Registers            |   36 |     0 |     41600 |  0.09 |
-|   Register as Flip Flop    |   36 |     0 |     41600 |  0.09 |
+| Slice Registers            |  107 |     0 |     41600 |  0.26 |
+|   Register as Flip Flop    |  107 |     0 |     41600 |  0.26 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                   |   77 |     0 |     16300 |  0.47 |
-| F8 Muxes                   |   33 |     0 |      8150 |  0.40 |
+| F7 Muxes                   |  161 |     0 |     16300 |  0.99 |
+| F8 Muxes                   |   66 |     0 |      8150 |  0.81 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 36    |          Yes |       Reset |            - |
+| 107   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -92,7 +92,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   24 |     0 |       106 | 22.64 |
+| Bonded IOB                  |   16 |     0 |       106 | 15.09 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -151,17 +151,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  222 |                 LUT |
-| MUXF7    |   77 |               MuxFx |
-| FDRE     |   36 |        Flop & Latch |
-| MUXF8    |   33 |               MuxFx |
-| LUT5     |   19 |                 LUT |
+| LUT6     |  565 |                 LUT |
+| MUXF7    |  161 |               MuxFx |
+| FDRE     |  107 |        Flop & Latch |
+| LUT5     |   73 |                 LUT |
+| MUXF8    |   66 |               MuxFx |
+| LUT3     |   29 |                 LUT |
+| LUT4     |   23 |                 LUT |
+| LUT2     |   15 |                 LUT |
 | OBUF     |   14 |                  IO |
-| LUT4     |   10 |                 LUT |
-| IBUF     |   10 |                  IO |
-| LUT2     |    9 |                 LUT |
-| LUT3     |    8 |                 LUT |
 | SRL16E   |    2 |  Distributed Memory |
+| IBUF     |    2 |                  IO |
 | LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 

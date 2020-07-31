@@ -18,13 +18,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1688 
+INFO: Helper process launched with PID 7260 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 820.082 ; gain = 233.160
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 821.230 ; gain = 235.082
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'GPU_TEST' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/.Xil/Vivado-4016-Marysia/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/.Xil/Vivado-4016-Marysia/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/textures.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:35]
+INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/screen.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:38]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/.Xil/Vivado-9888-Marysia/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/.Xil/Vivado-9888-Marysia/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'TIMING_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v:23]
 	Parameter X_AREA bound to: 1024 - type: integer 
 	Parameter X_LINE bound to: 1344 - type: integer 
@@ -37,17 +39,51 @@ INFO: [Synth 8-6157] synthesizing module 'TIMING_GEN' [D:/bomberman_uec2/Microbl
 INFO: [Synth 8-6155] done synthesizing module 'TIMING_GEN' (2#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v:23]
 INFO: [Synth 8-6157] synthesizing module 'FRAME_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'FRAME_GEN' (3#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'GRAM_DECODER' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GRAM_DECODER' (4#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLOCKER' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKER' (5#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CLOCKER__parameterized0' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKER__parameterized0' (5#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BLOCK_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BLOCK_GEN' (6#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v:1]
 INFO: [Synth 8-6157] synthesizing module 'CHAR_ROM' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:23]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 11 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/font.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'CHAR_ROM' (4#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CHAR_ROM' (7#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:23]
 INFO: [Synth 8-6157] synthesizing module 'TEXT_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'TEXT_GEN' (5#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'GPU_TEST' (6#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TEXT_GEN' (8#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GPU_TEST' (9#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:23]
 WARNING: [Synth 8-3331] design CHAR_ROM has unconnected port clk
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[11]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[10]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[9]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[8]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[7]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[6]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[5]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[4]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[3]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[2]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[1]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[0]
+WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[11]
+WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[7]
+WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[6]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[8]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[7]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[6]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[5]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[4]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[3]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[2]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[1]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 894.848 ; gain = 307.926
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 895.484 ; gain = 309.336
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -60,12 +96,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 894.848 ; gain = 307.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 895.484 ; gain = 309.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 894.848 ; gain = 307.926
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 895.484 ; gain = 309.336
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 894.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 895.484 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -78,20 +114,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/GPU_TEST_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.305 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 998.523 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1020.305 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -100,10 +136,10 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/bomberm
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clk_wizard. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -120,11 +156,13 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 2     
-	               11 Bit    Registers := 6     
-	                1 Bit    Registers := 12    
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 4     
 	   2 Input     11 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -154,6 +192,22 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 2     
+Module CLOCKER 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module CLOCKER__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module BLOCK_GEN 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 Module TEXT_GEN 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -178,27 +232,34 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'frame_generator/vcount_out_reg[10:0]' into 'timing_generator/vcount_reg[10:0]' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'frame_generator/hcount_out_reg' and it is trimmed from '11' to '5' bits. [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:42]
 Why this net has no driver: _order_recur <const0>
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[0]' (FD) to 'frame_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[1]' (FD) to 'frame_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[2]' (FD) to 'frame_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_generator/rgb_out_reg[3] )
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[4]' (FD) to 'frame_generator/rgb_out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[5]' (FD) to 'frame_generator/rgb_out_reg[6]'
-INFO: [Synth 8-3886] merging instance 'frame_generator/rgb_out_reg[6]' (FD) to 'frame_generator/rgb_out_reg[7]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[8]' (FDR) to 'text_generator/rgb_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[9]' (FDR) to 'text_generator/rgb_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[10]' (FDR) to 'text_generator/rgb_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[0]' (FDR) to 'text_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[1]' (FDR) to 'text_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[2]' (FDR) to 'text_generator/rgb_out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[4]' (FDR) to 'text_generator/rgb_out_reg[7]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[5]' (FDR) to 'text_generator/rgb_out_reg[7]'
-INFO: [Synth 8-3886] merging instance 'text_generator/rgb_out_reg[6]' (FDR) to 'text_generator/rgb_out_reg[7]'
+WARNING: [Synth 8-3331] design CHAR_ROM has unconnected port clk
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[11]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[10]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[9]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[8]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[7]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[6]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[5]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[4]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[3]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[2]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[1]
+WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[0]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[8]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[7]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[6]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[5]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[4]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[3]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[2]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[1]
+WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'color_clocker/out_reg[0]' (FD) to 'number_clocker/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'color_clocker/out_reg[1]' (FD) to 'number_clocker/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'color_clocker/out_reg[2]' (FD) to 'number_clocker/out_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -209,7 +270,11 @@ ROM:
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
 |CHAR_ROM    | p_0_out    | 2048x15       | LUT            | 
-|GPU_TEST    | p_0_out    | 2048x15       | LUT            | 
+|GPU_TEST    | p_0_out    | 8192x12       | LUT            | 
+|GPU_TEST    | p_0_out    | 1024x7        | LUT            | 
+|CHAR_ROM    | p_0_out    | 2048x15       | LUT            | 
+|GPU_TEST    | p_0_out    | 1024x7        | LUT            | 
+|GPU_TEST    | p_0_out    | 8192x12       | LUT            | 
 +------------+------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -225,13 +290,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 998.523 ; gain = 411.602
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,7 +308,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1000.676 ; gain = 413.754
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1020.305 ; gain = 434.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,13 +332,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,25 +357,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -320,8 +385,8 @@ Static Shift Register Report:
 +------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|GPU_TEST    | text_generator/hsync_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|GPU_TEST    | text_generator/vsync_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|GPU_TEST    | text_generator/hsync_out_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|GPU_TEST    | text_generator/vsync_out_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -344,51 +409,56 @@ Report Cell Usage:
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
 |2     |LUT1      |     1|
-|3     |LUT2      |     9|
-|4     |LUT3      |     8|
-|5     |LUT4      |    10|
-|6     |LUT5      |    19|
-|7     |LUT6      |   222|
-|8     |MUXF7     |    77|
-|9     |MUXF8     |    33|
+|3     |LUT2      |    15|
+|4     |LUT3      |    29|
+|5     |LUT4      |    23|
+|6     |LUT5      |    73|
+|7     |LUT6      |   565|
+|8     |MUXF7     |   161|
+|9     |MUXF8     |    66|
 |10    |SRL16E    |     2|
-|11    |FDRE      |    36|
-|12    |IBUF      |    10|
+|11    |FDRE      |   107|
+|12    |IBUF      |     1|
 |13    |OBUF      |    14|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+-------------------+-----------+------+
-|      |Instance           |Module     |Cells |
-+------+-------------------+-----------+------+
-|1     |top                |           |   443|
-|2     |  frame_generator  |FRAME_GEN  |    10|
-|3     |  text_generator   |TEXT_GEN   |     5|
-|4     |  timing_generator |TIMING_GEN |   402|
-+------+-------------------+-----------+------+
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             |  1059|
+|2     |  block_decoder    |GRAM_DECODER |     2|
+|3     |  block_generator  |BLOCK_GEN    |    57|
+|4     |  character_rom    |CHAR_ROM     |   301|
+|5     |  frame_generator  |FRAME_GEN    |   582|
+|6     |  number_clocker   |CLOCKER      |     6|
+|7     |  text_generator   |TEXT_GEN     |    14|
+|8     |  timing_generator |TIMING_GEN   |    80|
++------+-------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.469 ; gain = 314.871
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.469 ; gain = 418.547
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1023.703 ; gain = 312.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1023.703 ; gain = 437.555
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1017.535 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1035.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 227 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1035.766 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1017.535 ; gain = 704.355
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.535 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1035.766 ; gain = 722.441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1035.766 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/GPU_TEST.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file GPU_TEST_utilization_synth.rpt -pb GPU_TEST_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 19:10:38 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 22:06:33 2020...
