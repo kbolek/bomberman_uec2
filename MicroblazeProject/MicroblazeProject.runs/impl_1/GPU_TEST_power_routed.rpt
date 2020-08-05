@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Aug  1 01:35:08 2020
+| Date             : Sat Aug  1 15:16:52 2020
 | Host             : Marysia running 64-bit major release  (build 9200)
 | Command          : report_power -file GPU_TEST_power_routed.rpt -pb GPU_TEST_power_summary_routed.pb -rpx GPU_TEST_power_routed.rpx
 | Design           : GPU_TEST
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.206        |
+| Total On-Chip Power (W)  | 0.208        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.134        |
+| Dynamic (W)              | 0.136        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.001 |        5 |       --- |             --- |
-| Slice Logic             |     0.002 |     1054 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      663 |     20800 |            3.19 |
-|   F7/F8 Muxes           |    <0.001 |      227 |     32600 |            0.70 |
-|   Register              |    <0.001 |      107 |     41600 |            0.26 |
+| Clocks                  |    <0.001 |        5 |       --- |             --- |
+| Slice Logic             |     0.002 |      757 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      486 |     20800 |            2.34 |
+|   F7/F8 Muxes           |    <0.001 |      137 |     32600 |            0.42 |
+|   Register              |    <0.001 |       83 |     41600 |            0.20 |
 |   LUT as Shift Register |    <0.001 |        2 |      9600 |            0.02 |
-|   Others                |     0.000 |       12 |       --- |             --- |
-| Signals                 |     0.002 |      528 |       --- |             --- |
+|   Others                |     0.000 |       10 |       --- |             --- |
+| Signals                 |     0.002 |      431 |       --- |             --- |
 | MMCM                    |     0.120 |        1 |         5 |           20.00 |
-| I/O                     |     0.008 |       16 |       106 |           15.09 |
+| I/O                     |     0.011 |       16 |       106 |           15.09 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.206 |          |           |                 |
+| Total                   |     0.208 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.015 |       0.005 |      0.010 |
 | Vccaux    |       1.800 |     0.080 |       0.067 |      0.013 |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,7 +144,7 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| GPU_TEST          |     0.134 |
+| GPU_TEST          |     0.136 |
 |   clk_wizard      |     0.121 |
 |     inst          |     0.121 |
 |   frame_generator |     0.004 |

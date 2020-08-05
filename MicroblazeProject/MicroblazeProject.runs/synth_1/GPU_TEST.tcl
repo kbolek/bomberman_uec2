@@ -67,6 +67,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc
 set_property used_in_implementation false [get_files D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
