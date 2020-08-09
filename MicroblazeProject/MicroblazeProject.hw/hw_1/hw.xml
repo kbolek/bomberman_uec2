@@ -15,7 +15,7 @@
       <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/GPU_TEST.bin"/>
       <Properties Property="PROGRAM.PRM_FILE" value=""/>
       <Properties Property="PROGRAM.UNUSED_PIN_TERMINATION" value="pull-none"/>
-      <Properties Property="PROGRAM.VERIFY" value="0"/>
+      <Properties Property="PROGRAM.VERIFY" value="1"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_device" gui_info="">

@@ -3,6 +3,9 @@
 
 # XDC: imports/Downloads/Basys-3-Master.xdc
 
+# IP: ip/GPU_DC_0/GPU_DC_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==GPU_DC_0 || ORIG_REF_NAME==GPU_DC_0} -quiet] -quiet
+
 # IP: ip/clk_wiz_0_1/clk_wiz_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
 

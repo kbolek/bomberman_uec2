@@ -19,7 +19,6 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -37,21 +36,14 @@ set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_repo_paths d:/bomberman_uec2/ip_repo/GPU_LITE_1.0 [current_project]
+set_property ip_repo_paths d:/bomberman_uec2/ip_repo/GPU_DC_1.0 [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib {
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v
-  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v
-}
-read_ip -quiet d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+read_verilog -library xil_defaultlib D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v
+read_ip -quiet d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/GPU_DC_0.xci
+
+read_ip -quiet D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]

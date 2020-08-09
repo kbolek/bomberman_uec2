@@ -10,7 +10,7 @@
 
 source GPU_TEST.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/bomberman_uec2/ip_repo/GPU_LITE_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/bomberman_uec2/ip_repo/GPU_DC_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'B:/xilinx/Vivado/2019.2/data/ip'.
 Command: synth_design -top GPU_TEST -part xc7a35tcpg236-1
 Starting synth_design
@@ -18,13 +18,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5860 
+INFO: Helper process launched with PID 4716 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 820.332 ; gain = 234.141
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 821.160 ; gain = 234.855
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'GPU_TEST' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:23]
-INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/textures.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:35]
-INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/screen.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:38]
+INFO: [Synth 8-6157] synthesizing module 'GPU_TEST' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:3]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [B:/xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
@@ -88,7 +86,21 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [B:/xilinx/Vivado/2019.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [B:/xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'TIMING_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GPU_DC_0' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/synth/GPU_DC_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'GPU_DC_v1_0' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0.v:4]
+	Parameter C_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'GPU_DC_v1_0_AXI_LITE' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/textures.dat' is read successfully [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:408]
+INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/screen.dat' is read successfully [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:411]
+INFO: [Synth 8-226] default block is never used [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:237]
+INFO: [Synth 8-226] default block is never used [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'GPU_DC_v1_0_AXI_LITE' (6#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0_AXI_LITE.v:4]
+INFO: [Synth 8-6157] synthesizing module 'TIMING_GEN' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/TIMING_GEN.v:23]
 	Parameter X_AREA bound to: 1024 - type: integer 
 	Parameter X_LINE bound to: 1344 - type: integer 
 	Parameter SYNCL_X bound to: 136 - type: integer 
@@ -97,43 +109,37 @@ INFO: [Synth 8-6157] synthesizing module 'TIMING_GEN' [D:/bomberman_uec2/Microbl
 	Parameter Y_LINE bound to: 806 - type: integer 
 	Parameter SYNCL_Y bound to: 6 - type: integer 
 	Parameter SYNCP_Y bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'TIMING_GEN' (6#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TIMING_GEN.v:23]
-INFO: [Synth 8-6157] synthesizing module 'FRAME_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FRAME_GEN' (7#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/FRAME_GEN.v:1]
-INFO: [Synth 8-6157] synthesizing module 'GRAM_DECODER' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'GRAM_DECODER' (8#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GRAM_DECODER.v:3]
-INFO: [Synth 8-6157] synthesizing module 'CLOCKER' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TIMING_GEN' (7#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/TIMING_GEN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GRAM_DECODER' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/GRAM_DECODER.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GRAM_DECODER' (8#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/GRAM_DECODER.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CLOCKER' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CLOCKER.v:3]
 	Parameter WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'CLOCKER' (9#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
-INFO: [Synth 8-6157] synthesizing module 'CLOCKER__parameterized0' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKER' (9#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CLOCKER.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CLOCKER__parameterized0' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CLOCKER.v:3]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'CLOCKER__parameterized0' (9#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CLOCKER.v:3]
-INFO: [Synth 8-6157] synthesizing module 'BLOCK_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'BLOCK_GEN' (10#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/BLOCK_GEN.v:1]
-INFO: [Synth 8-6157] synthesizing module 'CHAR_ROM' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKER__parameterized0' (9#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CLOCKER.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BLOCK_GEN' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/BLOCK_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BLOCK_GEN' (10#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/BLOCK_GEN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CHAR_ROM' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CHAR_ROM.v:23]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/font.dat' is read successfully [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'CHAR_ROM' (11#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/CHAR_ROM.v:23]
-INFO: [Synth 8-6157] synthesizing module 'TEXT_GEN' [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'TEXT_GEN' (12#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/TEXT_GEN.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'GPU_TEST' (13#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:23]
-WARNING: [Synth 8-3331] design CHAR_ROM has unconnected port clk
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[11]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[10]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[9]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[8]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[7]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[6]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[5]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[4]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[3]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[2]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[1]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[0]
+INFO: [Synth 8-3876] $readmem data file 'D:/bomberman_uec2/font.dat' is read successfully [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CHAR_ROM.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'CHAR_ROM' (11#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/CHAR_ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TEXT_GEN' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/TEXT_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TEXT_GEN' (12#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/TEXT_GEN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GPU_DC_v1_0' (13#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/hdl/GPU_DC_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'GPU_DC_0' (14#1) [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/synth/GPU_DC_0.v:57]
+WARNING: [Synth 8-7023] instance 'GPU' of module 'GPU_DC_0' has 27 connections declared, but only 6 given [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'GPU_TEST' (15#1) [D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/new/GPU_TEST.v:3]
 WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[11]
 WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[7]
 WARNING: [Synth 8-3331] design GRAM_DECODER has unconnected port block_data[6]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design GPU_DC_v1_0_AXI_LITE has unconnected port S_AXI_ARPROT[0]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[8]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[7]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[6]
@@ -144,7 +150,7 @@ WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[2]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[1]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 894.668 ; gain = 308.477
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 895.859 ; gain = 309.555
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -157,12 +163,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 894.668 ; gain = 308.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 898.180 ; gain = 311.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 894.668 ; gain = 308.477
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 898.180 ; gain = 311.875
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 894.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 910.266 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -186,32 +192,32 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/GPU_TEST_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 993.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.348 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 993.449 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1014.348 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for clk_wizard/inst. (constraint file  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for clk_wizard/inst. (constraint file  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for GPU. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk_wizard. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "ekran" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,16 +234,21 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 3     
-	               11 Bit    Registers := 8     
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 6     
 	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 16    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
 +---Muxes : 
-	 769 Input     16 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -245,10 +256,17 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module GPU_TEST 
+Module GPU_DC_v1_0_AXI_LITE 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	 769 Input     16 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
 Module TIMING_GEN 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -261,14 +279,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 2     
-Module FRAME_GEN 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 1     
-	               11 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     12 Bit        Muxes := 2     
 Module CLOCKER 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -309,20 +319,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst/block_generator/vcount_out_reg[10:0]' into 'inst/timing_generator/vcount_reg[10:0]' [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/BLOCK_GEN.v:44]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/block_generator/hcount_out_reg' and it is trimmed from '11' to '5' bits. [d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/ip/GPU_DC_0/src/BLOCK_GEN.v:45]
 Why this net has no driver: _order_recur <const0>
-WARNING: [Synth 8-3331] design CHAR_ROM has unconnected port clk
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[11]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[10]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[9]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[8]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[7]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[6]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[5]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[4]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[3]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[2]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[1]
-WARNING: [Synth 8-3331] design BLOCK_GEN has unconnected port rgb[0]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_awprot[2]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_awprot[1]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_awprot[0]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_arprot[2]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_arprot[1]
+WARNING: [Synth 8-3331] design GPU_DC_0 has unconnected port axi_lite_arprot[0]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[8]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[7]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[6]
@@ -332,17 +337,12 @@ WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[3]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[2]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[1]
 WARNING: [Synth 8-3331] design GPU_TEST has unconnected port sw[0]
-INFO: [Synth 8-3886] merging instance 'block_generator/hcount_out_reg[5]' (FD) to 'color_clocker/out_reg[0]'
-INFO: [Synth 8-3886] merging instance 'block_generator/hcount_out_reg[6]' (FD) to 'color_clocker/out_reg[1]'
-INFO: [Synth 8-3886] merging instance 'block_generator/hcount_out_reg[7]' (FD) to 'color_clocker/out_reg[2]'
-INFO: [Synth 8-3886] merging instance 'number_clocker/out_reg[4]' (FD) to 'number_clocker/out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'number_clocker/out_reg[3]' (FD) to 'number_clocker/out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'number_clocker/out_reg[1]' (FD) to 'number_clocker/out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'number_clocker/out_reg[2]' (FD) to 'number_clocker/out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'number_clocker/out_reg[5]' (FD) to 'number_clocker/out_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\number_clocker/out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'GPU/inst/GPU_DC_v1_0_AXI_LITE_inst/axi_rresp_reg[0]' (FDRE) to 'GPU/inst/GPU_DC_v1_0_AXI_LITE_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GPU/\inst/GPU_DC_v1_0_AXI_LITE_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GPU/inst/GPU_DC_v1_0_AXI_LITE_inst/axi_bresp_reg[0]' (FDRE) to 'GPU/inst/GPU_DC_v1_0_AXI_LITE_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GPU/\inst/GPU_DC_v1_0_AXI_LITE_inst/axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -353,11 +353,19 @@ ROM:
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
 |CHAR_ROM    | p_0_out    | 2048x15       | LUT            | 
-|GPU_TEST    | p_0_out    | 8192x12       | LUT            | 
-|CHAR_ROM    | p_0_out    | 2048x15       | LUT            | 
-|GPU_TEST    | p_0_out    | 8192x12       | LUT            | 
+|GPU_DC_0    | p_0_out    | 2048x15       | LUT            | 
 +------------+------------+---------------+----------------+
 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+|Module Name | RTL Object                                      | Inference | Size (Depth x Width) | Primitives                 | 
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+|GPU         | inst/GPU_DC_v1_0_AXI_LITE_inst/texture_data_reg | Implied   | 8 K x 12             | RAM64M x 512	              | 
+|GPU         | inst/GPU_DC_v1_0_AXI_LITE_inst/block_data_reg   | Implied   | 1 K x 16             | RAM64X1D x 12	RAM64M x 60	 | 
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -371,13 +379,28 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1014.348 ; gain = 428.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 993.449 ; gain = 407.258
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1014.348 ; gain = 428.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+|Module Name | RTL Object                                      | Inference | Size (Depth x Width) | Primitives                 | 
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+|GPU         | inst/GPU_DC_v1_0_AXI_LITE_inst/texture_data_reg | Implied   | 8 K x 12             | RAM64M x 512	              | 
+|GPU         | inst/GPU_DC_v1_0_AXI_LITE_inst/block_data_reg   | Implied   | 1 K x 16             | RAM64X1D x 12	RAM64M x 60	 | 
++------------+-------------------------------------------------+-----------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -389,7 +412,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1003.543 ; gain = 417.352
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1019.230 ; gain = 432.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -412,14 +435,61 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_aclk to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_aresetn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_awaddr[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_awaddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_awvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wdata[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wstrb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wstrb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wstrb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wstrb[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_wvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_bready to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_araddr[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_araddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_arvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin GPU:axi_lite_rready to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,37 +508,37 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|GPU_TEST    | text_generator/hsync_out_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|GPU_TEST    | text_generator/vsync_out_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|GPU_DC_0    | inst/text_generator/hsync_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|GPU_DC_0    | inst/text_generator/vsync_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -488,56 +558,65 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     3|
-|2     |LUT1       |     1|
-|3     |LUT2       |    15|
-|4     |LUT3       |    28|
-|5     |LUT4       |    18|
-|6     |LUT5       |    61|
-|7     |LUT6       |   402|
+|2     |LUT1       |     2|
+|3     |LUT2       |    19|
+|4     |LUT3       |    39|
+|5     |LUT4       |    54|
+|6     |LUT5       |    43|
+|7     |LUT6       |   926|
 |8     |MMCME2_ADV |     1|
-|9     |MUXF7      |   100|
-|10    |MUXF8      |    37|
-|11    |SRL16E     |     2|
-|12    |FDRE       |    83|
-|13    |IBUF       |     2|
-|14    |OBUF       |    14|
+|9     |MUXF7      |    75|
+|10    |MUXF8      |    27|
+|11    |RAM64M     |   572|
+|12    |RAM64X1D   |    12|
+|13    |SRL16E     |     2|
+|14    |FDRE       |   277|
+|15    |FDSE       |     1|
+|16    |IBUF       |    18|
+|17    |OBUF       |    30|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+-------------------+------------------+------+
-|      |Instance           |Module            |Cells |
-+------+-------------------+------------------+------+
-|1     |top                |                  |   767|
-|2     |  clk_wizard       |clk_wiz_0         |     5|
-|3     |    inst           |clk_wiz_0_clk_wiz |     5|
-|4     |  block_generator  |BLOCK_GEN         |    29|
-|5     |  frame_generator  |FRAME_GEN         |   629|
-|6     |  text_generator   |TEXT_GEN          |    14|
-|7     |  timing_generator |TIMING_GEN        |    75|
-+------+-------------------+------------------+------+
++------+--------------------------------+------------------------+------+
+|      |Instance                        |Module                  |Cells |
++------+--------------------------------+------------------------+------+
+|1     |top                             |                        |  2101|
+|2     |  clk_wizard                    |clk_wiz_0               |     5|
+|3     |    inst                        |clk_wiz_0_clk_wiz       |     5|
+|4     |  GPU                           |GPU_DC_0                |  2049|
+|5     |    inst                        |GPU_DC_v1_0             |  2049|
+|6     |      GPU_DC_v1_0_AXI_LITE_inst |GPU_DC_v1_0_AXI_LITE    |  1569|
+|7     |      block_generator           |BLOCK_GEN               |    22|
+|8     |      color_clocker             |CLOCKER__parameterized0 |    15|
+|9     |      number_clocker            |CLOCKER                 |    24|
+|10    |      text_generator            |TEXT_GEN                |    14|
+|11    |      timing_generator          |TIMING_GEN              |   405|
++------+--------------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1009.344 ; gain = 324.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1009.344 ; gain = 423.152
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1025.070 ; gain = 322.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1025.070 ; gain = 438.766
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1009.344 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1033.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 687 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1037.133 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 584 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 572 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-61 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+63 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1017.773 ; gain = 704.727
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1017.773 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1037.133 ; gain = 726.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1037.133 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/synth_1/GPU_TEST.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file GPU_TEST_utilization_synth.rpt -pb GPU_TEST_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 15:16:01 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 13:28:55 2020...
