@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log GPU_TEST.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPU_TEST.tcl" );
+         "-log QUARTZ_CONSOLE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source QUARTZ_CONSOLE.tcl" );
 
 
 

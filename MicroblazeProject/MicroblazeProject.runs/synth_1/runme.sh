@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log GPU_TEST.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPU_TEST.tcl
+EAStep vivado -log QUARTZ_CONSOLE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source QUARTZ_CONSOLE.tcl

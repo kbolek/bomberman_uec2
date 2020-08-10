@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>GPU_DC</spirit:name>
-  <spirit:version>1.4</spirit:version>
+  <spirit:version>1.9</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>AXI_LITE</spirit:name>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>28b551eb</spirit:value>
+            <spirit:value>96e15429</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>28b551eb</spirit:value>
+            <spirit:value>96e15429</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -868,7 +868,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/GPU_DC_v1_4.tcl</spirit:name>
+        <spirit:name>xgui/GPU_DC_v1_9.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_ff2deb99</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -936,7 +936,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">GPU_DC_v1_4</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">GPU_DC_v1_9</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -948,12 +948,16 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>GPU</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.2</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.3</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.4</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.6</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.7</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.8</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-08-09T11:07:18Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-08-10T17:42:42Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7370a72a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d6f661a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
@@ -1062,16 +1066,104 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@276d79ef_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@70a11686_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2f65796f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec42b02_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@689aa4b6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@df23134_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@513bdb8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11e8e4ce_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@163ec80b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@444e2c70_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9de3c9a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26bd0430_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4223df51_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15af154b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14275eb6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ab24e3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e982d9d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@700b4344_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6809ae7c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205f6992_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52f2ba75_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59206806_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@330dd045_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73b412a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32179b7e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dd69fec_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1fe3e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43d2ac27_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42db8274_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dd0543c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14f30466_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@df6960d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d81cce0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29a042d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42479e88_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c1edb4f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fc7edb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db62b1a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5289a782_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9a2cbc1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f354eea_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66b90e1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f40474e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c3e540a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dabcab5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7889056b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f88ffe3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d6c72f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8ce9ca_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6112f81b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53ef0df4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36a564f4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51bb7553_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bcc0e0e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bb769ca_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@252dd1e1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277e535c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38c86aca_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dfd6a05_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67bf6dad_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d96f10_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bdab16f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e1b5e0f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77f7f96_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bfcbb9c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28dcb5a5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3867f784_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b2cbea4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42850d17_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@392da004_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f46bc24_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200a5763_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7095ca4d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b0f9d8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@678cc636_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43bec3e2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2df29eb9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b7267dd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ed22549_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1def3cde_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce0190e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68efc6e8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2807768f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3668710e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@105d5776_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b479a6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6c2d4c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b0bfed3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72efb281_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a80f639_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22df39ad_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9ccc1c8d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="7fca3d6a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9d5f32ef"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9455ed90"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ae691706"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="94f8611d"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="98a127a3"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0a934715"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

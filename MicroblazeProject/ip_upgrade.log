@@ -1,6 +1,153 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 19:57:08 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 from xilinx.com:user:GPU_DC:1.8 (Rev. 2) to xilinx.com:user:GPU_DC:1.9 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 19:30:09 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 (xilinx.com:user:GPU_DC:1.8) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 19:11:25 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 from xilinx.com:user:GPU_DC:1.7 (Rev. 2) to xilinx.com:user:GPU_DC:1.8 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 19:00:38 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 (xilinx.com:user:GPU_DC:1.7) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 18:46:50 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 from xilinx.com:user:GPU_DC:1.6 (Rev. 1) to xilinx.com:user:GPU_DC:1.7 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 10 18:20:37 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_GPU_DC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_GPU_DC_0_0 from xilinx.com:user:GPU_DC:1.4 (Rev. 2) to xilinx.com:user:GPU_DC:1.6 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Aug  9 22:39:16 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_PADS_SOUND_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_PADS_SOUND_0_0 (xilinx.com:user:PADS_SOUND:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Sun Aug  9 13:07:26 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
