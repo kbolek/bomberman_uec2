@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:GPU_DC:1.9
+// IP VLNV: xilinx.com:user:GPU_DC:1.10
 // IP Revision: 1
 
 (* X_CORE_INFO = "GPU_DC_v1_0,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_GPU_DC_0_0,GPU_DC_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "design_1_GPU_DC_0_0,GPU_DC_v1_0,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=GPU_DC,x_ipVersion=1.9,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_LITE_DATA_WIDTH=32,C_AXI_LITE_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "design_1_GPU_DC_0_0,GPU_DC_v1_0,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=GPU_DC,x_ipVersion=1.10,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_LITE_DATA_WIDTH=32,C_AXI_LITE_ADDR_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_GPU_DC_0_0 (
   vga_clk,

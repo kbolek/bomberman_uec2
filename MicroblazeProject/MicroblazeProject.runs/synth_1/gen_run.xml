@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597082275">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597574225">
   <File Type="PA-TCL" Name="QUARTZ_CONSOLE.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="QUARTZ_CONSOLE_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="QUARTZ_CONSOLE_reports.tcl"/>
@@ -22,6 +22,18 @@
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/textures.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/screen.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

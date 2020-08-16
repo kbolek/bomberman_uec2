@@ -581,11 +581,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 10 17:57:34 UTC 2020</spirit:value>
+            <spirit:value>Sun Aug 16 10:36:30 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d579b046</spirit:value>
+            <spirit:value>9:938c7ebc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -596,7 +596,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d579b046</spirit:value>
+            <spirit:value>9:938c7ebc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -612,11 +612,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 10 17:57:34 UTC 2020</spirit:value>
+            <spirit:value>Sun Aug 16 10:36:30 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d579b046</spirit:value>
+            <spirit:value>9:938c7ebc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -632,11 +632,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 10 17:57:34 UTC 2020</spirit:value>
+            <spirit:value>Sun Aug 16 10:36:30 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ee6341e1</spirit:value>
+            <spirit:value>9:9fde2200</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -652,11 +652,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 10 17:57:34 UTC 2020</spirit:value>
+            <spirit:value>Sun Aug 16 10:36:30 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ee6341e1</spirit:value>
+            <spirit:value>9:9fde2200</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1097,35 +1097,35 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/BLOCK_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/BLOCK_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/CHAR_ROM.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/CHAR_ROM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/CLOCKER.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/CLOCKER.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/hdl/GPU_DC_v1_0_AXI_LITE.v</spirit:name>
+        <spirit:name>../../ipshared/f281/hdl/GPU_DC_v1_0_AXI_LITE.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/GRAM_DECODER.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/GRAM_DECODER.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/TEXT_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/TEXT_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/TIMING_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/TIMING_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/hdl/GPU_DC_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/f281/hdl/GPU_DC_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1140,35 +1140,35 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/BLOCK_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/BLOCK_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/CHAR_ROM.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/CHAR_ROM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/CLOCKER.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/CLOCKER.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/hdl/GPU_DC_v1_0_AXI_LITE.v</spirit:name>
+        <spirit:name>../../ipshared/f281/hdl/GPU_DC_v1_0_AXI_LITE.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/GRAM_DECODER.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/GRAM_DECODER.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/TEXT_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/TEXT_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/src/TIMING_GEN.v</spirit:name>
+        <spirit:name>../../ipshared/f281/src/TIMING_GEN.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/bf8d/hdl/GPU_DC_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/f281/hdl/GPU_DC_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1438,6 +1438,29 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@72efb281_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@a80f639_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@22df39ad_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ae9b5b0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c9ac6c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35386df9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@710d36a1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b0e5e8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23899e08_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74a85412_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58bc5dc6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c124404_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71830af9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a438829_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278f3c25_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a7c4b61_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b2eac8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62e00f6c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5da3ef56_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d079805_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca58036_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9a97df_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6219c557_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@353a63eb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ffb0b1b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b969c58_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_LITE.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -1484,10 +1507,10 @@
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9ccc1c8d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="7fca3d6a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9455ed90"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6ba282f6"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ae691706"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="94f8611d"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0a934715"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4d80b1ee"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

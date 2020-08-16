@@ -7,7 +7,7 @@
   <spirit:componentInstances>
     <spirit:componentInstance>
       <spirit:instanceName>design_1_GPU_DC_0_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="GPU_DC" spirit:version="1.9"/>
+      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="GPU_DC" spirit:version="1.10"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="ADDRBLOCK_BASE_ADDRESS.AXI_LITE.AXI_LITE_reg">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXI_LITE.ADDR_WIDTH">4</spirit:configurableElementValue>

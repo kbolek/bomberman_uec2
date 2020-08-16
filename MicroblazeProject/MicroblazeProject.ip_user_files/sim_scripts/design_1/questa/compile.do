@@ -45,14 +45,14 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/ip/design_1_microblaze_0_1/sim/design_1_microblaze_0_1.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ipshared/bf8d/src/BLOCK_GEN.v" \
-"../../../bd/design_1/ipshared/bf8d/src/CHAR_ROM.v" \
-"../../../bd/design_1/ipshared/bf8d/src/CLOCKER.v" \
-"../../../bd/design_1/ipshared/bf8d/hdl/GPU_DC_v1_0_AXI_LITE.v" \
-"../../../bd/design_1/ipshared/bf8d/src/GRAM_DECODER.v" \
-"../../../bd/design_1/ipshared/bf8d/src/TEXT_GEN.v" \
-"../../../bd/design_1/ipshared/bf8d/src/TIMING_GEN.v" \
-"../../../bd/design_1/ipshared/bf8d/hdl/GPU_DC_v1_0.v" \
+"../../../bd/design_1/ipshared/f281/src/BLOCK_GEN.v" \
+"../../../bd/design_1/ipshared/f281/src/CHAR_ROM.v" \
+"../../../bd/design_1/ipshared/f281/src/CLOCKER.v" \
+"../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0_AXI_LITE.v" \
+"../../../bd/design_1/ipshared/f281/src/GRAM_DECODER.v" \
+"../../../bd/design_1/ipshared/f281/src/TEXT_GEN.v" \
+"../../../bd/design_1/ipshared/f281/src/TIMING_GEN.v" \
+"../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0.v" \
 "../../../bd/design_1/ip/design_1_GPU_DC_0_0/sim/design_1_GPU_DC_0_0.v" \
 
 vcom -work lmb_v10_v3_0_10 -64 -93 \

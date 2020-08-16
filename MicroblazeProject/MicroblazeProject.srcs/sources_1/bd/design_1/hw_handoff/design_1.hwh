@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 10 19:57:34 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Aug 16 12:36:31 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:basys3:part0:1.1" DEVICE="7a35t" NAME="design_1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -75,7 +75,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/GPU_DC_0" HWVERSION="1.9" INSTANCE="GPU_DC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="GPU_DC" VLNV="xilinx.com:user:GPU_DC:1.9">
+    <MODULE COREREVISION="1" FULLNAME="/GPU_DC_0" HWVERSION="1.10" INSTANCE="GPU_DC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="GPU_DC" VLNV="xilinx.com:user:GPU_DC:1.10">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI_LITE" NAME="AXI_LITE_reg" RANGE="4096" USAGE="register"/>
@@ -2020,101 +2020,6 @@
             <CONNECTION INSTANCE="rst_clk_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_AWADDR"/>
@@ -2208,6 +2113,101 @@
         <PORT DIR="I" LEFT="0" NAME="S00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_RREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DP_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="GPU_DC_0_axi_lite_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPU_DC_0" PORT="axi_lite_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PADS_SOUND_0_axi_lite_awaddr">

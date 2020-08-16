@@ -261,7 +261,7 @@ proc create_root_design { parentCell } {
   set vs [ create_bd_port -dir O -type data vs ]
 
   # Create instance: GPU_DC_0, and set properties
-  set GPU_DC_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:GPU_DC:1.9 GPU_DC_0 ]
+  set GPU_DC_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:GPU_DC:1.10 GPU_DC_0 ]
 
   # Create instance: PADS_SOUND_0, and set properties
   set PADS_SOUND_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PADS_SOUND:1.0 PADS_SOUND_0 ]

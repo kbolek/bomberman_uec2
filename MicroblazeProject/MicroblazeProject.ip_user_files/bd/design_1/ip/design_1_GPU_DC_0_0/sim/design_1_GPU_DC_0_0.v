@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:GPU_DC:1.9
+// IP VLNV: xilinx.com:user:GPU_DC:1.10
 // IP Revision: 1
 
 `timescale 1ns/1ps

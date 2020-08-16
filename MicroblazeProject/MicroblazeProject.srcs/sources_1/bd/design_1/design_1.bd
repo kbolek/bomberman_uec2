@@ -312,16 +312,16 @@
               "dlmb_v10/LMB_M"
             ]
           },
-          "microblaze_0_dlmb_cntlr": {
-            "interface_ports": [
-              "dlmb_bram_if_cntlr/BRAM_PORT",
-              "lmb_bram/BRAM_PORTA"
-            ]
-          },
           "microblaze_0_ilmb_bus": {
             "interface_ports": [
               "ilmb_v10/LMB_Sl_0",
               "ilmb_bram_if_cntlr/SLMB"
+            ]
+          },
+          "microblaze_0_dlmb_cntlr": {
+            "interface_ports": [
+              "dlmb_bram_if_cntlr/BRAM_PORT",
+              "lmb_bram/BRAM_PORTA"
             ]
           },
           "microblaze_0_ilmb": {
@@ -641,6 +641,18 @@
           }
         },
         "interface_nets": {
+          "m01_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
+            ]
+          },
           "microblaze_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -663,18 +675,6 @@
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
-            ]
-          },
-          "m01_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
             ]
           }
         },
@@ -755,7 +755,7 @@
         "xci_name": "design_1_PADS_SOUND_0_0"
       },
       "GPU_DC_0": {
-        "vlnv": "xilinx.com:user:GPU_DC:1.9",
+        "vlnv": "xilinx.com:user:GPU_DC:1.10",
         "xci_name": "design_1_GPU_DC_0_0"
       }
     },
@@ -772,12 +772,6 @@
           "microblaze_0_local_memory/DLMB"
         ]
       },
-      "microblaze_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M01_AXI",
-          "PADS_SOUND_0/AXI_LITE"
-        ]
-      },
       "microblaze_0_M_AXI_DP": {
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
@@ -788,6 +782,12 @@
         "interface_ports": [
           "microblaze_0/ILMB",
           "microblaze_0_local_memory/ILMB"
+        ]
+      },
+      "microblaze_0_axi_periph_M01_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M01_AXI",
+          "PADS_SOUND_0/AXI_LITE"
         ]
       }
     },

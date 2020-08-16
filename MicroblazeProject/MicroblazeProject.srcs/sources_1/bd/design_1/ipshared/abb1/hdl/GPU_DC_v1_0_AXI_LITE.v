@@ -417,10 +417,10 @@
 
 	// Add user logic here
     reg  [11:0] texture_data [8191:0];
-    initial $readmemh("D:/bomberman_uec2/textures.dat",texture_data);
+    initial $readmemh("textures.dat",texture_data);
 
     reg  [15:0] block_data [767:0];
-    initial $readmemh("D:/bomberman_uec2/screen.dat",block_data);
+    initial $readmemh("screen.dat",block_data);
     
     always @(posedge S_AXI_ACLK)
     begin
