@@ -11,17 +11,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_microblaze_0_1/sim/design_1_microblaze_0_1.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/f281/src/BLOCK_GEN.v" \
-  "../../../bd/design_1/ipshared/f281/src/CHAR_ROM.v" \
-  "../../../bd/design_1/ipshared/f281/src/CLOCKER.v" \
-  "../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0_AXI_LITE.v" \
-  "../../../bd/design_1/ipshared/f281/src/GRAM_DECODER.v" \
-  "../../../bd/design_1/ipshared/f281/src/TEXT_GEN.v" \
-  "../../../bd/design_1/ipshared/f281/src/TIMING_GEN.v" \
-  "../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0.v" \
-  "../../../bd/design_1/ip/design_1_GPU_DC_0_0/sim/design_1_GPU_DC_0_0.v" \
--endlib
 -makelib xcelium_lib/lmb_v10_v3_0_10 \
   "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/2e88/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
 -endlib
@@ -85,6 +74,45 @@
   "../../../bd/design_1/ipshared/1e8d/src/SOUND_GENERATOR.v" \
   "../../../bd/design_1/ipshared/1e8d/hdl/PADS_SOUND_v1_0.v" \
   "../../../bd/design_1/ip/design_1_PADS_SOUND_0_0/sim/design_1_PADS_SOUND_0_0.v" \
+-endlib
+-makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_srl_fifo_v1_0_2 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_uartlite_v2_0_24 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/d8db/hdl/axi_uartlite_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/mdm_v3_2_17 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ipshared/6ca0/src/BLOCK_GEN.v" \
+  "../../../bd/design_1/ipshared/6ca0/src/CHAR_ROM.v" \
+  "../../../bd/design_1/ipshared/6ca0/src/CLOCKER.v" \
+  "../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0_S_BLOCK_AXI.v" \
+  "../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0_S_TEXTURE_AXI.v" \
+  "../../../bd/design_1/ipshared/6ca0/src/GRAM_DECODER.v" \
+  "../../../bd/design_1/ipshared/6ca0/src/TEXT_GEN.v" \
+  "../../../bd/design_1/ipshared/6ca0/src/TIMING_GEN.v" \
+  "../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0.v" \
+  "../../../bd/design_1/ip/design_1_GPU_FULL_0_0/sim/design_1_GPU_FULL_0_0.v" \
+-endlib
+-makelib xcelium_lib/axi_protocol_converter_v2_1_20 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

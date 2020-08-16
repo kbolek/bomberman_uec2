@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Aug 16 12:42:53 2020
-# Process ID: 12732
+# Start of session at: Sun Aug 16 17:20:37 2020
+# Process ID: 9980
 # Current directory: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/impl_1
-# Command line: vivado.exe -log QUARTZ_CONSOLE.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source QUARTZ_CONSOLE.tcl -notrace
-# Log file: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/impl_1/QUARTZ_CONSOLE.vdi
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/impl_1/design_1_wrapper.vdi
 # Journal file: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source QUARTZ_CONSOLE.tcl -notrace
+source design_1_wrapper.tcl -notrace

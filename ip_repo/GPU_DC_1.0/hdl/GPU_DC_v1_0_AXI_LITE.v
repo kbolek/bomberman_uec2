@@ -120,11 +120,6 @@
 	integer	 byte_index;
 	reg	 aw_en;
     
-    reg [C_S_AXI_DATA_WIDTH-1:0]	texture_wr_addr;
-    reg [C_S_AXI_DATA_WIDTH-1:0]	texture_wr_data;
-    reg [C_S_AXI_DATA_WIDTH-1:0]	block_wr_addr;
-    reg [C_S_AXI_DATA_WIDTH-1:0]	block_wr_data;
-    
 	// I/O Connections assignments
 
 	assign S_AXI_AWREADY	= axi_awready;
@@ -276,13 +271,6 @@
 	                    end
 	        endcase
 	      end
-	      else
-	      begin
-	           texture_wr_addr <= slv_reg0;
-               texture_wr_data <= slv_reg1;
-               block_wr_addr <= slv_reg2;
-               block_wr_data <= slv_reg3;
-	      end
 	  end
 	end    
 
@@ -388,10 +376,10 @@
 	begin
 	      // Address decoding for reading registers
 	      case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
-	        2'h0   : reg_data_out <= slv_reg0;
-	        2'h1   : reg_data_out <= slv_reg1;
-	        2'h2   : reg_data_out <= slv_reg2;
-	        2'h3   : reg_data_out <= slv_reg3;
+	        2'h0   : reg_data_out <= 32'h73;
+	        2'h1   : reg_data_out <= 32'h75;
+	        2'h2   : reg_data_out <= 32'h420;
+	        2'h3   : reg_data_out <= 32'h123;
 	        default : reg_data_out <= 0;
 	      endcase
 	end
@@ -424,8 +412,8 @@
     
     always @(posedge S_AXI_ACLK)
     begin
-        texture_data[texture_wr_addr] <= texture_wr_data[11:0];
-        block_data[block_wr_addr] <= block_wr_data[15:0];
+        texture_data[slv_reg0] <= slv_reg1[11:0];
+        block_data[slv_reg2] <= slv_reg3[15:0];
     end
     
     always @(posedge vga_clk)

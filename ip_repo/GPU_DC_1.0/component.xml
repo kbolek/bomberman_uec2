@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>GPU_DC</spirit:name>
-  <spirit:version>1.10</spirit:version>
+  <spirit:version>1.11</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>AXI_LITE</spirit:name>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>19f4ada0</spirit:value>
+            <spirit:value>6aa870ff</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>19f4ada0</spirit:value>
+            <spirit:value>6aa870ff</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -868,7 +868,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/GPU_DC_v1_10.tcl</spirit:name>
+        <spirit:name>xgui/GPU_DC_v1_11.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_ff2deb99</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -948,7 +948,7 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>GPU</xilinx:displayName>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.2</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.3</xilinx:canUpgradeFrom>
@@ -957,8 +957,9 @@
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.7</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.8</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.9</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:GPU_DC:1.10</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-08-16T10:36:17Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-08-16T13:30:02Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7370a72a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d6f661a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
@@ -1178,13 +1179,36 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@353a63eb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7ffb0b1b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3b969c58_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a7c0633_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@222d5553_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67512370_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@87076d1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d2d9cec_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@333d32d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38196d1d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa4d8ff_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20313780_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@291ab24c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b921d40_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1b9d4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d04686_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ffb8754_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dba45dd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b0b85d7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d87cfb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21465b77_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@326788fd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7631cce1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3134eb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12153309_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e87fa03_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_DC_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9ccc1c8d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="7fca3d6a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6ba282f6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="14d2ec14"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ae691706"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="94f8611d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4d80b1ee"/>

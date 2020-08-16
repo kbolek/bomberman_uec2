@@ -15,6 +15,12 @@ vlib activehdl/axi_register_slice_v2_1_20
 vlib activehdl/fifo_generator_v13_2_5
 vlib activehdl/axi_data_fifo_v2_1_19
 vlib activehdl/axi_crossbar_v2_1_21
+vlib activehdl/axi_lite_ipif_v3_0_4
+vlib activehdl/lib_pkg_v1_0_2
+vlib activehdl/lib_srl_fifo_v1_0_2
+vlib activehdl/axi_uartlite_v2_0_24
+vlib activehdl/mdm_v3_2_17
+vlib activehdl/axi_protocol_converter_v2_1_20
 
 vmap xpm activehdl/xpm
 vmap microblaze_v11_0_2 activehdl/microblaze_v11_0_2
@@ -30,6 +36,12 @@ vmap axi_register_slice_v2_1_20 activehdl/axi_register_slice_v2_1_20
 vmap fifo_generator_v13_2_5 activehdl/fifo_generator_v13_2_5
 vmap axi_data_fifo_v2_1_19 activehdl/axi_data_fifo_v2_1_19
 vmap axi_crossbar_v2_1_21 activehdl/axi_crossbar_v2_1_21
+vmap axi_lite_ipif_v3_0_4 activehdl/axi_lite_ipif_v3_0_4
+vmap lib_pkg_v1_0_2 activehdl/lib_pkg_v1_0_2
+vmap lib_srl_fifo_v1_0_2 activehdl/lib_srl_fifo_v1_0_2
+vmap axi_uartlite_v2_0_24 activehdl/axi_uartlite_v2_0_24
+vmap mdm_v3_2_17 activehdl/mdm_v3_2_17
+vmap axi_protocol_converter_v2_1_20 activehdl/axi_protocol_converter_v2_1_20
 
 vlog -work xpm  -sv2k12 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -43,17 +55,6 @@ vcom -work microblaze_v11_0_2 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_microblaze_0_1/sim/design_1_microblaze_0_1.vhd" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ipshared/f281/src/BLOCK_GEN.v" \
-"../../../bd/design_1/ipshared/f281/src/CHAR_ROM.v" \
-"../../../bd/design_1/ipshared/f281/src/CLOCKER.v" \
-"../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0_AXI_LITE.v" \
-"../../../bd/design_1/ipshared/f281/src/GRAM_DECODER.v" \
-"../../../bd/design_1/ipshared/f281/src/TEXT_GEN.v" \
-"../../../bd/design_1/ipshared/f281/src/TIMING_GEN.v" \
-"../../../bd/design_1/ipshared/f281/hdl/GPU_DC_v1_0.v" \
-"../../../bd/design_1/ip/design_1_GPU_DC_0_0/sim/design_1_GPU_DC_0_0.v" \
 
 vcom -work lmb_v10_v3_0_10 -93 \
 "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/2e88/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
@@ -118,6 +119,45 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sou
 "../../../bd/design_1/ipshared/1e8d/src/SOUND_GENERATOR.v" \
 "../../../bd/design_1/ipshared/1e8d/hdl/PADS_SOUND_v1_0.v" \
 "../../../bd/design_1/ip/design_1_PADS_SOUND_0_0/sim/design_1_PADS_SOUND_0_0.v" \
+
+vcom -work axi_lite_ipif_v3_0_4 -93 \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work lib_pkg_v1_0_2 -93 \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work lib_srl_fifo_v1_0_2 -93 \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vcom -work axi_uartlite_v2_0_24 -93 \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/d8db/hdl/axi_uartlite_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
+
+vcom -work mdm_v3_2_17 -93 \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ipshared/6ca0/src/BLOCK_GEN.v" \
+"../../../bd/design_1/ipshared/6ca0/src/CHAR_ROM.v" \
+"../../../bd/design_1/ipshared/6ca0/src/CLOCKER.v" \
+"../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0_S_BLOCK_AXI.v" \
+"../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0_S_TEXTURE_AXI.v" \
+"../../../bd/design_1/ipshared/6ca0/src/GRAM_DECODER.v" \
+"../../../bd/design_1/ipshared/6ca0/src/TEXT_GEN.v" \
+"../../../bd/design_1/ipshared/6ca0/src/TIMING_GEN.v" \
+"../../../bd/design_1/ipshared/6ca0/hdl/GPU_FULL_v2_0.v" \
+"../../../bd/design_1/ip/design_1_GPU_FULL_0_0/sim/design_1_GPU_FULL_0_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_20  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 "../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
