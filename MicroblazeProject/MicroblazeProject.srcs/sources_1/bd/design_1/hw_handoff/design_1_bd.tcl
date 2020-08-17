@@ -263,7 +263,7 @@ proc create_root_design { parentCell } {
   set vs [ create_bd_port -dir O -type data vs ]
 
   # Create instance: BRAM_GPU_0, and set properties
-  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:1.1 BRAM_GPU_0 ]
+  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:1.5 BRAM_GPU_0 ]
 
   # Create instance: PADS_SOUND_0, and set properties
   set PADS_SOUND_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PADS_SOUND:1.0 PADS_SOUND_0 ]
@@ -271,6 +271,8 @@ proc create_root_design { parentCell } {
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0 ]
   set_property -dict [ list \
+   CONFIG.ECC_TYPE {0} \
+   CONFIG.PROTOCOL {AXI4} \
    CONFIG.READ_LATENCY {1} \
    CONFIG.SINGLE_PORT_BRAM {1} \
  ] $axi_bram_ctrl_0
@@ -286,15 +288,15 @@ proc create_root_design { parentCell } {
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [ list \
    CONFIG.Byte_Size {8} \
-   CONFIG.EN_SAFETY_CKT {true} \
+   CONFIG.EN_SAFETY_CKT {false} \
    CONFIG.Enable_32bit_Address {true} \
    CONFIG.Enable_B {Use_ENB_Pin} \
    CONFIG.Fill_Remaining_Memory_Locations {false} \
    CONFIG.Load_Init_File {false} \
    CONFIG.Memory_Type {True_Dual_Port_RAM} \
    CONFIG.Operating_Mode_B {WRITE_FIRST} \
-   CONFIG.Port_B_Clock {100} \
-   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Port_B_Clock {65} \
+   CONFIG.Port_B_Enable_Rate {65} \
    CONFIG.Port_B_Write_Rate {50} \
    CONFIG.Read_Width_A {32} \
    CONFIG.Read_Width_B {32} \

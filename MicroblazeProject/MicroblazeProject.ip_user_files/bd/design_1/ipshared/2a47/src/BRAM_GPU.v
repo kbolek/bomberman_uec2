@@ -13,7 +13,7 @@ module BRAM_GPU(
 wire [15:0] block_data;
 wire [12:0] texture_addr;
 wire [11:0] pixel;
-wire [9:0] block_addr;
+wire [11:0] block_addr;
 
 wire hsync_timing, vsync_timing;
 wire [11:0] rgb_timing;
@@ -133,6 +133,7 @@ initial $readmemh("textures.mem",texture_data);
 assign pixel = texture_data[texture_addr];
 
 assign block_data = bram_data[15:0];
-assign bram_addr = {22'h000000,block_addr};
+assign bram_addr[11:0] = block_addr;
+assign bram_addr[31:12] = 0;
 
 endmodule

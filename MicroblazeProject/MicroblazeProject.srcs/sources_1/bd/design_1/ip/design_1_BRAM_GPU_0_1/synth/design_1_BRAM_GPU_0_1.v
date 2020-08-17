@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:1.1
-// IP Revision: 2
+// IP VLNV: xilinx.com:user:BRAM_GPU:1.5
+// IP Revision: 1
 
 (* X_CORE_INFO = "BRAM_GPU,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_BRAM_GPU_0_1,BRAM_GPU,{}" *)
-(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=1.1,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=1.5,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BRAM_GPU_0_1 (

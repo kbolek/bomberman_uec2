@@ -97,13 +97,13 @@
   "../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/8295/src/BLOCK_GEN.v" \
-  "../../../bd/design_1/ipshared/8295/src/CHAR_ROM.v" \
-  "../../../bd/design_1/ipshared/8295/src/CLOCKER.v" \
-  "../../../bd/design_1/ipshared/8295/src/GRAM_DECODER.v" \
-  "../../../bd/design_1/ipshared/8295/src/TEXT_GEN.v" \
-  "../../../bd/design_1/ipshared/8295/src/TIMING_GEN.v" \
-  "../../../bd/design_1/ipshared/8295/src/BRAM_GPU.v" \
+  "../../../bd/design_1/ipshared/2a47/src/BLOCK_GEN.v" \
+  "../../../bd/design_1/ipshared/2a47/src/CHAR_ROM.v" \
+  "../../../bd/design_1/ipshared/2a47/src/CLOCKER.v" \
+  "../../../bd/design_1/ipshared/2a47/src/GRAM_DECODER.v" \
+  "../../../bd/design_1/ipshared/2a47/src/TEXT_GEN.v" \
+  "../../../bd/design_1/ipshared/2a47/src/TIMING_GEN.v" \
+  "../../../bd/design_1/ipshared/2a47/src/BRAM_GPU.v" \
   "../../../bd/design_1/ip/design_1_BRAM_GPU_0_1/sim/design_1_BRAM_GPU_0_1.v" \
 -endlib
 -makelib ies_lib/axi_bram_ctrl_v4_1_2 \
@@ -115,11 +115,11 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
 -endlib
--makelib ies_lib/axi_protocol_converter_v2_1_20 \
-  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-makelib ies_lib/xlconstant_v1_1_6 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

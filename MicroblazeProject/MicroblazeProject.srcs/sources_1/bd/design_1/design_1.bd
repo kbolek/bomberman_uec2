@@ -34,8 +34,8 @@
       "mdm_0": "",
       "axi_bram_ctrl_0": "",
       "blk_mem_gen_0": "",
-      "BRAM_GPU_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "BRAM_GPU_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -330,16 +330,28 @@
           }
         },
         "interface_nets": {
-          "microblaze_0_dlmb_bus": {
-            "interface_ports": [
-              "dlmb_v10/LMB_Sl_0",
-              "dlmb_bram_if_cntlr/SLMB"
-            ]
-          },
           "microblaze_0_dlmb_cntlr": {
             "interface_ports": [
               "dlmb_bram_if_cntlr/BRAM_PORT",
               "lmb_bram/BRAM_PORTA"
+            ]
+          },
+          "microblaze_0_ilmb": {
+            "interface_ports": [
+              "ILMB",
+              "ilmb_v10/LMB_M"
+            ]
+          },
+          "microblaze_0_ilmb_bus": {
+            "interface_ports": [
+              "ilmb_v10/LMB_Sl_0",
+              "ilmb_bram_if_cntlr/SLMB"
+            ]
+          },
+          "microblaze_0_dlmb_bus": {
+            "interface_ports": [
+              "dlmb_v10/LMB_Sl_0",
+              "dlmb_bram_if_cntlr/SLMB"
             ]
           },
           "microblaze_0_ilmb_cntlr": {
@@ -352,18 +364,6 @@
             "interface_ports": [
               "DLMB",
               "dlmb_v10/LMB_M"
-            ]
-          },
-          "microblaze_0_ilmb_bus": {
-            "interface_ports": [
-              "ilmb_v10/LMB_Sl_0",
-              "ilmb_bram_if_cntlr/SLMB"
-            ]
-          },
-          "microblaze_0_ilmb": {
-            "interface_ports": [
-              "ILMB",
-              "ilmb_v10/LMB_M"
             ]
           }
         },
@@ -655,16 +655,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_m00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "m00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_m00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -847,6 +847,12 @@
           }
         },
         "interface_nets": {
+          "xbar_to_m03_couplers": {
+            "interface_ports": [
+              "xbar/M03_AXI",
+              "m03_couplers/S_AXI"
+            ]
+          },
           "microblaze_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -877,12 +883,6 @@
               "m01_couplers/M_AXI"
             ]
           },
-          "xbar_to_m03_couplers": {
-            "interface_ports": [
-              "xbar/M03_AXI",
-              "m03_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
@@ -895,16 +895,16 @@
               "m02_couplers/M_AXI"
             ]
           },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
-            ]
-          },
           "m03_couplers_to_microblaze_0_axi_periph": {
             "interface_ports": [
               "M03_AXI",
               "m03_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
             ]
           }
         },
@@ -1029,6 +1029,9 @@
         "vlnv": "xilinx.com:ip:axi_bram_ctrl:4.1",
         "xci_name": "design_1_axi_bram_ctrl_0_1",
         "parameters": {
+          "PROTOCOL": {
+            "value": "AXI4"
+          },
           "READ_LATENCY": {
             "value": "1"
           },
@@ -1052,7 +1055,7 @@
         "xci_name": "design_1_blk_mem_gen_0_1",
         "parameters": {
           "EN_SAFETY_CKT": {
-            "value": "true"
+            "value": "false"
           },
           "Enable_32bit_Address": {
             "value": "true"
@@ -1067,10 +1070,10 @@
             "value": "WRITE_FIRST"
           },
           "Port_B_Clock": {
-            "value": "100"
+            "value": "65"
           },
           "Port_B_Enable_Rate": {
-            "value": "100"
+            "value": "65"
           },
           "Port_B_Write_Rate": {
             "value": "50"
@@ -1110,62 +1113,20 @@
           }
         }
       },
-      "BRAM_GPU_0": {
-        "vlnv": "xilinx.com:user:BRAM_GPU:1.1",
-        "xci_name": "design_1_BRAM_GPU_0_1"
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "design_1_xlconstant_0_0"
+      },
+      "BRAM_GPU_0": {
+        "vlnv": "xilinx.com:user:BRAM_GPU:1.5",
+        "xci_name": "design_1_BRAM_GPU_0_1"
       }
     },
     "interface_nets": {
-      "microblaze_0_M_AXI_DP": {
-        "interface_ports": [
-          "microblaze_0/M_AXI_DP",
-          "microblaze_0_axi_periph/S00_AXI"
-        ]
-      },
-      "microblaze_0_dlmb_1": {
-        "interface_ports": [
-          "microblaze_0/DLMB",
-          "microblaze_0_local_memory/DLMB"
-        ]
-      },
-      "microblaze_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M00_AXI",
-          "axi_bram_ctrl_0/S_AXI"
-        ]
-      },
       "mdm_0_MBDEBUG_0": {
         "interface_ports": [
           "mdm_0/MBDEBUG_0",
           "microblaze_0/DEBUG"
-        ]
-      },
-      "axi_uartlite_0_UART": {
-        "interface_ports": [
-          "usb_uart",
-          "axi_uartlite_0/UART"
-        ]
-      },
-      "microblaze_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M01_AXI",
-          "PADS_SOUND_0/AXI_LITE"
-        ]
-      },
-      "microblaze_0_ilmb_1": {
-        "interface_ports": [
-          "microblaze_0/ILMB",
-          "microblaze_0_local_memory/ILMB"
-        ]
-      },
-      "microblaze_0_axi_periph_M02_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M02_AXI",
-          "axi_uartlite_0/S_AXI"
         ]
       },
       "axi_bram_ctrl_0_BRAM_PORTA": {
@@ -1174,10 +1135,52 @@
           "axi_bram_ctrl_0/BRAM_PORTA"
         ]
       },
+      "microblaze_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M00_AXI",
+          "axi_bram_ctrl_0/S_AXI"
+        ]
+      },
+      "microblaze_0_ilmb_1": {
+        "interface_ports": [
+          "microblaze_0/ILMB",
+          "microblaze_0_local_memory/ILMB"
+        ]
+      },
+      "microblaze_0_M_AXI_DP": {
+        "interface_ports": [
+          "microblaze_0/M_AXI_DP",
+          "microblaze_0_axi_periph/S00_AXI"
+        ]
+      },
+      "axi_uartlite_0_UART": {
+        "interface_ports": [
+          "usb_uart",
+          "axi_uartlite_0/UART"
+        ]
+      },
+      "microblaze_0_dlmb_1": {
+        "interface_ports": [
+          "microblaze_0/DLMB",
+          "microblaze_0_local_memory/DLMB"
+        ]
+      },
+      "microblaze_0_axi_periph_M02_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M02_AXI",
+          "axi_uartlite_0/S_AXI"
+        ]
+      },
       "microblaze_0_axi_periph_M03_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M03_AXI",
           "mdm_0/S_AXI"
+        ]
+      },
+      "microblaze_0_axi_periph_M01_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M01_AXI",
+          "PADS_SOUND_0/AXI_LITE"
         ]
       }
     },
@@ -1331,16 +1334,16 @@
           "BRAM_GPU_0/vga_clk"
         ]
       },
-      "BRAM_GPU_0_bram_addr": {
-        "ports": [
-          "BRAM_GPU_0/bram_addr",
-          "blk_mem_gen_0/addrb"
-        ]
-      },
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
           "blk_mem_gen_0/enb"
+        ]
+      },
+      "BRAM_GPU_0_bram_addr": {
+        "ports": [
+          "BRAM_GPU_0/bram_addr",
+          "blk_mem_gen_0/addrb"
         ]
       }
     },

@@ -17,6 +17,11 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 create_project -in_memory -part xc7a35tcpg236-1
@@ -39,11 +44,6 @@ set_property ip_repo_paths {
 update_ip_catalog
 set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem {
-  D:/bomberman_uec2/MicroblazeProject/textures.mem
-  D:/bomberman_uec2/MicroblazeProject/screen.mem
-  D:/bomberman_uec2/MicroblazeProject/font.mem
-}
 read_verilog -library xil_defaultlib D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc]

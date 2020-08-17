@@ -67,9 +67,7 @@ module design_1_blk_mem_gen_0_1 (
   web,
   addrb,
   dinb,
-  doutb,
-  rsta_busy,
-  rstb_busy
+  doutb
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *)
@@ -84,7 +82,7 @@ input wire [3 : 0] wea;
 input wire [31 : 0] addra;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN" *)
 input wire [31 : 0] dina;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE BRAM_CTRL, READ_WRITE_MODE READ_WRITE, READ_LATENCY 2" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 4096, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE BRAM_CTRL, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *)
 output wire [31 : 0] douta;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB CLK" *)
@@ -102,8 +100,6 @@ input wire [31 : 0] dinb;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTB, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE BRAM_CTRL, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB DOUT" *)
 output wire [31 : 0] doutb;
-output wire rsta_busy;
-output wire rstb_busy;
 
   blk_mem_gen_v8_4_4 #(
     .C_FAMILY("artix7"),
@@ -176,11 +172,11 @@ output wire rstb_busy;
     .C_EN_RDADDRB_CHG(0),
     .C_EN_DEEPSLEEP_PIN(0),
     .C_EN_SHUTDOWN_PIN(0),
-    .C_EN_SAFETY_CKT(1),
+    .C_EN_SAFETY_CKT(0),
     .C_DISABLE_WARN_BHV_RANGE(0),
     .C_COUNT_36K_BRAM("2"),
     .C_COUNT_18K_BRAM("0"),
-    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     10.7492 mW")
+    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     7.645368 mW")
   ) inst (
     .clka(clka),
     .rsta(rsta),
@@ -207,8 +203,8 @@ output wire rstb_busy;
     .sleep(1'D0),
     .deepsleep(1'D0),
     .shutdown(1'D0),
-    .rsta_busy(rsta_busy),
-    .rstb_busy(rstb_busy),
+    .rsta_busy(),
+    .rstb_busy(),
     .s_aclk(1'H0),
     .s_aresetn(1'D0),
     .s_axi_awid(4'B0),
