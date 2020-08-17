@@ -1,58 +1,27 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Aug 16 17:17:34 2020
+| Date         : Sun Aug 16 21:49:38 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7a35tcpg236-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_GPU_FULL_0_0'
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_GPU_FULL_0_0 (xilinx.com:user:GPU_FULL:2.1) from (Rev. 2) to (Rev. 3)
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.1) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
 
 
+-Upgraded port 'bram_addr' width 32 differs from original width 10
 
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Aug 16 17:08:43 2020
-| Host         : Marysia running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7a35tcpg236-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_GPU_FULL_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_GPU_FULL_0_0 (xilinx.com:user:GPU_FULL:2.1) from (Rev. 1) to (Rev. 2)
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Aug 16 16:48:02 2020
-| Host         : Marysia running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7a35tcpg236-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_GPU_FULL_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_GPU_FULL_0_0 from xilinx.com:user:GPU_FULL:2.0 (Rev. 2) to xilinx.com:user:GPU_FULL:2.1 (Rev. 1)
 

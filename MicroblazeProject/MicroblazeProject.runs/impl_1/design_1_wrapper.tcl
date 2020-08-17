@@ -60,9 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -71,7 +68,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -79,7 +75,7 @@ set rc [catch {
   set_property webtalk.parent_dir D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/wt [current_project]
   set_property parent.project_path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.xpr [current_project]
   set_property ip_repo_paths {
-  D:/bomberman_uec2/ip_repo/GPU_FULL_2.0
+  D:/bomberman_uec2/ip_repo/GPU_BRAM
   D:/bomberman_uec2/ip_repo/PADS_SOUND_1.0
   D:/bomberman_uec2/ip_repo/GPU_DC_1.0
 } [current_project]
@@ -184,6 +180,26 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  catch { write_mem_info -force design_1_wrapper.mmi }
+  catch { write_bmm -force design_1_wrapper_bd.bmm }
+  write_bitstream -force design_1_wrapper.bit -bin_file
+  catch {write_debug_probes -quiet -force design_1_wrapper}
+  catch {file copy -force design_1_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

@@ -262,11 +262,18 @@ proc create_root_design { parentCell } {
   set sound_b [ create_bd_port -dir O sound_b ]
   set vs [ create_bd_port -dir O -type data vs ]
 
-  # Create instance: GPU_FULL_0, and set properties
-  set GPU_FULL_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:GPU_FULL:2.1 GPU_FULL_0 ]
+  # Create instance: BRAM_GPU_0, and set properties
+  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:1.1 BRAM_GPU_0 ]
 
   # Create instance: PADS_SOUND_0, and set properties
   set PADS_SOUND_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PADS_SOUND:1.0 PADS_SOUND_0 ]
+
+  # Create instance: axi_bram_ctrl_0, and set properties
+  set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0 ]
+  set_property -dict [ list \
+   CONFIG.READ_LATENCY {1} \
+   CONFIG.SINGLE_PORT_BRAM {1} \
+ ] $axi_bram_ctrl_0
 
   # Create instance: axi_uartlite_0, and set properties
   set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]
@@ -274,6 +281,35 @@ proc create_root_design { parentCell } {
    CONFIG.UARTLITE_BOARD_INTERFACE {usb_uart} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_uartlite_0
+
+  # Create instance: blk_mem_gen_0, and set properties
+  set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
+  set_property -dict [ list \
+   CONFIG.Byte_Size {8} \
+   CONFIG.EN_SAFETY_CKT {true} \
+   CONFIG.Enable_32bit_Address {true} \
+   CONFIG.Enable_B {Use_ENB_Pin} \
+   CONFIG.Fill_Remaining_Memory_Locations {false} \
+   CONFIG.Load_Init_File {false} \
+   CONFIG.Memory_Type {True_Dual_Port_RAM} \
+   CONFIG.Operating_Mode_B {WRITE_FIRST} \
+   CONFIG.Port_B_Clock {100} \
+   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Port_B_Write_Rate {50} \
+   CONFIG.Read_Width_A {32} \
+   CONFIG.Read_Width_B {32} \
+   CONFIG.Register_PortA_Output_of_Memory_Core {false} \
+   CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+   CONFIG.Register_PortB_Output_of_Memory_Core {false} \
+   CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+   CONFIG.Reset_Memory_Latch_A {false} \
+   CONFIG.Use_Byte_Write_Enable {true} \
+   CONFIG.Use_RSTA_Pin {true} \
+   CONFIG.Use_RSTB_Pin {true} \
+   CONFIG.Write_Width_A {32} \
+   CONFIG.Write_Width_B {32} \
+   CONFIG.use_bram_block {BRAM_Controller} \
+ ] $blk_mem_gen_0
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
@@ -354,7 +390,7 @@ proc create_root_design { parentCell } {
   # Create instance: microblaze_0_axi_periph, and set properties
   set microblaze_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 microblaze_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {5} \
+   CONFIG.NUM_MI {4} \
  ] $microblaze_0_axi_periph
 
   # Create instance: microblaze_0_local_memory
@@ -367,31 +403,36 @@ proc create_root_design { parentCell } {
    CONFIG.USE_BOARD_FLOW {true} \
  ] $rst_clk_100M
 
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+
   # Create interface connections
+  connect_bd_intf_net -intf_net axi_bram_ctrl_0_BRAM_PORTA [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
   connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports usb_uart] [get_bd_intf_pins axi_uartlite_0/UART]
   connect_bd_intf_net -intf_net mdm_0_MBDEBUG_0 [get_bd_intf_pins mdm_0/MBDEBUG_0] [get_bd_intf_pins microblaze_0/DEBUG]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_DP [get_bd_intf_pins microblaze_0/M_AXI_DP] [get_bd_intf_pins microblaze_0_axi_periph/S00_AXI]
-  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M00_AXI [get_bd_intf_pins GPU_FULL_0/S_BLOCK_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M00_AXI]
+  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M00_AXI [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M01_AXI [get_bd_intf_pins PADS_SOUND_0/AXI_LITE] [get_bd_intf_pins microblaze_0_axi_periph/M01_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M02_AXI [get_bd_intf_pins axi_uartlite_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M03_AXI [get_bd_intf_pins mdm_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M03_AXI]
-  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M04_AXI [get_bd_intf_pins GPU_FULL_0/S_TEXTURE_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M04_AXI]
   connect_bd_intf_net -intf_net microblaze_0_dlmb_1 [get_bd_intf_pins microblaze_0/DLMB] [get_bd_intf_pins microblaze_0_local_memory/DLMB]
   connect_bd_intf_net -intf_net microblaze_0_ilmb_1 [get_bd_intf_pins microblaze_0/ILMB] [get_bd_intf_pins microblaze_0_local_memory/ILMB]
 
   # Create port connections
-  connect_bd_net -net GPU_FULL_0_b [get_bd_ports b] [get_bd_pins GPU_FULL_0/b]
-  connect_bd_net -net GPU_FULL_0_g [get_bd_ports g] [get_bd_pins GPU_FULL_0/g]
-  connect_bd_net -net GPU_FULL_0_hs [get_bd_ports hs] [get_bd_pins GPU_FULL_0/hs]
-  connect_bd_net -net GPU_FULL_0_r [get_bd_ports r] [get_bd_pins GPU_FULL_0/r]
-  connect_bd_net -net GPU_FULL_0_vs [get_bd_ports vs] [get_bd_pins GPU_FULL_0/vs]
+  connect_bd_net -net BRAM_GPU_0_b [get_bd_ports b] [get_bd_pins BRAM_GPU_0/b]
+  connect_bd_net -net BRAM_GPU_0_bram_addr [get_bd_pins BRAM_GPU_0/bram_addr] [get_bd_pins blk_mem_gen_0/addrb]
+  connect_bd_net -net BRAM_GPU_0_g [get_bd_ports g] [get_bd_pins BRAM_GPU_0/g]
+  connect_bd_net -net BRAM_GPU_0_hs [get_bd_ports hs] [get_bd_pins BRAM_GPU_0/hs]
+  connect_bd_net -net BRAM_GPU_0_r [get_bd_ports r] [get_bd_pins BRAM_GPU_0/r]
+  connect_bd_net -net BRAM_GPU_0_vs [get_bd_ports vs] [get_bd_pins BRAM_GPU_0/vs]
+  connect_bd_net -net Net [get_bd_pins BRAM_GPU_0/vga_clk] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_gpu]
   connect_bd_net -net PADS_SOUND_0_pad_a_plug [get_bd_ports pad_a_plug] [get_bd_pins PADS_SOUND_0/pad_a_plug]
   connect_bd_net -net PADS_SOUND_0_pad_b_plug [get_bd_ports pad_b_plug] [get_bd_pins PADS_SOUND_0/pad_b_plug]
   connect_bd_net -net PADS_SOUND_0_sound_a [get_bd_ports sound_a] [get_bd_pins PADS_SOUND_0/sound_a]
   connect_bd_net -net PADS_SOUND_0_sound_b [get_bd_ports sound_b] [get_bd_pins PADS_SOUND_0/sound_b]
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins BRAM_GPU_0/bram_data] [get_bd_pins blk_mem_gen_0/doutb]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_cpu [get_bd_pins GPU_FULL_0/s_block_axi_aclk] [get_bd_pins GPU_FULL_0/s_texture_axi_aclk] [get_bd_pins PADS_SOUND_0/axi_lite_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_cpu] [get_bd_pins mdm_0/S_AXI_ACLK] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/clk] [get_bd_pins rst_clk_100M/slowest_sync_clk]
-  connect_bd_net -net clk_wiz_0_clk_gpu [get_bd_pins GPU_FULL_0/vga_clk] [get_bd_pins clk_wiz_0/clk_gpu]
+  connect_bd_net -net clk_wiz_0_clk_cpu [get_bd_pins PADS_SOUND_0/axi_lite_aclk] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_cpu] [get_bd_pins mdm_0/S_AXI_ACLK] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/clk] [get_bd_pins rst_clk_100M/slowest_sync_clk]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_100M/dcm_locked]
   connect_bd_net -net mdm_0_Debug_SYS_Rst [get_bd_pins mdm_0/Debug_SYS_Rst] [get_bd_pins rst_clk_100M/mb_debug_sys_rst]
   connect_bd_net -net pad_a_1 [get_bd_ports pad_a] [get_bd_pins PADS_SOUND_0/pad_a]
@@ -399,12 +440,12 @@ proc create_root_design { parentCell } {
   connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_100M/ext_reset_in]
   connect_bd_net -net rst_clk_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_clk_100M/mb_reset]
-  connect_bd_net -net rst_clk_100M_peripheral_aresetn [get_bd_pins GPU_FULL_0/s_block_axi_aresetn] [get_bd_pins GPU_FULL_0/s_texture_axi_aresetn] [get_bd_pins PADS_SOUND_0/axi_lite_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins mdm_0/S_AXI_ARESETN] [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_100M/peripheral_aresetn]
+  connect_bd_net -net rst_clk_100M_peripheral_aresetn [get_bd_pins PADS_SOUND_0/axi_lite_aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins mdm_0/S_AXI_ARESETN] [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_100M/peripheral_aresetn]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins blk_mem_gen_0/enb] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
-  assign_bd_address -offset 0x50000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs GPU_FULL_0/S_BLOCK_AXI/S_BLOCK_AXI_mem] -force
-  assign_bd_address -offset 0x50010000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs GPU_FULL_0/S_TEXTURE_AXI/S_TEXTURE_AXI_reg] -force
   assign_bd_address -offset 0x60000000 -range 0x00000080 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs PADS_SOUND_0/AXI_LITE/AXI_LITE_reg] -force
+  assign_bd_address -offset 0xC0000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -force
   assign_bd_address -offset 0x40600000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_uartlite_0/S_AXI/Reg] -force
   assign_bd_address -offset 0x00000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] -force
   assign_bd_address -offset 0x00000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] -force
