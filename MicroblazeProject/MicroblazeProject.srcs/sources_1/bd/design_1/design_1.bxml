@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1597684529"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1597684529"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1597684529"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1597684529"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1597767500"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1597767500"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1597767500"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1597767500"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_microblaze_0_1\design_1_microblaze_0_1.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -120,7 +120,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_bram_ctrl_0_1\design_1_axi_bram_ctrl_0_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_bram_ctrl_0"/>
+        <Instance HierarchyPath="blk_ram_ctrl"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -128,15 +128,15 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_blk_mem_gen_0_1\design_1_blk_mem_gen_0_1.xci" Type="IP">
-        <Instance HierarchyPath="blk_mem_gen_0"/>
+        <Instance HierarchyPath="blk_ram"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\design_1_xlconstant_0_0\design_1_xlconstant_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_0"/>
+      <File Name="ip\design_1_AXI_Timers_0_0\design_1_AXI_Timers_0_0.xci" Type="IP">
+        <Instance HierarchyPath="AXI_Timers_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

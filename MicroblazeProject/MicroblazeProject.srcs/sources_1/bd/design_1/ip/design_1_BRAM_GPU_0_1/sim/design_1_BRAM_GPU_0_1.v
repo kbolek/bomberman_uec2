@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:1.5
-// IP Revision: 1
+// IP VLNV: xilinx.com:user:BRAM_GPU:1.6
+// IP Revision: 2
 
 `timescale 1ns/1ps
 
@@ -61,8 +61,12 @@ module design_1_BRAM_GPU_0_1 (
   b,
   hs,
   vs,
-  bram_addr,
-  bram_data
+  bram_addr_blk,
+  bram_rdata_blk,
+  bram_en_blk,
+  bram_clk_blk,
+  bram_rst_blk,
+  bram_we_blk
 );
 
 input wire vga_clk;
@@ -71,8 +75,19 @@ output wire [3 : 0] g;
 output wire [3 : 0] b;
 output wire hs;
 output wire vs;
-output wire [31 : 0] bram_addr;
-input wire [31 : 0] bram_data;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk ADDR" *)
+output wire [31 : 0] bram_addr_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk DOUT" *)
+input wire [31 : 0] bram_rdata_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk EN" *)
+output wire bram_en_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk CLK" *)
+output wire bram_clk_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk RST" *)
+output wire bram_rst_blk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_blk, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk WE" *)
+output wire [3 : 0] bram_we_blk;
 
   BRAM_GPU inst (
     .vga_clk(vga_clk),
@@ -81,7 +96,11 @@ input wire [31 : 0] bram_data;
     .b(b),
     .hs(hs),
     .vs(vs),
-    .bram_addr(bram_addr),
-    .bram_data(bram_data)
+    .bram_addr_blk(bram_addr_blk),
+    .bram_rdata_blk(bram_rdata_blk),
+    .bram_en_blk(bram_en_blk),
+    .bram_clk_blk(bram_clk_blk),
+    .bram_rst_blk(bram_rst_blk),
+    .bram_we_blk(bram_we_blk)
   );
 endmodule

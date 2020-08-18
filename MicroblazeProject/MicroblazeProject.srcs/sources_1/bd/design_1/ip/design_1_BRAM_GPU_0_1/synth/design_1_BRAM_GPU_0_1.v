@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:1.5
-// IP Revision: 1
+// IP VLNV: xilinx.com:user:BRAM_GPU:1.6
+// IP Revision: 2
 
 (* X_CORE_INFO = "BRAM_GPU,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_BRAM_GPU_0_1,BRAM_GPU,{}" *)
-(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=1.5,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=1.6,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BRAM_GPU_0_1 (
@@ -62,8 +62,12 @@ module design_1_BRAM_GPU_0_1 (
   b,
   hs,
   vs,
-  bram_addr,
-  bram_data
+  bram_addr_blk,
+  bram_rdata_blk,
+  bram_en_blk,
+  bram_clk_blk,
+  bram_rst_blk,
+  bram_we_blk
 );
 
 input wire vga_clk;
@@ -72,8 +76,19 @@ output wire [3 : 0] g;
 output wire [3 : 0] b;
 output wire hs;
 output wire vs;
-output wire [31 : 0] bram_addr;
-input wire [31 : 0] bram_data;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk ADDR" *)
+output wire [31 : 0] bram_addr_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk DOUT" *)
+input wire [31 : 0] bram_rdata_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk EN" *)
+output wire bram_en_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk CLK" *)
+output wire bram_clk_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk RST" *)
+output wire bram_rst_blk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_blk, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk WE" *)
+output wire [3 : 0] bram_we_blk;
 
   BRAM_GPU inst (
     .vga_clk(vga_clk),
@@ -82,7 +97,11 @@ input wire [31 : 0] bram_data;
     .b(b),
     .hs(hs),
     .vs(vs),
-    .bram_addr(bram_addr),
-    .bram_data(bram_data)
+    .bram_addr_blk(bram_addr_blk),
+    .bram_rdata_blk(bram_rdata_blk),
+    .bram_en_blk(bram_en_blk),
+    .bram_clk_blk(bram_clk_blk),
+    .bram_rst_blk(bram_rst_blk),
+    .bram_we_blk(bram_we_blk)
   );
 endmodule

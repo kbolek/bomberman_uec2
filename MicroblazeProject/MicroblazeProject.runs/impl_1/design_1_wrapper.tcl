@@ -61,8 +61,6 @@ proc step_failed { step } {
 }
 
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -79,9 +77,9 @@ set rc [catch {
   set_property webtalk.parent_dir D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/wt [current_project]
   set_property parent.project_path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.xpr [current_project]
   set_property ip_repo_paths {
+  D:/bomberman_uec2/ip_repo/AXI_Timers_1.0
   D:/bomberman_uec2/ip_repo/GPU_BRAM
   D:/bomberman_uec2/ip_repo/PADS_SOUND_1.0
-  D:/bomberman_uec2/ip_repo/GPU_DC_1.0
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]

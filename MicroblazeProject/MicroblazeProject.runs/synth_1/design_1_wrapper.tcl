@@ -20,8 +20,6 @@ proc create_report { reportName command } {
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 create_project -in_memory -part xc7a35tcpg236-1
@@ -37,9 +35,9 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
+  d:/bomberman_uec2/ip_repo/AXI_Timers_1.0
   d:/bomberman_uec2/ip_repo/GPU_BRAM
   d:/bomberman_uec2/ip_repo/PADS_SOUND_1.0
-  d:/bomberman_uec2/ip_repo/GPU_DC_1.0
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.cache/ip [current_project]
