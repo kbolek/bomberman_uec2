@@ -1,15 +1,15 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sun Aug 16 21:49:42 2020
-//Host        : Marysia running 64-bit major release  (build 9200)
+//Date        : Mon Aug 17 16:30:30 2020
+//Host        : DESKTOP-515IPPL running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_board_cnt=12,da_clkrst_cnt=4,da_mb_cnt=4,da_trigger_cnt=2,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_board_cnt=12,da_clkrst_cnt=4,da_mb_cnt=4,da_trigger_cnt=2,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (b,
     clk,
@@ -43,6 +43,7 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.VS DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.VS, LAYERED_METADATA undef" *) output vs;
 
   wire [3:0]BRAM_GPU_0_b;
+  wire [31:0]BRAM_GPU_0_bram_addr;
   wire [3:0]BRAM_GPU_0_g;
   wire BRAM_GPU_0_hs;
   wire [3:0]BRAM_GPU_0_r;
@@ -52,7 +53,7 @@ module design_1
   wire PADS_SOUND_0_pad_b_plug;
   wire PADS_SOUND_0_sound_a;
   wire PADS_SOUND_0_sound_b;
-  wire [12:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
+  wire [11:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DOUT;
@@ -94,7 +95,7 @@ module design_1
   wire [0:0]microblaze_0_M_AXI_DP_WREADY;
   wire [3:0]microblaze_0_M_AXI_DP_WSTRB;
   wire microblaze_0_M_AXI_DP_WVALID;
-  wire [12:0]microblaze_0_axi_periph_M00_AXI_ARADDR;
+  wire [11:0]microblaze_0_axi_periph_M00_AXI_ARADDR;
   wire [1:0]microblaze_0_axi_periph_M00_AXI_ARBURST;
   wire [3:0]microblaze_0_axi_periph_M00_AXI_ARCACHE;
   wire [7:0]microblaze_0_axi_periph_M00_AXI_ARLEN;
@@ -103,7 +104,7 @@ module design_1
   wire microblaze_0_axi_periph_M00_AXI_ARREADY;
   wire [2:0]microblaze_0_axi_periph_M00_AXI_ARSIZE;
   wire microblaze_0_axi_periph_M00_AXI_ARVALID;
-  wire [12:0]microblaze_0_axi_periph_M00_AXI_AWADDR;
+  wire [11:0]microblaze_0_axi_periph_M00_AXI_AWADDR;
   wire [1:0]microblaze_0_axi_periph_M00_AXI_AWBURST;
   wire [3:0]microblaze_0_axi_periph_M00_AXI_AWCACHE;
   wire [7:0]microblaze_0_axi_periph_M00_AXI_AWLEN;
@@ -203,6 +204,7 @@ module design_1
   wire [0:0]rst_clk_100M_bus_struct_reset;
   wire rst_clk_100M_mb_reset;
   wire [0:0]rst_clk_100M_peripheral_aresetn;
+  wire [0:0]xlconstant_0_dout;
 
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
   assign b[3:0] = BRAM_GPU_0_b;
@@ -221,6 +223,7 @@ module design_1
   assign vs = BRAM_GPU_0_vs;
   design_1_BRAM_GPU_0_1 BRAM_GPU_0
        (.b(BRAM_GPU_0_b),
+        .bram_addr(BRAM_GPU_0_bram_addr),
         .bram_data(blk_mem_gen_0_doutb),
         .g(BRAM_GPU_0_g),
         .hs(BRAM_GPU_0_hs),
@@ -321,8 +324,8 @@ module design_1
         .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
   design_1_blk_mem_gen_0_1 blk_mem_gen_0
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
+        .addrb(BRAM_GPU_0_bram_addr),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
         .clkb(Net),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
@@ -330,7 +333,7 @@ module design_1
         .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
         .doutb(blk_mem_gen_0_doutb),
         .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
-        .enb(1'b0),
+        .enb(xlconstant_0_dout),
         .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
         .rstb(1'b0),
         .wea(axi_bram_ctrl_0_BRAM_PORTA_WE),
@@ -572,6 +575,8 @@ module design_1
         .mb_reset(rst_clk_100M_mb_reset),
         .peripheral_aresetn(rst_clk_100M_peripheral_aresetn),
         .slowest_sync_clk(clk_wiz_0_clk_cpu));
+  design_1_xlconstant_0_0 xlconstant_0
+       (.dout(xlconstant_0_dout));
 endmodule
 
 module design_1_microblaze_0_axi_periph_2
@@ -694,7 +699,7 @@ module design_1_microblaze_0_axi_periph_2
   input ARESETN;
   input M00_ACLK;
   input M00_ARESETN;
-  output [12:0]M00_AXI_araddr;
+  output [11:0]M00_AXI_araddr;
   output [1:0]M00_AXI_arburst;
   output [3:0]M00_AXI_arcache;
   output [7:0]M00_AXI_arlen;
@@ -703,7 +708,7 @@ module design_1_microblaze_0_axi_periph_2
   input M00_AXI_arready;
   output [2:0]M00_AXI_arsize;
   output M00_AXI_arvalid;
-  output [12:0]M00_AXI_awaddr;
+  output [11:0]M00_AXI_awaddr;
   output [1:0]M00_AXI_awburst;
   output [3:0]M00_AXI_awcache;
   output [7:0]M00_AXI_awlen;
@@ -806,7 +811,7 @@ module design_1_microblaze_0_axi_periph_2
   input [3:0]S00_AXI_wstrb;
   input [0:0]S00_AXI_wvalid;
 
-  wire [12:0]m00_couplers_to_microblaze_0_axi_periph_ARADDR;
+  wire [11:0]m00_couplers_to_microblaze_0_axi_periph_ARADDR;
   wire [1:0]m00_couplers_to_microblaze_0_axi_periph_ARBURST;
   wire [3:0]m00_couplers_to_microblaze_0_axi_periph_ARCACHE;
   wire [7:0]m00_couplers_to_microblaze_0_axi_periph_ARLEN;
@@ -815,7 +820,7 @@ module design_1_microblaze_0_axi_periph_2
   wire m00_couplers_to_microblaze_0_axi_periph_ARREADY;
   wire [2:0]m00_couplers_to_microblaze_0_axi_periph_ARSIZE;
   wire m00_couplers_to_microblaze_0_axi_periph_ARVALID;
-  wire [12:0]m00_couplers_to_microblaze_0_axi_periph_AWADDR;
+  wire [11:0]m00_couplers_to_microblaze_0_axi_periph_AWADDR;
   wire [1:0]m00_couplers_to_microblaze_0_axi_periph_AWBURST;
   wire [3:0]m00_couplers_to_microblaze_0_axi_periph_AWCACHE;
   wire [7:0]m00_couplers_to_microblaze_0_axi_periph_AWLEN;
@@ -1003,7 +1008,7 @@ module design_1_microblaze_0_axi_periph_2
   wire [15:12]xbar_to_m03_couplers_WSTRB;
   wire [3:3]xbar_to_m03_couplers_WVALID;
 
-  assign M00_AXI_araddr[12:0] = m00_couplers_to_microblaze_0_axi_periph_ARADDR;
+  assign M00_AXI_araddr[11:0] = m00_couplers_to_microblaze_0_axi_periph_ARADDR;
   assign M00_AXI_arburst[1:0] = m00_couplers_to_microblaze_0_axi_periph_ARBURST;
   assign M00_AXI_arcache[3:0] = m00_couplers_to_microblaze_0_axi_periph_ARCACHE;
   assign M00_AXI_arlen[7:0] = m00_couplers_to_microblaze_0_axi_periph_ARLEN;
@@ -1011,7 +1016,7 @@ module design_1_microblaze_0_axi_periph_2
   assign M00_AXI_arprot[2:0] = m00_couplers_to_microblaze_0_axi_periph_ARPROT;
   assign M00_AXI_arsize[2:0] = m00_couplers_to_microblaze_0_axi_periph_ARSIZE;
   assign M00_AXI_arvalid = m00_couplers_to_microblaze_0_axi_periph_ARVALID;
-  assign M00_AXI_awaddr[12:0] = m00_couplers_to_microblaze_0_axi_periph_AWADDR;
+  assign M00_AXI_awaddr[11:0] = m00_couplers_to_microblaze_0_axi_periph_AWADDR;
   assign M00_AXI_awburst[1:0] = m00_couplers_to_microblaze_0_axi_periph_AWBURST;
   assign M00_AXI_awcache[3:0] = m00_couplers_to_microblaze_0_axi_periph_AWCACHE;
   assign M00_AXI_awlen[7:0] = m00_couplers_to_microblaze_0_axi_periph_AWLEN;
@@ -1427,7 +1432,7 @@ module m00_couplers_imp_8RVYHO
     S_AXI_wvalid);
   input M_ACLK;
   input M_ARESETN;
-  output [12:0]M_AXI_araddr;
+  output [11:0]M_AXI_araddr;
   output [1:0]M_AXI_arburst;
   output [3:0]M_AXI_arcache;
   output [7:0]M_AXI_arlen;
@@ -1436,7 +1441,7 @@ module m00_couplers_imp_8RVYHO
   input M_AXI_arready;
   output [2:0]M_AXI_arsize;
   output M_AXI_arvalid;
-  output [12:0]M_AXI_awaddr;
+  output [11:0]M_AXI_awaddr;
   output [1:0]M_AXI_awburst;
   output [3:0]M_AXI_awcache;
   output [7:0]M_AXI_awlen;
@@ -1482,7 +1487,7 @@ module m00_couplers_imp_8RVYHO
 
   wire S_ACLK_1;
   wire S_ARESETN_1;
-  wire [12:0]auto_pc_to_m00_couplers_ARADDR;
+  wire [11:0]auto_pc_to_m00_couplers_ARADDR;
   wire [1:0]auto_pc_to_m00_couplers_ARBURST;
   wire [3:0]auto_pc_to_m00_couplers_ARCACHE;
   wire [7:0]auto_pc_to_m00_couplers_ARLEN;
@@ -1491,7 +1496,7 @@ module m00_couplers_imp_8RVYHO
   wire auto_pc_to_m00_couplers_ARREADY;
   wire [2:0]auto_pc_to_m00_couplers_ARSIZE;
   wire auto_pc_to_m00_couplers_ARVALID;
-  wire [12:0]auto_pc_to_m00_couplers_AWADDR;
+  wire [11:0]auto_pc_to_m00_couplers_AWADDR;
   wire [1:0]auto_pc_to_m00_couplers_AWBURST;
   wire [3:0]auto_pc_to_m00_couplers_AWCACHE;
   wire [7:0]auto_pc_to_m00_couplers_AWLEN;
@@ -1533,7 +1538,7 @@ module m00_couplers_imp_8RVYHO
   wire [3:0]m00_couplers_to_auto_pc_WSTRB;
   wire m00_couplers_to_auto_pc_WVALID;
 
-  assign M_AXI_araddr[12:0] = auto_pc_to_m00_couplers_ARADDR;
+  assign M_AXI_araddr[11:0] = auto_pc_to_m00_couplers_ARADDR;
   assign M_AXI_arburst[1:0] = auto_pc_to_m00_couplers_ARBURST;
   assign M_AXI_arcache[3:0] = auto_pc_to_m00_couplers_ARCACHE;
   assign M_AXI_arlen[7:0] = auto_pc_to_m00_couplers_ARLEN;
@@ -1541,7 +1546,7 @@ module m00_couplers_imp_8RVYHO
   assign M_AXI_arprot[2:0] = auto_pc_to_m00_couplers_ARPROT;
   assign M_AXI_arsize[2:0] = auto_pc_to_m00_couplers_ARSIZE;
   assign M_AXI_arvalid = auto_pc_to_m00_couplers_ARVALID;
-  assign M_AXI_awaddr[12:0] = auto_pc_to_m00_couplers_AWADDR;
+  assign M_AXI_awaddr[11:0] = auto_pc_to_m00_couplers_AWADDR;
   assign M_AXI_awburst[1:0] = auto_pc_to_m00_couplers_AWBURST;
   assign M_AXI_awcache[3:0] = auto_pc_to_m00_couplers_AWCACHE;
   assign M_AXI_awlen[7:0] = auto_pc_to_m00_couplers_AWLEN;
@@ -1619,11 +1624,11 @@ module m00_couplers_imp_8RVYHO
         .m_axi_wready(auto_pc_to_m00_couplers_WREADY),
         .m_axi_wstrb(auto_pc_to_m00_couplers_WSTRB),
         .m_axi_wvalid(auto_pc_to_m00_couplers_WVALID),
-        .s_axi_araddr(m00_couplers_to_auto_pc_ARADDR[12:0]),
+        .s_axi_araddr(m00_couplers_to_auto_pc_ARADDR[11:0]),
         .s_axi_arprot(m00_couplers_to_auto_pc_ARPROT),
         .s_axi_arready(m00_couplers_to_auto_pc_ARREADY),
         .s_axi_arvalid(m00_couplers_to_auto_pc_ARVALID),
-        .s_axi_awaddr(m00_couplers_to_auto_pc_AWADDR[12:0]),
+        .s_axi_awaddr(m00_couplers_to_auto_pc_AWADDR[11:0]),
         .s_axi_awprot(m00_couplers_to_auto_pc_AWPROT),
         .s_axi_awready(m00_couplers_to_auto_pc_AWREADY),
         .s_axi_awvalid(m00_couplers_to_auto_pc_AWVALID),

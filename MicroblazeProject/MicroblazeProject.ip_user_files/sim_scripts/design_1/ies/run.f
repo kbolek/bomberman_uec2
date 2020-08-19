@@ -1,9 +1,9 @@
 -makelib ies_lib/xpm -sv \
-  "B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/microblaze_v11_0_2 \
   "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/f871/hdl/microblaze_v11_0_vh_rfs.vhd" \
@@ -114,6 +114,12 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
+-endlib
+-makelib ies_lib/xlconstant_v1_1_6 \
+  "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_20 \
   "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

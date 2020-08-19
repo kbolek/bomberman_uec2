@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597671211">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597674737">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -52,7 +52,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys-3-Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/lolkusus/Downloads/Basys-3-Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../lolkusus/Downloads/Basys-3-Master.xdc"/>
         <Attr Name="ImportTime" Val="1594735963"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

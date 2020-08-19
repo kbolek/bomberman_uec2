@@ -1,6 +1,214 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 16:30:12 2020
+| Host         : DESKTOP-515IPPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_clk_100M_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_rst_clk_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Customization errors found on 'design_1_rst_clk_100M_0'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 -user_name design_1_rst_clk_100M_0
+set_property -dict "\
+  CONFIG.C_AUX_RESET_HIGH {0} \
+  CONFIG.C_AUX_RST_WIDTH {4} \
+  CONFIG.C_EXT_RESET_HIGH {1} \
+  CONFIG.C_EXT_RST_WIDTH {4} \
+  CONFIG.C_NUM_BUS_RST {1} \
+  CONFIG.C_NUM_INTERCONNECT_ARESETN {1} \
+  CONFIG.C_NUM_PERP_ARESETN {1} \
+  CONFIG.C_NUM_PERP_RST {1} \
+  CONFIG.Component_Name {design_1_rst_clk_100M_0} \
+  CONFIG.RESET_BOARD_INTERFACE {reset} \
+  CONFIG.USE_BOARD_FLOW {true} \
+  CONFIG.aux_reset.INSERT_VIP {0} \
+  CONFIG.aux_reset.POLARITY {ACTIVE_LOW} \
+  CONFIG.bus_struct_reset.INSERT_VIP {0} \
+  CONFIG.bus_struct_reset.POLARITY {ACTIVE_HIGH} \
+  CONFIG.bus_struct_reset.TYPE {INTERCONNECT} \
+  CONFIG.clock.ASSOCIATED_BUSIF {} \
+  CONFIG.clock.ASSOCIATED_RESET {mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset} \
+  CONFIG.clock.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.clock.FREQ_HZ {100000000} \
+  CONFIG.clock.INSERT_VIP {0} \
+  CONFIG.clock.PHASE {0.0} \
+  CONFIG.dbg_reset.INSERT_VIP {0} \
+  CONFIG.dbg_reset.POLARITY {ACTIVE_HIGH} \
+  CONFIG.ext_reset.BOARD.ASSOCIATED_PARAM {RESET_BOARD_INTERFACE} \
+  CONFIG.ext_reset.INSERT_VIP {0} \
+  CONFIG.ext_reset.POLARITY {ACTIVE_HIGH} \
+  CONFIG.interconnect_low_rst.INSERT_VIP {0} \
+  CONFIG.interconnect_low_rst.POLARITY {ACTIVE_LOW} \
+  CONFIG.interconnect_low_rst.TYPE {INTERCONNECT} \
+  CONFIG.mb_rst.INSERT_VIP {0} \
+  CONFIG.mb_rst.POLARITY {ACTIVE_HIGH} \
+  CONFIG.mb_rst.TYPE {PROCESSOR} \
+  CONFIG.peripheral_high_rst.INSERT_VIP {0} \
+  CONFIG.peripheral_high_rst.POLARITY {ACTIVE_HIGH} \
+  CONFIG.peripheral_high_rst.TYPE {PERIPHERAL} \
+  CONFIG.peripheral_low_rst.INSERT_VIP {0} \
+  CONFIG.peripheral_low_rst.POLARITY {ACTIVE_LOW} \
+  CONFIG.peripheral_low_rst.TYPE {PERIPHERAL} " [get_ips design_1_rst_clk_100M_0]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 16:30:12 2020
+| Host         : DESKTOP-515IPPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 16:30:12 2020
+| Host         : DESKTOP-515IPPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 24)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'usb_uart' on parameter 'UARTLITE BOARD INTERFACE' due to the following failure - 
+Value 'usb_uart' is out of the range for parameter 'UARTLITE BOARD INTERFACE(UARTLITE_BOARD_INTERFACE)' for BD Cell 'design_1_axi_uartlite_0_0' . Valid values are - Custom
+. Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_uartlite:2.0 -user_name design_1_axi_uartlite_0_0
+set_property -dict "\
+  CONFIG.ACLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.ACLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.ACLK.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.ACLK.FREQ_HZ {100000000} \
+  CONFIG.ACLK.INSERT_VIP {0} \
+  CONFIG.ACLK.PHASE {0.0} \
+  CONFIG.ARESETN.INSERT_VIP {0} \
+  CONFIG.ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_BAUDRATE {9600} \
+  CONFIG.C_DATA_BITS {8} \
+  CONFIG.C_ODD_PARITY {0} \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ {100000000} \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ_d {100.0} \
+  CONFIG.C_USE_PARITY {0} \
+  CONFIG.Component_Name {design_1_axi_uartlite_0_0} \
+  CONFIG.INTERRUPT.PortWidth {1} \
+  CONFIG.INTERRUPT.SENSITIVITY {EDGE_RISING} \
+  CONFIG.PARITY {No_Parity} \
+  CONFIG.S_AXI.ADDR_WIDTH {4} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {/clk_wiz_0_clk_out1} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {100000000} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {0} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.INSERT_VIP {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {1} \
+  CONFIG.S_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S_AXI.PHASE {0.0} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.UART.BOARD.ASSOCIATED_PARAM {UARTLITE_BOARD_INTERFACE} \
+  CONFIG.UARTLITE_BOARD_INTERFACE {usb_uart} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips design_1_axi_uartlite_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Sun Aug 16 21:49:38 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

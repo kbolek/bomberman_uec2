@@ -898,11 +898,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8eb8032c</spirit:value>
+            <spirit:value>9:dc3c5aae</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -916,11 +916,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8eb8032c</spirit:value>
+            <spirit:value>9:dc3c5aae</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -936,11 +936,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8eb8032c</spirit:value>
+            <spirit:value>9:dc3c5aae</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -968,11 +968,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d423ddda</spirit:value>
+            <spirit:value>9:ee9618b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -988,11 +988,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d423ddda</spirit:value>
+            <spirit:value>9:ee9618b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1006,11 +1006,11 @@ Writing a 1 to this bit position clears the receive FIFO
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Aug 16 12:07:41 UTC 2020</spirit:value>
+            <spirit:value>Mon Aug 17 14:30:37 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8eb8032c</spirit:value>
+            <spirit:value>9:dc3c5aae</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1417,9 +1417,8 @@ Writing a 1 to this bit position clears the receive FIFO
       <spirit:enumeration>Even</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_aadfdf9b</spirit:name>
+      <spirit:name>choice_list_ac75ef1e</spirit:name>
       <spirit:enumeration>Custom</spirit:enumeration>
-      <spirit:enumeration>usb_uart</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_d4196e9f</spirit:name>
@@ -1679,7 +1678,7 @@ Writing a 1 to this bit position clears the receive FIFO
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>UARTLITE_BOARD_INTERFACE</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.UARTLITE_BOARD_INTERFACE" spirit:choiceRef="choice_list_aadfdf9b" spirit:order="1104">usb_uart</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.UARTLITE_BOARD_INTERFACE" spirit:choiceRef="choice_list_ac75ef1e" spirit:order="1104">Custom</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>

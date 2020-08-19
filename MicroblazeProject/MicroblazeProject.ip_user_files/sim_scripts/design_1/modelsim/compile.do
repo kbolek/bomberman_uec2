@@ -21,6 +21,7 @@ vlib modelsim_lib/msim/lib_srl_fifo_v1_0_2
 vlib modelsim_lib/msim/axi_uartlite_v2_0_24
 vlib modelsim_lib/msim/mdm_v3_2_17
 vlib modelsim_lib/msim/axi_bram_ctrl_v4_1_2
+vlib modelsim_lib/msim/xlconstant_v1_1_6
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_20
 
 vmap xpm modelsim_lib/msim/xpm
@@ -43,14 +44,15 @@ vmap lib_srl_fifo_v1_0_2 modelsim_lib/msim/lib_srl_fifo_v1_0_2
 vmap axi_uartlite_v2_0_24 modelsim_lib/msim/axi_uartlite_v2_0_24
 vmap mdm_v3_2_17 modelsim_lib/msim/mdm_v3_2_17
 vmap axi_bram_ctrl_v4_1_2 modelsim_lib/msim/axi_bram_ctrl_v4_1_2
+vmap xlconstant_v1_1_6 modelsim_lib/msim/xlconstant_v1_1_6
 vmap axi_protocol_converter_v2_1_20 modelsim_lib/msim/axi_protocol_converter_v2_1_20
 
 vlog -work xpm -64 -incr -sv "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
-"B:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/Xilinx/Vitis/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work microblaze_v11_0_2 -64 -93 \
 "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/f871/hdl/microblaze_v11_0_vh_rfs.vhd" \
@@ -161,6 +163,12 @@ vcom -work xil_defaultlib -64 -93 \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
+
+vlog -work xlconstant_v1_1_6 -64 -incr "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_20 -64 -incr "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Bomberman" key="programflash.hwplatform"/>
+	<item value="" key="Bomberman-offSet"/>
+	<item value="Auto Detect" key="Bomberman-device"/>
+	<item value="false" key="Bomberman-verifyFlash"/>
+	<item value="false" key="Bomberman-blankCheck"/>
+	<item value="" key="Bomberman-imgFile"/>
+	<item value="&lt;None&gt;" key="Bomberman-flashType"/>
+	<item value="Local" key="Bomberman-target"/>
+	<item value="" key="Bomberman-fsblFile"/>
+</section>

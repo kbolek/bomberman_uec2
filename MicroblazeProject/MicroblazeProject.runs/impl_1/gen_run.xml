@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597671213">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597674740">
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_1_wrapper_timing_summary_init.rpt"/>
@@ -118,7 +118,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys-3-Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/lolkusus/Downloads/Basys-3-Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../lolkusus/Downloads/Basys-3-Master.xdc"/>
         <Attr Name="ImportTime" Val="1594735963"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
