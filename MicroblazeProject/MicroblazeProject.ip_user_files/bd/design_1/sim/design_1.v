@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Aug 18 18:14:54 2020
+//Date        : Wed Aug 19 22:47:52 2020
 //Host        : Marysia running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -43,6 +43,12 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.VS DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.VS, LAYERED_METADATA undef" *) output vs;
 
   wire [3:0]BRAM_GPU_0_b;
+  wire [31:0]BRAM_GPU_0_bram_blk_ADDR;
+  wire BRAM_GPU_0_bram_blk_CLK;
+  wire [31:0]BRAM_GPU_0_bram_blk_DOUT;
+  wire BRAM_GPU_0_bram_blk_EN;
+  wire BRAM_GPU_0_bram_blk_RST;
+  wire [3:0]BRAM_GPU_0_bram_blk_WE;
   wire [3:0]BRAM_GPU_0_g;
   wire BRAM_GPU_0_hs;
   wire [3:0]BRAM_GPU_0_r;
@@ -60,7 +66,6 @@ module design_1
   wire [3:0]axi_bram_ctrl_0_BRAM_PORTA_WE;
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
-  wire [31:0]blk_mem_gen_0_doutb;
   wire clk_1;
   wire clk_wiz_0_clk_cpu;
   wire clk_wiz_0_clk_gpu;
@@ -262,7 +267,12 @@ module design_1
         .s_axi_wvalid(microblaze_0_axi_periph_M04_AXI_WVALID));
   design_1_BRAM_GPU_0_1 BRAM_GPU_0
        (.b(BRAM_GPU_0_b),
-        .bram_rdata_blk({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
+        .bram_addr_blk(BRAM_GPU_0_bram_blk_ADDR),
+        .bram_clk_blk(BRAM_GPU_0_bram_blk_CLK),
+        .bram_en_blk(BRAM_GPU_0_bram_blk_EN),
+        .bram_rdata_blk(BRAM_GPU_0_bram_blk_DOUT),
+        .bram_rst_blk(BRAM_GPU_0_bram_blk_RST),
+        .bram_we_blk(BRAM_GPU_0_bram_blk_WE),
         .g(BRAM_GPU_0_g),
         .hs(BRAM_GPU_0_hs),
         .r(BRAM_GPU_0_r),
@@ -296,9 +306,46 @@ module design_1
         .pad_b_plug(PADS_SOUND_0_pad_b_plug),
         .sound_a(PADS_SOUND_0_sound_a),
         .sound_b(PADS_SOUND_0_sound_b));
-  (* BMM_INFO_ADDRESS_SPACE = "byte  0xA0000000 32 > design_1 blk_mem_gen_0" *) 
+  design_1_axi_uartlite_0_0 axi_uartlite_0
+       (.rx(axi_uartlite_0_UART_RxD),
+        .s_axi_aclk(clk_wiz_0_clk_cpu),
+        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[3:0]),
+        .s_axi_aresetn(rst_clk_100M_peripheral_aresetn),
+        .s_axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
+        .s_axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
+        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[3:0]),
+        .s_axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
+        .s_axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
+        .s_axi_bready(microblaze_0_axi_periph_M02_AXI_BREADY),
+        .s_axi_bresp(microblaze_0_axi_periph_M02_AXI_BRESP),
+        .s_axi_bvalid(microblaze_0_axi_periph_M02_AXI_BVALID),
+        .s_axi_rdata(microblaze_0_axi_periph_M02_AXI_RDATA),
+        .s_axi_rready(microblaze_0_axi_periph_M02_AXI_RREADY),
+        .s_axi_rresp(microblaze_0_axi_periph_M02_AXI_RRESP),
+        .s_axi_rvalid(microblaze_0_axi_periph_M02_AXI_RVALID),
+        .s_axi_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
+        .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
+        .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
+        .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
+        .tx(axi_uartlite_0_UART_TxD));
+  design_1_blk_mem_gen_0_1 blk_ram
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
+        .addrb(BRAM_GPU_0_bram_blk_ADDR),
+        .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
+        .clkb(BRAM_GPU_0_bram_blk_CLK),
+        .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
+        .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
+        .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
+        .doutb(BRAM_GPU_0_bram_blk_DOUT),
+        .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
+        .enb(BRAM_GPU_0_bram_blk_EN),
+        .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
+        .rstb(BRAM_GPU_0_bram_blk_RST),
+        .wea(axi_bram_ctrl_0_BRAM_PORTA_WE),
+        .web(BRAM_GPU_0_bram_blk_WE));
+  (* BMM_INFO_ADDRESS_SPACE = "byte  0xA0000000 32 > design_1 blk_ram" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  design_1_axi_bram_ctrl_0_1 axi_bram_ctrl_0
+  design_1_axi_bram_ctrl_0_1 blk_ram_ctrl
        (.bram_addr_a(axi_bram_ctrl_0_BRAM_PORTA_ADDR),
         .bram_clk_a(axi_bram_ctrl_0_BRAM_PORTA_CLK),
         .bram_en_a(axi_bram_ctrl_0_BRAM_PORTA_EN),
@@ -339,38 +386,6 @@ module design_1
         .s_axi_wready(microblaze_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(microblaze_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M00_AXI_WVALID));
-  design_1_axi_uartlite_0_0 axi_uartlite_0
-       (.rx(axi_uartlite_0_UART_RxD),
-        .s_axi_aclk(clk_wiz_0_clk_cpu),
-        .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[3:0]),
-        .s_axi_aresetn(rst_clk_100M_peripheral_aresetn),
-        .s_axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
-        .s_axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .s_axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[3:0]),
-        .s_axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
-        .s_axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
-        .s_axi_bready(microblaze_0_axi_periph_M02_AXI_BREADY),
-        .s_axi_bresp(microblaze_0_axi_periph_M02_AXI_BRESP),
-        .s_axi_bvalid(microblaze_0_axi_periph_M02_AXI_BVALID),
-        .s_axi_rdata(microblaze_0_axi_periph_M02_AXI_RDATA),
-        .s_axi_rready(microblaze_0_axi_periph_M02_AXI_RREADY),
-        .s_axi_rresp(microblaze_0_axi_periph_M02_AXI_RRESP),
-        .s_axi_rvalid(microblaze_0_axi_periph_M02_AXI_RVALID),
-        .s_axi_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
-        .s_axi_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
-        .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
-        .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
-        .tx(axi_uartlite_0_UART_TxD));
-  design_1_blk_mem_gen_0_1 blk_mem_gen_0
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
-        .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
-        .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
-        .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
-        .doutb(blk_mem_gen_0_doutb),
-        .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
-        .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
-        .wea(axi_bram_ctrl_0_BRAM_PORTA_WE));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_cpu(clk_wiz_0_clk_cpu),
         .clk_gpu(clk_wiz_0_clk_gpu),
@@ -407,7 +422,7 @@ module design_1
         .S_AXI_WREADY(microblaze_0_axi_periph_M03_AXI_WREADY),
         .S_AXI_WSTRB(microblaze_0_axi_periph_M03_AXI_WSTRB),
         .S_AXI_WVALID(microblaze_0_axi_periph_M03_AXI_WVALID));
-  (* BMM_INFO_PROCESSOR = "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr design_1 axi_bram_ctrl_0" *) 
+  (* BMM_INFO_PROCESSOR = "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr design_1 blk_ram_ctrl" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   design_1_microblaze_0_1 microblaze_0
        (.Byte_Enable(microblaze_0_dlmb_1_BE),

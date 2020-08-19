@@ -1,0 +1,62 @@
+22:24:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\temp_xsdb_launch_script.tcl
+22:24:08 INFO  : XSCT server has started successfully.
+22:24:09 INFO  : plnx-install-location is set to ''
+22:24:09 INFO  : Successfully done setting XSCT server connection channel  
+22:24:09 INFO  : Successfully done setting workspace for the tool. 
+22:24:09 INFO  : Successfully done query RDI_DATADIR 
+22:24:10 INFO  : Registering command handlers for Vitis TCF services
+22:39:38 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:45:53 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:46:12 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:46:39 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+22:46:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:46:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+22:46:41 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+22:56:35 INFO  : Hardware specification for platform project 'QUARTZ' is updated.
+22:56:50 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:56:55 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:57:12 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+22:57:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+22:57:13 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+22:57:43 INFO  : The hardware specfication used by project 'Bomberman' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:57:43 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+22:57:43 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+22:57:43 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\download.bit' stored in project is removed.
+22:57:43 INFO  : The updated bitstream files are copied from platform to folder 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream' in project 'Bomberman'.
+22:57:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:44 INFO  : Jtag cable 'Digilent Basys3 210183795574A' is selected.
+22:57:44 INFO  : 'jtag frequency' command is executed.
+22:57:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+22:57:44 ERROR : couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:57:44 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:57:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+22:57:44 ERROR : couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:57:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:48 INFO  : Jtag cable 'Digilent Basys3 210183795574A' is selected.
+22:57:48 INFO  : 'jtag frequency' command is executed.
+22:57:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+22:57:49 ERROR : couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:57:49 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+22:57:49 ERROR : couldn't open "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit": no such file or directory
+22:58:21 INFO  : Hardware specification for platform project 'QUARTZ' is updated.
+22:58:54 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:59:02 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+22:59:18 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+22:59:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:59:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+22:59:20 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+23:03:45 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+23:04:00 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+23:04:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:04:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+23:04:01 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"

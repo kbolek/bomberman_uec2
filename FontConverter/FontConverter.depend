@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1589493850 source:d:\vivado\fontconverter\main.cpp
-	<iostream>
-	<fstream>
-	<iomanip>
-	"font32x32.h"
-
-1589483682 d:\vivado\fontconverter\font32x32.h
-

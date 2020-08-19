@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:1.6
-// IP Revision: 2
+// IP VLNV: xilinx.com:user:BRAM_GPU:1.7
+// IP Revision: 1
 
 `timescale 1ns/1ps
 

@@ -144,13 +144,13 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ipshared/d023/src/BLOCK_GEN.v" \
-"../../../bd/design_1/ipshared/d023/src/CHAR_ROM.v" \
-"../../../bd/design_1/ipshared/d023/src/CLOCKER.v" \
-"../../../bd/design_1/ipshared/d023/src/GRAM_DECODER.v" \
-"../../../bd/design_1/ipshared/d023/src/TEXT_GEN.v" \
-"../../../bd/design_1/ipshared/d023/src/TIMING_GEN.v" \
-"../../../bd/design_1/ipshared/d023/src/BRAM_GPU.v" \
+"../../../bd/design_1/ipshared/9018/src/BLOCK_GEN.v" \
+"../../../bd/design_1/ipshared/9018/src/CHAR_ROM.v" \
+"../../../bd/design_1/ipshared/9018/src/CLOCKER.v" \
+"../../../bd/design_1/ipshared/9018/src/GRAM_DECODER.v" \
+"../../../bd/design_1/ipshared/9018/src/TEXT_GEN.v" \
+"../../../bd/design_1/ipshared/9018/src/TIMING_GEN.v" \
+"../../../bd/design_1/ipshared/9018/src/BRAM_GPU.v" \
 "../../../bd/design_1/ip/design_1_BRAM_GPU_0_1/sim/design_1_BRAM_GPU_0_1.v" \
 
 vcom -work axi_bram_ctrl_v4_1_2 -64 -93 \

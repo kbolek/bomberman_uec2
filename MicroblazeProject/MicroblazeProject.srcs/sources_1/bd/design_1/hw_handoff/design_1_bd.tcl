@@ -266,7 +266,7 @@ proc create_root_design { parentCell } {
   set AXI_Timers_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:AXI_Timers:1.2 AXI_Timers_0 ]
 
   # Create instance: BRAM_GPU_0, and set properties
-  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:1.6 BRAM_GPU_0 ]
+  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:1.7 BRAM_GPU_0 ]
 
   # Create instance: PADS_SOUND_0, and set properties
   set PADS_SOUND_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PADS_SOUND:1.0 PADS_SOUND_0 ]
