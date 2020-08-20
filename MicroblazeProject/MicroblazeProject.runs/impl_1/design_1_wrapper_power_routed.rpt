@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Aug 19 22:54:25 2020
+| Date             : Thu Aug 20 06:20:41 2020
 | Host             : Marysia running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.016 |        8 |       --- |             --- |
-| Slice Logic              |     0.019 |    11156 |       --- |             --- |
-|   LUT as Logic           |     0.016 |     4319 |     20800 |           20.76 |
+| Clocks                   |     0.015 |        8 |       --- |             --- |
+| Slice Logic              |     0.019 |    11159 |       --- |             --- |
+|   LUT as Logic           |     0.016 |     4305 |     20800 |           20.70 |
 |   LUT as Distributed RAM |     0.001 |      128 |      9600 |            1.33 |
 |   CARRY4                 |     0.001 |      473 |      8150 |            5.80 |
-|   F7/F8 Muxes            |    <0.001 |      721 |     32600 |            2.21 |
+|   F7/F8 Muxes            |    <0.001 |      728 |     32600 |            2.23 |
 |   Register               |    <0.001 |     3702 |     41600 |            8.90 |
-|   LUT as Shift Register  |    <0.001 |      135 |      9600 |            1.41 |
+|   LUT as Shift Register  |    <0.001 |      133 |      9600 |            1.39 |
 |   Others                 |     0.000 |      825 |       --- |             --- |
-| Signals                  |     0.019 |     8009 |       --- |             --- |
+| Signals                  |     0.019 |     7993 |       --- |             --- |
 | Block RAM                |     0.003 |       18 |        50 |           36.00 |
 | MMCM                     |     0.121 |        1 |         5 |           20.00 |
 | DSPs                     |     0.004 |        5 |        90 |            5.56 |
@@ -163,8 +163,6 @@ Table of Contents
 |       U0                      |     0.001 |
 |     clk_wiz_0                 |     0.121 |
 |       inst                    |     0.121 |
-|     mdm_0                     |     0.001 |
-|       U0                      |     0.001 |
 |     microblaze_0              |     0.024 |
 |       U0                      |     0.024 |
 |     microblaze_0_axi_periph   |     0.001 |

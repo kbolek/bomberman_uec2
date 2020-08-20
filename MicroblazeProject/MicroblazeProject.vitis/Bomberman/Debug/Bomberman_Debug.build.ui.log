@@ -1,4 +1,4 @@
-2020-08-19T23:03:45.316642600255-23:03:45 **** Incremental Build of configuration Debug for project Bomberman ****
+2020-08-20T06:22:58.299248400255-06:22:58 **** Build of configuration Debug for project Bomberman ****
 000-make all 
 000-'Building file: ../src/main.c'
 000-'Invoking: MicroBlaze gcc compiler'
@@ -17,5 +17,5 @@
 000-'Finished building: Bomberman.elf.size'
 000-' '
 00255-
-23:03:46 Build Finished (took 936ms)
+06:23:00 Build Finished (took 1s.887ms)
 

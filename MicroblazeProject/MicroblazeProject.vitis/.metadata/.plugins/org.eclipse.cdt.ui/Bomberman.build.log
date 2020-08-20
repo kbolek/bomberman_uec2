@@ -1,4 +1,4 @@
-23:03:45 **** Incremental Build of configuration Debug for project Bomberman ****
+06:22:58 **** Build of configuration Debug for project Bomberman ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -17,5 +17,5 @@ mb-size Bomberman.elf  |tee "Bomberman.elf.size"
 'Finished building: Bomberman.elf.size'
 ' '
 
-23:03:46 Build Finished (took 936ms)
+06:23:00 Build Finished (took 1s.887ms)
 

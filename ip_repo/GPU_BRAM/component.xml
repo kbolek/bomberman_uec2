@@ -76,7 +76,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0aeda18f</spirit:value>
+            <spirit:value>61a6b1fc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -92,7 +92,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0aeda18f</spirit:value>
+            <spirit:value>61a6b1fc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -401,7 +401,7 @@
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:TIMING_GEN:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.0</xilinx:canUpgradeFrom>
@@ -411,7 +411,7 @@
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.5</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.6</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-08-19T20:47:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-08-19T21:08:11Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@166d61b6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
@@ -624,12 +624,23 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@16bc2237_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1f98cef6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe7edee_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d8dbf3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@814e1a4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65e8c4f0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762a2882_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6127456a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54305674_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@715ca484_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b39c2b9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66991b36_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b36827e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@733cd375_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9cf04b45"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="87b2af51"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0b580152"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9daf167c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="97ec376f"/>
     </xilinx:packagingInfo>

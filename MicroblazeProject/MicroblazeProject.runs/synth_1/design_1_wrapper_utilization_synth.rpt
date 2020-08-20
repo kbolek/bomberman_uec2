@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Aug 19 22:52:34 2020
+| Date         : Thu Aug 20 06:18:21 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 4879 |     0 |     20800 | 23.46 |
-|   LUT as Logic             | 4597 |     0 |     20800 | 22.10 |
+| Slice LUTs*                | 4876 |     0 |     20800 | 23.44 |
+|   LUT as Logic             | 4594 |     0 |     20800 | 22.09 |
 |   LUT as Memory            |  282 |     0 |      9600 |  2.94 |
 |     LUT as Distributed RAM |  128 |     0 |           |       |
 |     LUT as Shift Register  |  154 |     0 |           |       |
 | Slice Registers            | 4368 |     0 |     41600 | 10.50 |
 |   Register as Flip Flop    | 4368 |     0 |     41600 | 10.50 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                   |  695 |     0 |     16300 |  4.26 |
-| F8 Muxes                   |   60 |     0 |      8150 |  0.74 |
+| F7 Muxes                   |  696 |     0 |     16300 |  4.27 |
+| F8 Muxes                   |   66 |     0 |      8150 |  0.81 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -154,11 +154,11 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       | 4026 |        Flop & Latch |
-| LUT6       | 2527 |                 LUT |
+| LUT6       | 2521 |                 LUT |
 | LUT2       |  803 |                 LUT |
-| LUT5       |  729 |                 LUT |
+| LUT5       |  731 |                 LUT |
 | LUT4       |  715 |                 LUT |
-| MUXF7      |  695 |               MuxFx |
+| MUXF7      |  696 |               MuxFx |
 | CARRY4     |  473 |          CarryLogic |
 | LUT3       |  438 |                 LUT |
 | FDCE       |  265 |        Flop & Latch |
@@ -166,7 +166,7 @@ Table of Contents
 | RAMD32     |  128 |  Distributed Memory |
 | LUT1       |  106 |                 LUT |
 | FDSE       |   70 |        Flop & Latch |
-| MUXF8      |   60 |               MuxFx |
+| MUXF8      |   66 |               MuxFx |
 | OBUF       |   19 |                  IO |
 | RAMB36E1   |   18 |        Block Memory |
 | SRLC16E    |   16 |  Distributed Memory |

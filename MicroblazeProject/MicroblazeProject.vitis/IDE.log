@@ -60,3 +60,34 @@ connect -url tcp:127.0.0.1:3121
 23:04:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 23:04:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
 23:04:01 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+23:16:33 INFO  : Hardware specification for platform project 'QUARTZ' is updated.
+23:16:55 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+23:16:56 INFO  : The hardware specfication used by project 'Bomberman' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+23:16:56 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+23:16:56 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+23:16:56 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\download.bit' stored in project is removed.
+23:16:56 INFO  : The updated bitstream files are copied from platform to folder 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream' in project 'Bomberman'.
+23:17:29 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+23:17:57 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+23:18:12 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+23:18:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+23:18:13 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+06:16:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\temp_xsdb_launch_script.tcl
+06:16:57 INFO  : Registering command handlers for Vitis TCF services
+06:16:58 INFO  : XSCT server has started successfully.
+06:16:58 INFO  : plnx-install-location is set to ''
+06:16:58 INFO  : Successfully done setting XSCT server connection channel  
+06:16:58 INFO  : Successfully done setting workspace for the tool. 
+06:16:58 INFO  : Successfully done query RDI_DATADIR 
+06:22:33 INFO  : Hardware specification for platform project 'QUARTZ' is updated.
+06:22:57 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+06:23:00 INFO  : The hardware specfication used by project 'Bomberman' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+06:23:00 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\download.bit' stored in project is removed.
+06:23:00 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\QUARTS_FONTS.bit' stored in project is removed.
+06:23:00 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\QUARTS_FONTS.mmi' stored in project is removed.
+06:23:00 INFO  : The updated bitstream files are copied from platform to folder 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream' in project 'Bomberman'.
+06:23:23 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+06:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:23:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+06:23:28 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
