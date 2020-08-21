@@ -3476,3 +3476,1402 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-81: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:19:58.655
 !MESSAGE Executed Webtalk command
+!SESSION 2020-08-21 16:36:06.468 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-08-21 16:36:10.382
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.651
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.651
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.683
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.687
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.688
+!MESSAGE XSCT Command: [setws D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:20.689
+!MESSAGE XSCT command with result: [setws D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Result: [null, ]. Thread: Thread-12
+
+!ENTRY org.eclipse.ui 4 4 2020-08-21 16:36:20.958
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-08-21 16:36:20.960
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:23.310
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:23.580
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:23.581
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:36:23.582
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, B:/Vitis/Vitis/2019.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.413
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.507
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.511
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.513
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.514
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.519
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:42:35.520
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.523
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:35.525
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.271
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.273
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.274
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.281
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Result: [null, {"AXI_Timers_0": {"hier_name": "AXI_Timers_0",
+"type": "AXI_Timers",
+"version": "1.2",
+"ip_type": "PERIPHERAL",
+},
+"BRAM_GPU_0": {"hier_name": "BRAM_GPU_0",
+"type": "BRAM_GPU",
+"version": "1.7",
+"ip_type": "PERIPHERAL",
+},
+"PADS_SOUND_0": {"hier_name": "PADS_SOUND_0",
+"type": "PADS_SOUND",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"blk_ram": {"hier_name": "blk_ram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"blk_ram_ctrl": {"hier_name": "blk_ram_ctrl",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_0": {"hier_name": "mdm_0",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_100M": {"hier_name": "rst_clk_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.288
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:41.290
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Wed Aug 19 23:09:53 2020",
+"vivado_version": "2019.2",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.848
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.850
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.866
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.868
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.870
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:42.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:53.175
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2020-08-21 16:42:54.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:54.421
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:54.423
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.376
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.379
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.384
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.385
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.399
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:55.401
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:56.094
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:56.095
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:57.384
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:58.186
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:42:58.188
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.ui 4 4 2020-08-21 16:43:07.760
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@7d72f5a9} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:43:10.987
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.927
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.929
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.929
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.931
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:43:19.931
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.933
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:19.934
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:43:22.156
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:39.601
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:39.602
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.183
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.185
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.198
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.205
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.205
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.211
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.226
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.226
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.243
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:50.243
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:51.523
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:52.325
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:43:52.332
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.913
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.915
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.915
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.918
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:58:31.918
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.919
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:31.923
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:58:32.801
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.544
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.548
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.548
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.551
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 16:58:49.551
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.553
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:49.555
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:59.040
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:58:59.042
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.674
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.675
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.688
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.694
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.695
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.700
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.700
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.714
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.715
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.731
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:09.732
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:11.011
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:11.814
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 16:59:11.820
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.110
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.111
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.112
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.117
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.117
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.122
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.122
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:11.137
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY org.eclipse.jface 4 0 2020-08-21 17:01:18.528
+!MESSAGE The command ("com.xilinx.ide.application.ui.perspectve") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3532)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-08-21 17:01:18.532
+!MESSAGE The command ("com.xilinx.sdk.performance.ui.PerformancePerspective") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3532)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:36.091
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:36.093
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:46.493
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:46.495
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.026
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.027
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.027
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.033
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.033
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.038
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.039
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:01:51.053
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:01:55.918
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: zynq_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:01:55.918
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:01:55.919
+!MESSAGE Workspace path used is: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:02:37.776
+!MESSAGE Tool usage for 'FLASH' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.181
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.183
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.184
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.186
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:05:49.187
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.187
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:49.191
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:54.248
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:05:54.249
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.010
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.012
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.025
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.033
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.033
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.037
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.038
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.052
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.052
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.069
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:05.069
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:06.342
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:07.142
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:06:07.146
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.jface 4 0 2020-08-21 17:07:13.878
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.727
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.730
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.730
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.734
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:07:21.735
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.735
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:21.737
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.283
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.284
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.289
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.290
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.294
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:07:26.309
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:07:28.635
+!MESSAGE Tool usage for 'FLASH' updated to '2'
+
+!ENTRY org.eclipse.jface 4 0 2020-08-21 17:09:44.126
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2020-08-21 17:09:47.037
+!MESSAGE /icons/elcl16/watchpoint_co.gif
+!STACK 0
+java.io.FileNotFoundException: /icons/elcl16/watchpoint_co.gif
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:51)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.base/java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:112)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:237)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:255)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:230)
+	at org.eclipse.jface.resource.URLImageDescriptor.access$2(URLImageDescriptor.java:218)
+	at org.eclipse.jface.resource.URLImageDescriptor$URLImageFileNameProvider.getImagePath(URLImageDescriptor.java:54)
+	at org.eclipse.swt.internal.DPIUtil.validateAndGetImagePathAtZoom(DPIUtil.java:416)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:684)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:261)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:180)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:52)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:69)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:85)
+	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:172)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.getImage(AbstractContributionItem.java:148)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.updateIcons(AbstractContributionItem.java:174)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.update(AbstractContributionItem.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.fill(AbstractContributionItem.java:261)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:649)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:324)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:546)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:525)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:493)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.299
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.303
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.303
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.305
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:12:27.306
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.306
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:12:27.308
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:12:30.262
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.926
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.929
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.929
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.935
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:14:20.936
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.936
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:20.938
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.125
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.128
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.129
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.131
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:14:34.131
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.132
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:34.133
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.978
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.979
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.979
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.986
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.987
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.992
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:39.992
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:40.007
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:43.612
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:43.614
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.239
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.240
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.252
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.259
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.259
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.264
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.265
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.279
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.279
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.295
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:54.296
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:55.571
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:56.374
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:14:56.380
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.801
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.804
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.804
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.806
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:15:36.807
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.808
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:36.809
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.054
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.055
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.055
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.060
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.060
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.066
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.066
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:15:40.081
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:15:41.866
+!MESSAGE Tool usage for 'FLASH' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:35:51.502
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:35:51.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.208
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.210
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.222
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.230
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.231
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.235
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.236
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.251
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.251
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.269
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:02.270
+!MESSAGE XSCT Command: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:03.537
+!MESSAGE XSCT command with result: [fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:04.339
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:36:04.345
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.380
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.383
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.383
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.386
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:37:25.387
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.387
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:25.391
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:37:27.942
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:33.079
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:33.081
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:44.439
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:37:44.440
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_V2.xsa ], Result: [null, blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.933
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.934
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.934
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.940
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.940
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.945
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183795574A]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.946
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 17:38:34.961
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:38:42.862
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: zynq_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:38:42.863
+!MESSAGE Preference loaded using local preference: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:38:48.103
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: zynq_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:38:48.103
+!MESSAGE Preference loaded using local preference: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:38:56.152
+!MESSAGE Tool usage for 'FLASH' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:40:15.949
+!MESSAGE Executing command: cmd /C B:\Vitis\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 17:40:15.990
+!MESSAGE Executed Webtalk command

@@ -16,7 +16,7 @@ void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBloc
 }
 
 void DrawBackground(BlockStruct *sBlock){
-	sBlock->eTextureType=Background;
+	sBlock->textureType=Background;
 	for(uint32_t BgCounterV=0;BgCounterV<RESOLUTION_Y;BgCounterV++){
 			for(uint32_t BgCounterH=0;BgCounterH<RESOLUTION_X;BgCounterH++){
 				GpuPutBlockStruct(BgCounterH,BgCounterV,sBlock);
@@ -32,7 +32,7 @@ void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height, Bloc
 	DrawBackground(sBlock);
 
 	//map background (path)
-	sBlock->eTextureType=Path;;
+	sBlock->textureType=Path;;
 	for(uint32_t PathCounterV=0;PathCounterV<Height-2;PathCounterV++){
 		for(uint32_t PathCounterH=0;PathCounterH<Width-2;PathCounterH++){
 			GpuPutBlockStruct(Xpos+1+PathCounterH,Ypos+1+PathCounterV,sBlock);
@@ -40,7 +40,7 @@ void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height, Bloc
 	}
 
 	//outside border
-	sBlock->eTextureType=WallFront;
+	sBlock->textureType=WallFront;
 	DrawHLine(Xpos,Ypos,Width,sBlock);
 	//sBlock->eTextureType=WallUsual;
 	DrawVLine(Xpos,Ypos+1,Height-1,sBlock);
@@ -48,7 +48,7 @@ void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height, Bloc
 	DrawHLine(Xpos,Ypos+Height-1,Width,sBlock);
 
 	//blocked paths
-	sBlock->eTextureType=WallUsual;
+	sBlock->textureType=WallUsual;
 	for(uint32_t BlockedPathCounterV=0;BlockedPathCounterV<((Height/2)-1);BlockedPathCounterV++){
 		for(uint32_t BlockedPathCounterH=0;BlockedPathCounterH<((Width/2)-1);BlockedPathCounterH++){
 			GpuPutBlockStruct(Xpos+2+(BlockedPathCounterH*2),(Ypos+2)+(BlockedPathCounterV*2),sBlock);

@@ -2,7 +2,7 @@
 
 uint32_t *Gpu_Ptr = (uint32_t *) GPU_BLOCK_ADDR;
 
-uint32_t GpuPutBlock(uint32_t textureInversion,enum TextureType eTextureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y)
+uint32_t GpuPutBlock(uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y)
 {
 	if((x >= RESOLUTION_X) || (y >= RESOLUTION_Y))
 	{
@@ -12,7 +12,7 @@ uint32_t GpuPutBlock(uint32_t textureInversion,enum TextureType eTextureType, ui
 	{
 		uint32_t temp = 0;
 		temp |= (textureInversion & INVERSION_MASK) << 15;
-		temp |= (eTextureType & TEXTURE_NUMBER_MASK) << 12;
+		temp |= (textureType & TEXTURE_NUMBER_MASK) << 12;
 		temp |= (textColor & TEXT_COLOR_MASK) << 8;
 		temp |= (textChar & TEXT_CHAR_MASK);
 
@@ -33,7 +33,7 @@ uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock)
 	{
 		uint32_t temp = 0;
 		temp |= (sBlock->textureInversion & INVERSION_MASK) << 15;
-		temp |= (sBlock->eTextureType & TEXTURE_NUMBER_MASK) << 12;
+		temp |= (sBlock->textureType & TEXTURE_NUMBER_MASK) << 12;
 		temp |= (sBlock->textColor & TEXT_COLOR_MASK) << 8;
 		temp |= (sBlock->textChar & TEXT_CHAR_MASK);
 
@@ -56,7 +56,7 @@ uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock)
 		uint32_t temp = Gpu_Ptr[addr];
 
 		sBlock->textureInversion = ((temp >> 15) & INVERSION_MASK);
-		sBlock->eTextureType = ((temp >> 12) & TEXTURE_NUMBER_MASK);
+		sBlock->textureType = ((temp >> 12) & TEXTURE_NUMBER_MASK);
 		sBlock->textColor = ((temp >> 8) & TEXT_COLOR_MASK);
 		sBlock->textChar = (temp & TEXT_CHAR_MASK);
 
@@ -64,7 +64,7 @@ uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock)
 	}
 }
 
-uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar)
+uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor)
 {
 	BlockStruct sBlock;
 
@@ -75,12 +75,13 @@ uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar)
 	else
 	{
 		sBlock.textChar = textChar;
+		sBlock.textColor = textColor;
 		GpuPutBlockStruct(x,y,&sBlock);
 		return 0;
 	}
 }
 
-uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar)
+uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor)
 {
 	BlockStruct sBlock;
 
@@ -91,6 +92,7 @@ uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar)
 	else
 	{
 		*textChar = sBlock.textChar;
+		*textColor = sBlock.textColor;
 		return 0;
 	}
 }
@@ -150,7 +152,7 @@ uint32_t GpuAsciiToChar (char asciiChar)
 		case '{':
 			return (uint32_t) 47;
 			break;
-		case '|':
+		case ':':
 			return (uint32_t) 48;
 			break;
 		case '}':

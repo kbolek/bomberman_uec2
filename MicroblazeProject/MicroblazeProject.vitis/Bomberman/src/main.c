@@ -12,17 +12,17 @@ int main()
     print("Hello World\n\r");
     BlockStruct sBlock;
     DrawMap(7,3,17,15,&sBlock);
-    sBlock.eTextureType=FireWall;
+    sBlock.textureType=FireWall;
     GpuPutBlockStruct (12, 8,&sBlock);
-    sBlock.eTextureType=FireVertical;
+    sBlock.textureType=FireVertical;
     GpuPutBlockStruct (12, 9,&sBlock);
-    sBlock.eTextureType=FireCorner;
+    sBlock.textureType=FireCorner;
     GpuPutBlockStruct (12, 10,&sBlock);
-    sBlock.eTextureType=FireHorizontal;
+    sBlock.textureType=FireHorizontal;
     GpuPutBlockStruct (13, 10,&sBlock);
 
 
-    sBlock.eTextureType=WallFront;
+    sBlock.textureType=WallFront;
     DrawClockFrame(&sBlock);
     //end of rubbish code
 
@@ -34,8 +34,9 @@ int main()
     {
 
     	ShowTime();
-    	//PadsRead();
-    	//GpuPutBlock(1,0,0,sPads[0].buttons,0,0);
+    	PadsRead();
+    	GpuPutBlock(1,0,0,sPads[0].buttons,0,0); //ogarnij ktory bit ktorego pada to ktory przycisk
+    	GpuPutBlock(1,0,0,sPads[1].buttons,1,0);
 
     	//GpuGetBlock(0,0,&sBlock);
     	//sBlock.textureNumber = 4;

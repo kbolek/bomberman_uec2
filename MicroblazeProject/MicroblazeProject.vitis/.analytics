@@ -28,3 +28,20 @@ timestamp=[2020-08-20 16:36:44], mode=PLATFORM_GENERATION, duration=0:00:14.235,
 timestamp=[2020-08-20 18:17:33], mode=PLATFORM_GENERATION, duration=0:00:15.993, duration_ms=15993, data={name=QUARTZ}
 timestamp=[2020-08-21 12:45:36], mode=WORKBENCH_START, duration=0:00:19.627, duration_ms=19627, data={}
 timestamp=[2020-08-21 12:45:38], mode=WORKBENCH_UI_INIT, duration=0:00:02.206, duration_ms=2206, data={editors_count=6, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
+timestamp=[2020-08-21 16:36:21], mode=WORKBENCH_START, duration=0:00:12.037, duration_ms=12037, data={}
+timestamp=[2020-08-21 16:36:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.633, duration_ms=633, data={editors_count=9, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
+timestamp=[2020-08-21 16:42:35], mode=PLATFORM_GENERATION, duration=0:00:25.205, duration_ms=25205, data={name=QUARTZ}
+timestamp=[2020-08-21 16:43:12], mode=PLATFORM_GENERATION, duration=0:00:01.442, duration_ms=1442, data={name=QUARTZ}
+timestamp=[2020-08-21 16:43:19], mode=PLATFORM_GENERATION, duration=0:00:07.257, duration_ms=7257, data={name=QUARTZ}
+timestamp=[2020-08-21 16:56:42], mode=PLATFORM_GENERATION, duration=0:00:03.142, duration_ms=3142, data={name=QUARTZ}
+timestamp=[2020-08-21 16:56:50], mode=PLATFORM_GENERATION, duration=0:00:03.088, duration_ms=3088, data={name=QUARTZ}
+timestamp=[2020-08-21 16:57:54], mode=PLATFORM_GENERATION, duration=0:00:03.147, duration_ms=3147, data={name=QUARTZ}
+timestamp=[2020-08-21 16:58:04], mode=PLATFORM_GENERATION, duration=0:00:03.042, duration_ms=3042, data={name=QUARTZ}
+timestamp=[2020-08-21 16:58:22], mode=PLATFORM_GENERATION, duration=0:00:07.906, duration_ms=7906, data={name=QUARTZ}
+timestamp=[2020-08-21 17:05:49], mode=PLATFORM_GENERATION, duration=0:00:07.404, duration_ms=7404, data={name=QUARTZ}
+timestamp=[2020-08-21 17:11:38], mode=PLATFORM_GENERATION, duration=0:00:03.232, duration_ms=3232, data={name=QUARTZ}
+timestamp=[2020-08-21 17:12:13], mode=PLATFORM_GENERATION, duration=0:00:07.707, duration_ms=7707, data={name=QUARTZ}
+timestamp=[2020-08-21 17:13:13], mode=PLATFORM_GENERATION, duration=0:00:03.197, duration_ms=3197, data={name=QUARTZ}
+timestamp=[2020-08-21 17:13:36], mode=PLATFORM_GENERATION, duration=0:00:07.294, duration_ms=7294, data={name=QUARTZ}
+timestamp=[2020-08-21 17:14:15], mode=PLATFORM_GENERATION, duration=0:00:07.446, duration_ms=7446, data={name=QUARTZ}
+timestamp=[2020-08-21 17:37:22], mode=PLATFORM_GENERATION, duration=0:00:09.119, duration_ms=9119, data={name=QUARTZ}

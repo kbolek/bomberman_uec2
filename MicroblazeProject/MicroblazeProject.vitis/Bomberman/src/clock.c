@@ -4,7 +4,7 @@ TimeStruct asTimeStruct;
 
 void ClockInit(){
 	 TimerClearAll();
-	 TimerSet(1);
+	 TimerSet(0);
 	 asTimeStruct.SecondsLSB = 0;
 	 asTimeStruct.SecondsMSB = 0;
 	 asTimeStruct.MinutesLSB = 0;
@@ -17,7 +17,7 @@ void Clock(){
 	 uint32_t SecondsClear;
 	 uint32_t Minutes;
 	 uint32_t MinutesClear;
-	 TimerRead(1,&MiliSeconds);
+	 TimerRead(0,&MiliSeconds);
 
 	 Seconds = (MiliSeconds/1000);
 	 SecondsClear = Seconds%60;
@@ -42,12 +42,12 @@ void ShowTime(){
 	asTimeStruct.MinutesMSB = GpuNumberToChar(asTimeStruct.MinutesMSB);
 
 	//scale it
-	GpuPutChar(17,2,asTimeStruct.SecondsLSB);
-	GpuPutChar(16,2,asTimeStruct.SecondsMSB);
-	char cColon = GpuAsciiToChar('?');
-	GpuPutChar(15,2,cColon);
-	GpuPutChar(14,2,asTimeStruct.MinutesLSB);
-	GpuPutChar(13,2,asTimeStruct.MinutesMSB);
+	GpuPutChar(17,2,asTimeStruct.SecondsLSB,COLOR_GREEN);
+	GpuPutChar(16,2,asTimeStruct.SecondsMSB,COLOR_RED);
+	char cColon = GpuAsciiToChar(':');
+	GpuPutChar(15,2,cColon,COLOR_MAGENTA);
+	GpuPutChar(14,2,asTimeStruct.MinutesLSB,COLOR_BLUE);
+	GpuPutChar(13,2,asTimeStruct.MinutesMSB,COLOR_YELLOW);
 
 }
 

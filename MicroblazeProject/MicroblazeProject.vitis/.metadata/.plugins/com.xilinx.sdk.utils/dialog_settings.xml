@@ -2,5 +2,6 @@
 <section name="Workbench">
 	<item value="C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT1.0\bomberman_uec2\MicroblazeProject" key="sdx_program_fpga_view_bit_bmm_browse_key"/>
 	<item value="D:\bomberman_uec2\MicroblazeProject" key="scw_hwspec_file_selection"/>
+	<item value="D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream" key="zynq_flash_files_selection"/>
 	<item value="D:\bomberman_uec2\MicroblazeProject" key="scw_hwspec"/>
 </section>

@@ -19,8 +19,25 @@ extern "C" {
 #define TEXT_COLOR_MASK 0x07
 #define TEXT_CHAR_MASK 0x3F
 
+#define COLOR_BLACK 0x0
+#define COLOR_BLUE 0x1
+#define COLOR_GREEN 0x2
+#define COLOR_RED 0x4
+#define COLOR_CYAN 0x3
+#define COLOR_MAGENTA 0x5
+#define COLOR_YELLOW 0x6
+#define COLOR_WHITE 0x7
+
+#define Background 0
+#define FireCorner 1
+#define FireVertical 2
+#define FireHorizontal 3
+#define Path 4
+#define FireWall 5
+#define WallUsual 6
+#define WallFront 7
+
 ////////////////////////////////////////////////////
-enum TextureType {Background,FireCorner,FireVertical,FireHorizontal,Path,FireWall,WallUsual,WallFront};
 
 ////////////////////////////////////////////////////
 
@@ -28,22 +45,22 @@ enum TextureType {Background,FireCorner,FireVertical,FireHorizontal,Path,FireWal
 typedef struct
 {
 	uint32_t textureInversion;
-	enum TextureType eTextureType;
+	uint32_t textureType;
 	uint32_t textColor;
 	uint32_t textChar;
 }BlockStruct;
 
-////////////////////////////////////////////////////
+////////////////////////////////////////////////////JAK KRZUCHY TU COS RUSZYSZ TO COS NIEDOBREGO CI ZROBIE
 
-uint32_t GpuPutBlock (uint32_t textureInversion, enum TextureType eTextureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
+uint32_t GpuPutBlock (uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
 
 uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock);
 
 uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock);
 
-uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar);
+uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor);
 
-uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar);
+uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor);
 
 uint32_t GpuNumberToChar (uint32_t number);
 

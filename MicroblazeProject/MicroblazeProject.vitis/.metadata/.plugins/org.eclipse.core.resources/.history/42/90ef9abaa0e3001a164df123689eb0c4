@@ -1,9 +1,0 @@
-#include "map.h"
-
-void DrawClockFrame(BlockStruct *sBlock){
-	uint32_t ClockXpos = asClockPositionStuct.HXpos + (asClockPositionStuct.HLenhth/2);
-	DrawHLine(ClockXpos-3,asClockPositionStruct.HYpos-1,5,sBlock);
-
-}
-
-
