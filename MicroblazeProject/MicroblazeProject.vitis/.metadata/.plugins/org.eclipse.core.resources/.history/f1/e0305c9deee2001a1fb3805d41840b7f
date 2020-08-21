@@ -1,0 +1,68 @@
+#include "xil_printf.h"
+#include "sleep.h"
+
+#include "gpu_drv.h"
+#include "timers_drv.h"
+#include "pad_drv.h"
+
+int main()
+{
+    print("Hello World\n\r");
+    BlockStruct sBlock;
+    sBlock.eTextureType= sth1;
+    GpuPutBlockStruct(0,0,&sBlock);
+    sBlock.eTextureType= sth2;
+    GpuPutBlockStruct(0,1,&sBlock);
+    sBlock.eTextureType= sth3;
+    GpuPutBlockStruct(0,2,&sBlock);
+    sBlock.eTextureType= sth4;
+    GpuPutBlockStruct(0,3,&sBlock);
+    sBlock.eTextureType= sth5;
+    GpuPutBlockStruct(0,4,&sBlock);
+    sBlock.eTextureType= sth6;
+    GpuPutBlockStruct(0,5,&sBlock);
+    sBlock.eTextureType= sth7;
+    GpuPutBlockStruct(0,6,&sBlock);
+    sBlock.eTextureType= sth8;
+    GpuPutBlockStruct(0,7,&sBlock);
+    sBlock.eTextureType= sth9;
+    GpuPutBlockStruct(0,8,&sBlock);
+
+
+
+    //for (uint32_t x = 0; x < 32; x++)
+        //{
+        	//for (uint32_t y = 0; y < 24; y++)
+        	//{
+
+        	//}
+       // }
+
+    //TimerClearAll();
+    //TimerSet(1);
+
+    while(1)
+    {
+    	//PadsRead();
+    	//GpuPutBlock(1,0,0,sPads[0].buttons,0,0);
+
+    	//GpuGetBlock(0,0,&sBlock);
+    	//sBlock.textureNumber = 4;
+    	//GpuPutBlockStruct(2,2,&sBlock);
+
+    	//uint32_t time;
+		//TimerRead(1,&time);
+    	//uint32_t character = GpuNumberToChar((time/1000)%10);
+
+    	//GpuPutChar(10,10,character);
+
+
+    	//if((time%1000)==1)
+    	//{
+    		//print("Sekunda\n\r");
+    		//usleep(1000);
+    	//}
+    }
+
+    return 0;
+}

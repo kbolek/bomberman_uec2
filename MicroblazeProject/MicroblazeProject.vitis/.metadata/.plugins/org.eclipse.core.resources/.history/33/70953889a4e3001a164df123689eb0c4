@@ -1,0 +1,10 @@
+#include "map.h"
+#include "gpu_drv.h"
+
+void DrawClockFrame(BlockStruct *sBlock){
+	uint32_t ClockXpos = asClockPositionStruct.HXpos + (asClockPositionStruct.HLength/2);
+	DrawHLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos ,CLOCK_H_LENGTH,sBlock);
+
+}
+
+

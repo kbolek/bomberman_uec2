@@ -20,18 +20,22 @@ extern "C" {
 #define TEXT_CHAR_MASK 0x3F
 
 ////////////////////////////////////////////////////
+enum TextureType {Background,FireCorner,FireVertical,FireHorizontal,Path,FireWall,WallUsual,WallFront};
+
+////////////////////////////////////////////////////
+
 
 typedef struct
 {
 	uint32_t textureInversion;
-	uint32_t textureNumber;
+	enum TextureType eTextureType;
 	uint32_t textColor;
 	uint32_t textChar;
 }BlockStruct;
 
 ////////////////////////////////////////////////////
 
-uint32_t GpuPutBlock (uint32_t textureInversion, uint32_t textureNumber, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
+uint32_t GpuPutBlock (uint32_t textureInversion, enum TextureType eTextureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
 
 uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock);
 
@@ -44,5 +48,6 @@ uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar);
 uint32_t GpuNumberToChar (uint32_t number);
 
 uint32_t GpuAsciiToChar (char asciiChar);
+
 
 #endif

@@ -1,0 +1,63 @@
+#include "clock.h"
+
+TimeStruct asTimeStruct;
+
+void ClockInit(){
+	 TimerClearAll();
+	 TimerSet(1);
+	 asTimeStruct.SecondsLSB = 0;
+	 asTimeStruct.SecondsMSB = 0;
+	 asTimeStruct.MinutesLSB = 0;
+	 asTimeStruct.MinutesMSB = 0;
+}
+
+void Clock(){
+	 uint32_t Time;
+	 TimerRead(1,&Time);
+
+	 if((Time/1000)%10 == 0){
+		 asTimeStruct.SecondsLSB = 0;
+		 asTimeStruct.SecondsMSB += 1;
+	 }
+	 else if(asTimeStruct.SecondsMSB%60 == 0){
+		 asTimeStruct.SecondsMSB = 0;
+		 asTimeStruct.MinutesLSB += 1;
+
+	 }
+	 else if(asTimeStruct.MinutesLSB%10 == 0){
+		 asTimeStruct.MinutesLSB = 0;
+		 asTimeStruct.MinutesMSB += 1;
+	 }
+	 else{
+		 ClockInit();
+	 }
+}
+
+void ShowTime(){
+	Clock();
+	asTimeStruct.SecondsLSB = GpuNumberToChar(asTimeStruct.SecondsLSB);
+	asTimeStruct.SecondsMSB = GpuNumberToChar(asTimeStruct.SecondsMSB);
+	asTimeStruct.MinutesLSB = GpuNumberToChar(asTimeStruct.MinutesLSB);
+	asTimeStruct.MinutesMSB = GpuNumberToChar(asTimeStruct.MinutesMSB);
+
+	//scale it
+	GpuPutChar(17,1,asTimeStruct.SecondsLSB);
+	GpuPutChar(16,1,asTimeStruct.SecondsMSB);
+	char cColon = GpuAsciiToChar(':');
+	GpuPutChar(15,2,cColon);
+	GpuPutChar(14,2,asTimeStruct.MinutesLSB);
+	GpuPutChar(13,2,asTimeStruct.MinutesMSB);
+
+}
+
+
+
+void DrawClockFrame(BlockStruct *sBlock){
+	uint32_t ClockXpos = asClockPositionStruct.HXpos + (asClockPositionStruct.HLength/2);
+	DrawHLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos-1 ,CLOCK_H_LENGTH,sBlock);
+	DrawHLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos-CLOCK_V_LENGTH,CLOCK_H_LENGTH,sBlock);
+	DrawVLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos - CLOCK_V_LENGTH,CLOCK_V_LENGTH,sBlock);
+	DrawVLine(ClockXpos+(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos - CLOCK_V_LENGTH,CLOCK_V_LENGTH,sBlock);
+}
+
+

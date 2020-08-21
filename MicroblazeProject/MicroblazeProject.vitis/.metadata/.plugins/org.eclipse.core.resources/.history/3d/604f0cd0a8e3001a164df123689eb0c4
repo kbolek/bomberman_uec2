@@ -1,0 +1,13 @@
+#ifndef CLOCK_H
+#define CLOCK_H
+#include "gpu_drv.h"
+#include "map.h"
+#include "timers_drv.h"
+
+//size of the clock frame
+#define CLOCK_H_LENGTH 7
+#define CLOCK_V_LENGTH 3
+
+void DrawClockFrame(BlockStruct *sBlock);
+
+#endif

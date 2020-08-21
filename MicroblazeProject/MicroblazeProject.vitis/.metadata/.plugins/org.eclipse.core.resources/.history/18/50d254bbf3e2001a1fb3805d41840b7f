@@ -1,0 +1,21 @@
+#include "map.h"
+
+
+void DrawHLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBlock){
+	if(Xpos > 32){
+		//printf("Something went wrong");
+	}
+	else {
+		for(uint32_t HBlockCounter = 0; HBlockCounter < (Length+1); HBlockCounter++ ){
+			GpuPutBlockStruct((Xpos+HBlockCounter),Ypos,sBlock);
+		}
+	}
+
+
+}
+
+
+//void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length){
+
+//}
+

@@ -1,0 +1,9 @@
+#ifndef CLOCK_H
+#define CLOCK_H
+
+//size of the clock frame
+#define CLOCK_H_LENGTH 5
+
+void DrawClockFrame(BlockStruct *sBlock);
+
+#endif
