@@ -41,13 +41,13 @@ void ShowTime(){
 	asTimeStruct.MinutesLSB = GpuNumberToChar(asTimeStruct.MinutesLSB);
 	asTimeStruct.MinutesMSB = GpuNumberToChar(asTimeStruct.MinutesMSB);
 
-	//scale it
-	GpuPutChar(17,2,asTimeStruct.SecondsLSB,COLOR_GREEN);
-	GpuPutChar(16,2,asTimeStruct.SecondsMSB,COLOR_RED);
+	//DOIT::scale it (first, and second parameter) bolko will do it
+	GpuPutChar(17,1,asTimeStruct.SecondsLSB,COLOR_WHITE);
+	GpuPutChar(16,1,asTimeStruct.SecondsMSB,COLOR_WHITE);
 	char cColon = GpuAsciiToChar(':');
-	GpuPutChar(15,2,cColon,COLOR_MAGENTA);
-	GpuPutChar(14,2,asTimeStruct.MinutesLSB,COLOR_BLUE);
-	GpuPutChar(13,2,asTimeStruct.MinutesMSB,COLOR_YELLOW);
+	GpuPutChar(15,1,cColon,COLOR_WHITE);
+	GpuPutChar(14,1,asTimeStruct.MinutesLSB,COLOR_WHITE);
+	GpuPutChar(13,1,asTimeStruct.MinutesMSB,COLOR_WHITE);
 
 }
 

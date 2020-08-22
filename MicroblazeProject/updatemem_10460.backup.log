@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# updatemem v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Sat Aug 22 17:39:41 2020
+# Process ID: 10460
+# Current directory: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vitis/Vitis/2019.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/QUARTZ_V3.mmi -data C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT1.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\Debug\Bomberman.elf -proc design_1_i/microblaze_0 -bit C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/QUARTZ_V3.bit -out C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit -force
+# Log file: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/updatemem.log
+# Journal file: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/Vitis/Vitis/2019.2/scripts/updatemem/main.tcl -notrace
+Command: update_mem -meminfo C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/QUARTZ_V3.mmi -data {C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT1.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\Debug\Bomberman.elf} -proc design_1_i/microblaze_0 -bit C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/QUARTZ_V3.bit -out C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit -force
+Loading bitfile C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/QUARTZ_V3.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit...
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+update_mem completed successfully
+update_mem: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 551.914 ; gain = 459.512
+INFO: [Common 17-206] Exiting updatemem at Sat Aug 22 17:39:59 2020...
