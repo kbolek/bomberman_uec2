@@ -1,6 +1,6 @@
-17:37:27 **** Incremental Build of configuration Debug for project Bomberman_system ****
+12:36:22 **** Build of configuration Debug for project Bomberman_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-17:37:27 Build Finished (took 141ms)
+12:36:22 Build Finished (took 136ms)
 

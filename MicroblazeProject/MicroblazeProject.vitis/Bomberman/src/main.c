@@ -27,7 +27,11 @@ int main()
     //end of rubbish code
 
 
-
+    GpuPutSprite(0,1,sprAmplifier,COLOR_RED);
+    GpuPutSprite(1,1,sprBomb,COLOR_GREEN);
+    GpuPutSprite(2,1,sprCharBack,COLOR_CYAN);
+    GpuPutSprite(3,1,sprCharFront,COLOR_YELLOW);
+    GpuPutSprite(4,1,sprTransistor,COLOR_MAGENTA);
 
     ClockInit();
     while(1)

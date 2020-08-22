@@ -185,3 +185,44 @@ uint32_t GpuAsciiToChar (char asciiChar)
 		}
 	}
 }
+
+uint32_t GpuPutSprite (uint32_t x, uint32_t y, Sprites eSprite, uint32_t spriteColor)
+{
+	BlockStruct sBlock;
+
+	if (GpuGetBlock(x,y,&sBlock) != 0)
+	{
+		return 1;
+	}
+	else
+	{
+		switch(eSprite)
+		{
+		case sprAmplifier:
+			sBlock.textChar = 57;
+			break;
+		case sprBomb:
+			sBlock.textChar = 58;
+			break;
+		case sprCharBack:
+			sBlock.textChar = 59;
+			break;
+		case sprCharFront:
+			sBlock.textChar = 60;
+			break;
+		case sprTransistor:
+			sBlock.textChar = 61;
+			break;
+		//sprite 62,63 empty
+		case sprEmpty:
+			sBlock.textChar = 0;
+			break;
+		default:
+			return 1;
+			break;
+		}
+		sBlock.textColor = spriteColor;
+		GpuPutBlockStruct(x,y,&sBlock);
+		return 0;
+	}
+}

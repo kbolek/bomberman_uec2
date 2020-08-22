@@ -38,7 +38,15 @@ extern "C" {
 #define WallFront 7
 
 ////////////////////////////////////////////////////
-
+typedef enum
+{
+	sprAmplifier,
+	sprBomb,
+	sprCharBack,
+	sprCharFront,
+	sprTransistor,
+	sprEmpty
+}Sprites;
 ////////////////////////////////////////////////////
 
 
@@ -66,5 +74,6 @@ uint32_t GpuNumberToChar (uint32_t number);
 
 uint32_t GpuAsciiToChar (char asciiChar);
 
+uint32_t GpuPutSprite (uint32_t x, uint32_t y, Sprites eSprite, uint32_t spriteColor);
 
 #endif

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Aug 20 06:18:21 2020
+| Date         : Sat Aug 22 12:31:11 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 4876 |     0 |     20800 | 23.44 |
-|   LUT as Logic             | 4594 |     0 |     20800 | 22.09 |
-|   LUT as Memory            |  282 |     0 |      9600 |  2.94 |
+| Slice LUTs*                | 5425 |     0 |     20800 | 26.08 |
+|   LUT as Logic             | 5147 |     0 |     20800 | 24.75 |
+|   LUT as Memory            |  278 |     0 |      9600 |  2.90 |
 |     LUT as Distributed RAM |  128 |     0 |           |       |
-|     LUT as Shift Register  |  154 |     0 |           |       |
-| Slice Registers            | 4368 |     0 |     41600 | 10.50 |
-|   Register as Flip Flop    | 4368 |     0 |     41600 | 10.50 |
+|     LUT as Shift Register  |  150 |     0 |           |       |
+| Slice Registers            | 4697 |     0 |     41600 | 11.29 |
+|   Register as Flip Flop    | 4697 |     0 |     41600 | 11.29 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                   |  696 |     0 |     16300 |  4.27 |
-| F8 Muxes                   |   66 |     0 |      8150 |  0.81 |
+| F7 Muxes                   |  701 |     0 |     16300 |  4.30 |
+| F8 Muxes                   |   41 |     0 |      8150 |  0.50 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -59,7 +59,7 @@ Table of Contents
 | 7     |          Yes |           - |          Set |
 | 265   |          Yes |           - |        Reset |
 | 70    |          Yes |         Set |            - |
-| 4026  |          Yes |       Reset |            - |
+| 4355  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,20 +153,20 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       | 4026 |        Flop & Latch |
-| LUT6       | 2521 |                 LUT |
-| LUT2       |  803 |                 LUT |
-| LUT5       |  731 |                 LUT |
-| LUT4       |  715 |                 LUT |
-| MUXF7      |  696 |               MuxFx |
-| CARRY4     |  473 |          CarryLogic |
-| LUT3       |  438 |                 LUT |
+| FDRE       | 4355 |        Flop & Latch |
+| LUT6       | 2720 |                 LUT |
+| LUT5       |  931 |                 LUT |
+| LUT2       |  898 |                 LUT |
+| LUT4       |  768 |                 LUT |
+| MUXF7      |  701 |               MuxFx |
+| LUT3       |  522 |                 LUT |
+| CARRY4     |  506 |          CarryLogic |
 | FDCE       |  265 |        Flop & Latch |
-| SRL16E     |  138 |  Distributed Memory |
+| SRL16E     |  133 |  Distributed Memory |
 | RAMD32     |  128 |  Distributed Memory |
-| LUT1       |  106 |                 LUT |
+| LUT1       |  112 |                 LUT |
 | FDSE       |   70 |        Flop & Latch |
-| MUXF8      |   66 |               MuxFx |
+| MUXF8      |   41 |               MuxFx |
 | OBUF       |   19 |                  IO |
 | RAMB36E1   |   18 |        Block Memory |
 | SRLC16E    |   16 |  Distributed Memory |
@@ -174,6 +174,7 @@ Table of Contents
 | FDPE       |    7 |        Flop & Latch |
 | DSP48E1    |    5 |    Block Arithmetic |
 | BUFG       |    5 |               Clock |
+| SRLC32E    |    1 |  Distributed Memory |
 | MMCME2_ADV |    1 |               Clock |
 | BSCANE2    |    1 |              Others |
 +------------+------+---------------------+
