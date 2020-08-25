@@ -2449,3 +2449,10 @@ com.xilinx.sdk.utils.exception.SdxUiRuntimeException: The selected system projec
 18:36:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 18:36:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
 18:36:38 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+19:43:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT1.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\temp_xsdb_launch_script.tcl
+19:43:24 INFO  : XSCT server has started successfully.
+19:43:24 INFO  : Successfully done setting XSCT server connection channel  
+19:43:24 INFO  : plnx-install-location is set to ''
+19:43:24 INFO  : Successfully done setting workspace for the tool. 
+19:43:31 INFO  : Registering command handlers for Vitis TCF services
+19:43:33 INFO  : Successfully done query RDI_DATADIR 

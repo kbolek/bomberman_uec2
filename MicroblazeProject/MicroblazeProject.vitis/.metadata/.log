@@ -9026,3 +9026,48 @@ java.lang.Exception
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-08-25 18:36:59.034
 !MESSAGE Executed Webtalk command
+!SESSION 2020-08-25 19:43:04.228 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-08-25 19:43:11.187
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.252
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.253
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.263
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.273
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.274
+!MESSAGE XSCT Command: [setws C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:24.279
+!MESSAGE XSCT command with result: [setws C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT1.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Result: [null, ]. Thread: Thread-13
+
+!ENTRY org.eclipse.ui 4 4 2020-08-25 19:43:26.481
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-08-25 19:43:26.485
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:31.842
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:33.057
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:33.059
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-25 19:43:33.061
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/Vitis/2019.2/data]. Thread: Worker-3: Initializing s/w repositories
