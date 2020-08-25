@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="false" key="Bomberman-partial_bit"/>
-	<item value="_ide/bitstream/QUARTZ_V3.mmi" key="Bomberman-bmmFile"/>
+	<item value="_ide/bitstream/QUARTZ_4.mmi" key="Bomberman-bmmFile"/>
 	<item value="Auto Detect" key="Bomberman-device"/>
 	<item value="false" key="Bomberman-skip_rev_check"/>
-	<item value="_ide/bitstream/QUARTZ_V3.bit" key="Bomberman-bitFile"/>
+	<item value="D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\QUARTZ_4.bit" key="Bomberman-bitFile"/>
 	<item value="Bomberman" key="programfpga.sdxproject"/>
 	<item value="Local" key="Bomberman-target"/>
-	<item value="C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT1.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\Debug\Bomberman.elf" key="Bomberman-microblaze_0-initElf"/>
+	<item value="D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\Debug\Bomberman.elf" key="Bomberman-microblaze_0-initElf"/>
 </section>

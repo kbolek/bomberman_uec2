@@ -1,0 +1,44 @@
+#ifndef PAD_DRV_H
+#define PAD_DRV_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "xil_types.h"
+
+/////////////////////////////////////////////////////
+
+#define PAD_ADDR 0xC0000000
+#define PADS_COUNT 2
+
+#define PAD1_INSERTION_BIT 5 //negowany
+#define PAD1_LEFT_BIT 3 //KEY1
+#define PAD1_UP_BIT 2 //KEY2
+#define PAD1_RIGHT_BIT 1 //KEY3
+#define PAD1_DOWN_BIT 0 //KEY4
+#define PAD1_ENTER_BIT 4 //KEY5 - enter
+
+
+//
+
+////////////////////////////////////////////////////
+
+typedef struct
+{
+	uint32_t buttons;
+	uint16_t isConnected;
+	uint16_t priorityButton;
+}PadStruct;
+
+PadStruct sPads[PADS_COUNT];
+
+////////////////////////////////////////////////////
+
+void decodePad1 (uint32_t inputData, PadStruct *Pad);
+
+void decodePad2 (uint32_t inputData, PadStruct *Pad);
+
+void PadsRead ();
+
+#endif

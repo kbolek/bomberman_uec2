@@ -1,0 +1,53 @@
+#include "xil_printf.h"
+#include "sleep.h"
+
+#include "gpu_drv.h"
+#include "pad_drv.h"
+#include "map.h"
+#include "clock.h"
+
+int main()
+{
+	//rubbish code
+    print("Hello World\n\r");
+    BlockStruct sBlock;
+    DrawMap(7,3,17,15,&sBlock);
+    sBlock.textureType=FireWall;
+    GpuPutBlockStruct (12, 8,&sBlock);
+    sBlock.textureType=FireVertical;
+    GpuPutBlockStruct (12, 9,&sBlock);
+    sBlock.textureType=FireCorner;
+    GpuPutBlockStruct (12, 10,&sBlock);
+    sBlock.textureType=FireHorizontal;
+    GpuPutBlockStruct (13, 10,&sBlock);
+
+
+    sBlock.textureType=WallFront;
+    DrawClockFrame(&sBlock);
+    //end of rubbish code
+    uint32_t cColon = GpuAsciiToChar(':');
+
+
+
+    ClockInit();
+    while(1)
+    {
+
+    	ShowTime();
+    	PadsRead();
+    	uint32_t character = GpuNumberToChar((sPads[0].buttons>>12)&0xF);
+    	GpuPutChar(0,4,(character),COLOR_WHITE);
+
+    	character = GpuNumberToChar((sPads[0].buttons>>8)&0xF);
+    	GpuPutChar(0,4,(character),COLOR_WHITE);
+
+    	character = GpuNumberToChar((sPads[0].buttons>>4)&0xF);
+    	GpuPutChar(0,4,(character),COLOR_WHITE);
+
+    	character = GpuNumberToChar((sPads[0].buttons)&0xF);
+    	GpuPutChar(0,4,(character),COLOR_WHITE);
+
+    }
+
+    return 0;
+}
