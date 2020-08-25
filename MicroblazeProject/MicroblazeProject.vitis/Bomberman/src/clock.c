@@ -41,20 +41,27 @@ void ShowTime(){
 	asTimeStruct.MinutesLSB = GpuNumberToChar(asTimeStruct.MinutesLSB);
 	asTimeStruct.MinutesMSB = GpuNumberToChar(asTimeStruct.MinutesMSB);
 
-	//DOIT::scale it (first, and second parameter) bolko will do it
+	/* FIRST WORKING VERSION IF TEST WILL FAIL
 	GpuPutChar(17,1,asTimeStruct.SecondsLSB,COLOR_WHITE);
 	GpuPutChar(16,1,asTimeStruct.SecondsMSB,COLOR_WHITE);
 	char cColon = GpuAsciiToChar(':');
 	GpuPutChar(15,1,cColon,COLOR_WHITE);
 	GpuPutChar(14,1,asTimeStruct.MinutesLSB,COLOR_WHITE);
-	GpuPutChar(13,1,asTimeStruct.MinutesMSB,COLOR_WHITE);
+	GpuPutChar(13,1,asTimeStruct.MinutesMSB,COLOR_WHITE);*/
+
+	//TEST IT!
+	GpuPutChar(ClockXpos-(CLOCK_H_LENGTH/2)+5,asClockPositionStruct.HYpos-2,asTimeStruct.SecondsLSB,COLOR_WHITE);
+	GpuPutChar(ClockXpos-(CLOCK_H_LENGTH/2)+4,asClockPositionStruct.HYpos-2,asTimeStruct.SecondsMSB,COLOR_WHITE);
+	char cColon = GpuAsciiToChar(':');
+	GpuPutChar(ClockXpos-(CLOCK_H_LENGTH/2)+3,asClockPositionStruct.HYpos-2,cColon,COLOR_WHITE);
+	GpuPutChar(ClockXpos-(CLOCK_H_LENGTH/2)+2,asClockPositionStruct.HYpos-2,asTimeStruct.MinutesLSB,COLOR_WHITE);
+	GpuPutChar(ClockXpos-(CLOCK_H_LENGTH/2)+1,asClockPositionStruct.HYpos-2,asTimeStruct.MinutesMSB,COLOR_WHITE);
+	//END TEST
 
 }
 
-
-
 void DrawClockFrame(BlockStruct *sBlock){
-	uint32_t ClockXpos = asClockPositionStruct.HXpos + (asClockPositionStruct.HLength/2);
+	ClockXpos = asClockPositionStruct.HXpos + (asClockPositionStruct.HLength/2);
 	DrawHLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos-1 ,CLOCK_H_LENGTH,sBlock);
 	DrawHLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos-CLOCK_V_LENGTH,CLOCK_H_LENGTH,sBlock);
 	DrawVLine(ClockXpos-(CLOCK_H_LENGTH/2),asClockPositionStruct.HYpos - CLOCK_V_LENGTH,CLOCK_V_LENGTH,sBlock);

@@ -1,0 +1,16 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+#include "gpu_drv.h"
+
+#define PLAYERS 2
+
+typedef struct{
+	uint32_t xPosition,
+	uint32_t yPosition,
+
+}PlayerStruct;
+
+PlayerStruct sPlayerStruct[PLAYERS];
+
+
+#endif

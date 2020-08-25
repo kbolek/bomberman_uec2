@@ -31,6 +31,7 @@ int main()
     GpuPutBlockStruct (13, 10,&sBlock);
 
 
+
     sBlock.textureType=WallFront;
     DrawClockFrame(&sBlock);
 

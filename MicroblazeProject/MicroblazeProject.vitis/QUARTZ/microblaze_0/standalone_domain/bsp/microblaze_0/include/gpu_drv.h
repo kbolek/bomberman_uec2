@@ -34,7 +34,7 @@ extern "C" {
 #define FireHorizontal 3
 #define Path 4
 #define FireWall 5
-#define WallUsual 6
+#define PathBlocked 6
 #define WallFront 7
 
 ////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ typedef struct
 	uint32_t textChar;
 }BlockStruct;
 
-////////////////////////////////////////////////////JAK KRZUCHY TU COS RUSZYSZ TO COS NIEDOBREGO CI ZROBIE
+////////////////////////////////////////////////////JAK KRZUCHY TU COS RUSZYSZ TO COS NIEDOBREGO CI ZROBIE XDXDXDXDXD OJUZ JUZ CHOMIK
 
 uint32_t GpuPutBlock (uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
 

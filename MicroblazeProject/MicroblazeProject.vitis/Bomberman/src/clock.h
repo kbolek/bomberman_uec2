@@ -1,6 +1,7 @@
 #ifndef CLOCK_H
 #define CLOCK_H
 #include "gpu_drv.h"
+#include "drawing.h"
 #include "map.h"
 #include "timers_drv.h"
 
@@ -16,6 +17,7 @@ typedef struct{
 }TimeStruct;
 
 extern TimeStruct asTimeStruct;
+uint32_t ClockXpos;
 
 void ClockInit();
 void Clock();
