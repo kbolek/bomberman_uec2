@@ -3,7 +3,7 @@
 uint32_t *Timer_Ptr = (uint32_t *) TIMER_ADDR;
 
 
-uint32_t TimerSet (uint32_t timerNumber)
+uint32_t TimerSet (uint8_t timerNumber)
 {
 	if(timerNumber >= TIMER_COUNT)
 	{
@@ -16,7 +16,7 @@ uint32_t TimerSet (uint32_t timerNumber)
 	}
 }
 
-uint32_t TimerClear (uint32_t timerNumber)
+uint32_t TimerClear (uint8_t timerNumber)
 {
 	if(timerNumber >= TIMER_COUNT)
 	{
@@ -29,7 +29,7 @@ uint32_t TimerClear (uint32_t timerNumber)
 	}
 }
 
-uint32_t TimerRestart (uint32_t timerNumber)
+uint32_t TimerRestart (uint8_t timerNumber)
 {
 	if(timerNumber >= TIMER_COUNT)
 	{
@@ -49,13 +49,13 @@ uint32_t TimerRestart (uint32_t timerNumber)
 
 void TimerClearAll()
 {
-	for (uint32_t timerCounter = 0; timerCounter < TIMER_COUNT; timerCounter++)
+	for (uint8_t timerCounter = 0; timerCounter < TIMER_COUNT; timerCounter++)
 	{
 		TimerClear(timerCounter);
 	}
 }
 
-uint32_t TimerRead (uint32_t timerNumber, uint32_t *value)
+uint32_t TimerRead (uint8_t timerNumber, uint32_t *value)
 {
 	if(timerNumber >= TIMER_COUNT)
 	{

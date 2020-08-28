@@ -4,7 +4,7 @@ TimeStruct asTimeStruct;
 
 void ClockInit(){
 	 TimerClearAll();
-	 TimerSet(0);
+	 TimerSet(CLOCK_TIMER_ID);
 	 asTimeStruct.SecondsLSB = 0;
 	 asTimeStruct.SecondsMSB = 0;
 	 asTimeStruct.MinutesLSB = 0;
@@ -17,7 +17,7 @@ void Clock(){
 	 uint32_t SecondsClear;
 	 uint32_t Minutes;
 	 uint32_t MinutesClear;
-	 TimerRead(0,&MiliSeconds);
+	 TimerRead(CLOCK_TIMER_ID,&MiliSeconds);
 
 	 Seconds = (MiliSeconds/1000);
 	 SecondsClear = Seconds%60;

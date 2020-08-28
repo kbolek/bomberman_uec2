@@ -9,17 +9,20 @@ LD_SRCS += \
 C_SRCS += \
 ../src/clock.c \
 ../src/main.c \
-../src/map.c 
+../src/map.c \
+../src/sprites.c 
 
 OBJS += \
 ./src/clock.o \
 ./src/main.o \
-./src/map.o 
+./src/map.o \
+./src/sprites.o 
 
 C_DEPS += \
 ./src/clock.d \
 ./src/main.d \
-./src/map.d 
+./src/map.d \
+./src/sprites.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

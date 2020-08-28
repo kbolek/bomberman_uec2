@@ -1,0 +1,23 @@
+#ifndef SPRITES_H
+#define SPRITES_H
+
+#include "timers_drv.h"
+
+#define SPRITES_COUNT 8
+
+typedef struct
+{
+	uint32_t x;
+	uint32_t y;
+}position;
+
+typedef struct
+{
+	position oldPosition;
+	position newPosition;
+	uint32_t spriteID;
+}sprite;
+
+sprite asSprites[SPRITES_COUNT];
+
+#endif

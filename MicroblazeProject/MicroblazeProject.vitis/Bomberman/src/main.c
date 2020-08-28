@@ -5,6 +5,7 @@
 #include "pad_drv.h"
 #include "map.h"
 #include "clock.h"
+#include "sprites.h"
 
 void putHex(uint32_t inputHex, uint32_t x, uint32_t y)
 {

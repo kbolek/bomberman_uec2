@@ -9026,3 +9026,321 @@ java.lang.Exception
 
 !ENTRY com.xilinx.sdk.utils 1 0 2020-08-25 18:36:59.034
 !MESSAGE Executed Webtalk command
+!SESSION 2020-08-28 16:26:06.447 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-08-28 16:26:12.012
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2020-08-28 16:26:26.417
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-08-28 16:26:26.446
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.072
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.072
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.078
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.079
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.079
+!MESSAGE XSCT Command: [setws D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:28.080
+!MESSAGE XSCT command with result: [setws D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis], Result: [null, ]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:31.640
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:41.791
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:41.792
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:26:41.793
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, B:/Vitis/Vitis/2019.2/data]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY org.eclipse.ui 4 4 2020-08-28 16:46:28.405
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@7d143e6e} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.632
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.703
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.747
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.749
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.750
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.752
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 16:51:25.753
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.764
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:51:25.765
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.574
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.576
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.576
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.578
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 16:57:12.578
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.579
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 16:57:12.580
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.030
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.033
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.034
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.038
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:05:15.039
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.040
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:05:15.042
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-15: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.788
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.790
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.790
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.795
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:08:02.795
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.796
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:08:02.797
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.507
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.510
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.510
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.514
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:15:46.514
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.515
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:15:46.516
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.821
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.823
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.824
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:20:02.826
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.827
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:02.828
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.907
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.910
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.910
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.912
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:20:53.912
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.913
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:20:53.914
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.491
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.494
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.495
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.498
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:23:55.498
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.499
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:23:55.500
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.407
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.409
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.409
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.414
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:27:29.414
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.415
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:27:29.416
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-25: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.604
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.607
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.608
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:28:22.611
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.612
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:28:22.613
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.084
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.086
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.086
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.091
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/QUARTZ_4.xsa D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-28 17:29:07.091
+!MESSAGE Generating MD5 hash for file: D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\QUARTZ\export\QUARTZ\sw\QUARTZ\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.092
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-28 17:29:07.093
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project

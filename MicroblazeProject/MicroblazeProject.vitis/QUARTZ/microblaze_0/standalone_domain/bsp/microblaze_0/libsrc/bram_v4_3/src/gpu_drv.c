@@ -186,7 +186,7 @@ uint32_t GpuAsciiToChar (char asciiChar)
 	}
 }
 
-uint32_t GpuPutSprite (uint32_t x, uint32_t y, Sprites eSprite, uint32_t spriteColor)
+uint32_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spriteColor)
 {
 	BlockStruct sBlock;
 
