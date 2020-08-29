@@ -1,9 +1,0 @@
-#ifndef GPU_DRV_H
-#define GPU_DRV_H
-
-//size of the clock frame
-#define CLOCK_H_LENGTH 5
-
-void DrawClockFrame(BlockStruct *sBlock);
-
-#endif

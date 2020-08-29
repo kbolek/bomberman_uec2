@@ -2467,3 +2467,180 @@ com.xilinx.sdk.utils.exception.SdxUiRuntimeException: The selected system projec
 17:27:29 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
 17:28:22 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
 17:29:07 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:01:16 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:02:56 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:03:09 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:06:58 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:07:19 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:07:59 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:13:29 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:13:59 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:14:07 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:15:32 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:16:16 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:16:26 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:16:44 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:21:50 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:22:11 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:22:33 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:23:39 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:25:22 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:25:54 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:26:05 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:26:38 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:26:58 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:26:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:27:02 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:27:47 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:29:03 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:29:16 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:29:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:29:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:29:17 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:29:52 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:30:06 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:30:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:30:08 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:30:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:39 INFO  : Jtag cable 'Digilent Basys3 210183795574A' is selected.
+11:30:39 INFO  : 'jtag frequency' command is executed.
+11:30:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:30:40 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:30:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:30:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:30:40 INFO  : System reset is completed.
+11:30:43 INFO  : 'after 3000' command is executed.
+11:30:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:30:44 INFO  : The application 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/Debug/Bomberman.elf' is downloaded to processor 'microblaze_0'.
+11:30:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0
+fpga -file D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/Debug/Bomberman.elf
+----------------End of Script----------------
+
+11:30:44 INFO  : Memory regions updated for context PA
+11:30:44 INFO  : Memory regions updated for context PA
+11:30:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:30:44 INFO  : 'con' command is executed.
+11:30:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:30:44 INFO  : Launch script is exported to file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_bomberman_system_standalone.tcl'
+11:34:29 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:34:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:34:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:34:31 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:35:11 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:35:28 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:35:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:35:30 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:37:46 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:37:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:37:47 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:38:15 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:38:29 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:38:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:38:31 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:38:41 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:38:57 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:38:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:38:58 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:39:53 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:39:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:39:55 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:40:08 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:40:22 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:40:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:40:24 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:41:13 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:41:26 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:41:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:41:27 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:41:44 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:41:58 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:41:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:41:59 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:45:18 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:45:32 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:45:47 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:46:28 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:46:33 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:46:40 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:46:54 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:46:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:46:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:46:55 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:47:01 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:47:15 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:47:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:47:17 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:47:56 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:48:11 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:48:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:48:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:48:13 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:48:48 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:48:56 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:49:09 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:49:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:49:11 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:49:26 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:49:40 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:49:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:49:41 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:50:08 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:50:21 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:50:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:50:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:50:22 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:51:42 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:51:55 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:51:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:51:56 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:53:38 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+11:53:51 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:53:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:53:53 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+11:55:40 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+11:55:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+11:55:41 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+12:04:16 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+12:04:29 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+12:04:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+12:04:30 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+12:04:56 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+12:05:11 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+12:05:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:05:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+12:05:12 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+12:10:01 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+12:10:15 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+12:10:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+12:10:16 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+12:13:06 INFO  : Disconnected from the channel tcfchan#5.

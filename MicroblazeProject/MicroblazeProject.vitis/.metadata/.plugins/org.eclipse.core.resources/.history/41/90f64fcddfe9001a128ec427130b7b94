@@ -69,7 +69,7 @@ int main()
     	}
 
     	refreshSprites();
-    	usleep(20000);
+    	usleep(1001);
     }
 
     return 0;
