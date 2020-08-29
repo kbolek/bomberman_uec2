@@ -8,19 +8,16 @@
 
 typedef struct
 {
-	uint32_t x;
-	uint32_t y;
-}position;
-
-typedef struct
-{
-	position oldPosition;
-	position newPosition;
+	uint32_t newX;
+	uint32_t newY;
+	uint32_t oldX;
+	uint32_t oldY;
 	spriteChar spriteTexture;
 	uint32_t spriteColor;
 	uint8_t assignedTimer;
 	uint32_t actionTime;
-	void (*actionFunction)();
+	uint8_t (*actionFunction)(uint8_t spriteId);
+	uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 }sprite;
 
 void initSprites ();
@@ -29,16 +26,26 @@ void refreshSprites ();
 
 void clearSprite (uint8_t spriteId);
 
-void moveSprite (uint8_t spriteId, position newPosition);
+void moveSprite (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
+
+void moveSpriteAbs (uint8_t spriteId, uint32_t newX, uint32_t newY);
 
 void setSpriteTexture (uint8_t spriteId, spriteChar spriteTexture);
+
+void setSpriteColor (uint8_t spriteId, uint32_t spriteColor);
 
 void startSpriteTimer (uint8_t spriteId, uint32_t actionTime);
 
 void stopSpriteTimer (uint8_t spriteId);
 
-void assignSpriteFunction (uint8_t spriteId, void (*actionFunction)());
+void restartSpriteTimer (uint8_t spriteId);
 
-void emptySpriteFunction ();
+void assignSpriteActionFunction (uint8_t spriteId, uint8_t (*actionFunction)(uint8_t spriteId));
+
+void assignSpriteMoveFunction (uint8_t spriteId, uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY));
+
+uint8_t emptySpriteFunction (uint8_t spriteId);
+
+uint8_t defaultMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 
 #endif

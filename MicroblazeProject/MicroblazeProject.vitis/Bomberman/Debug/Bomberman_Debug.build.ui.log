@@ -1,4 +1,4 @@
-2020-08-28T17:29:07.132060700255-17:29:07 **** Incremental Build of configuration Debug for project Bomberman ****
+2020-08-29T11:53:38.186658600255-11:53:38 **** Incremental Build of configuration Debug for project Bomberman ****
 000-make all 
 000-'Building file: ../src/sprites.c'
 000-'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@
 000-'Invoking: MicroBlaze Print Size'
 000-mb-size Bomberman.elf  |tee "Bomberman.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-   6772	    344	   3156	  10272	   2820	Bomberman.elf
+000-   9332	    344	   3476	  13152	   3360	Bomberman.elf
 000-'Finished building: Bomberman.elf.size'
 000-' '
 00255-
-17:29:07 Build Finished (took 316ms)
+11:53:38 Build Finished (took 316ms)
 

@@ -13178,3 +13178,425 @@ TRACE::2020-08-28.17:08:02::SCWMssOS::Checking the sw design at  D:/bomberman_ue
 TRACE::2020-08-28.17:08:02::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2020-08-28.17:08:02::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+LOG::2020-08-29.11:37:25::SCWPlatform::Started generating the artifacts platform QUARTZ
+TRACE::2020-08-29.11:37:25::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-08-29.11:37:25::SCWPlatform::Started generating the artifacts for system configuration QUARTZ
+LOG::2020-08-29.11:37:25::SCWSystem::Checking the domain standalone_domain
+LOG::2020-08-29.11:37:25::SCWSystem::Not a boot domain 
+LOG::2020-08-29.11:37:25::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-08-29.11:37:25::SCWDomain::Generating domain artifcats
+TRACE::2020-08-29.11:37:25::SCWMssOS::Generating standalone artifcats
+TRACE::2020-08-29.11:37:25::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-08-29.11:37:25::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:25::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:25::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:25::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:37:25::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:25::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:37:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:37:25::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:37:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:37:25::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:25::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:25::SCWMssOS::Completed writing the mss file at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp
+TRACE::2020-08-29.11:37:25::SCWMssOS::Mss edits present, copying mssfile into export location D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:25::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-08-29.11:37:25::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-08-29.11:37:25::SCWDomain::Building the domain :  standalone_domain
+TRACE::2020-08-29.11:37:25::SCWMssOS::doing bsp build ... 
+TRACE::2020-08-29.11:37:25::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make 
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:37:25::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:37:25::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-08-29.11:37:25::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FL
+TRACE::2020-08-29.11:37:25::SCWMssOS::AGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-08-29.11:37:25::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FL
+TRACE::2020-08-29.11:37:25::SCWMssOS::AGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:37:25::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:37:25::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:37:25::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:37:25::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2020-08-29.11:37:25::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILE
+TRACE::2020-08-29.11:37:25::SCWMssOS::R_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:37:25::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:37:25::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Compiling AXI_Timers..."
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-08-29.11:37:25::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FLAGS
+TRACE::2020-08-29.11:37:25::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:25::SCWMssOS::"Compiling bram"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-08-29.11:37:26::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FLAGS
+TRACE::2020-08-29.11:37:26::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Compiling cpu"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:37:26::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:37:26::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Compiling PADS_SOUND..."
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:37:26::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:37:26::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:26::SCWMssOS::"Compiling standalone";
+
+TRACE::2020-08-29.11:37:27::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-08-29.11:37:27::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2020-08-29.11:37:27::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_F
+TRACE::2020-08-29.11:37:27::SCWMssOS::LAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:37:27::SCWMssOS::"Compiling uartlite"
+
+TRACE::2020-08-29.11:37:28::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-08-29.11:37:28::SCWMssOS::Copying to export directory.
+TRACE::2020-08-29.11:37:28::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-08-29.11:37:28::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-08-29.11:37:28::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-08-29.11:37:28::SCWSystem::Completed Processing the sysconfig QUARTZ
+LOG::2020-08-29.11:37:28::SCWPlatform::Completed generating the artifacts for system configuration QUARTZ
+TRACE::2020-08-29.11:37:28::SCWPlatform::Started preparing the platform 
+TRACE::2020-08-29.11:37:28::SCWSystem::Writing the bif file for system config QUARTZ
+TRACE::2020-08-29.11:37:28::SCWSystem::dir created 
+TRACE::2020-08-29.11:37:28::SCWSystem::Writing the bif 
+TRACE::2020-08-29.11:37:28::SCWPlatform::Started writing the spfm file 
+TRACE::2020-08-29.11:37:28::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-08-29.11:37:28::SCWPlatform::Completed generating the platform
+TRACE::2020-08-29.11:37:28::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:37:28::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:37:28::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:37:28::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:37:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:37:28::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:28::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:37:28::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:28::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/QUARTZ_4.xsa",
+	"platIntHandOff":	"<platformDir>/hw/QUARTZ_4.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"c75f72556caf5aa79b604749d52e15a4",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-08-29.11:37:28::SCWPlatform::updated the xpfm file.
+TRACE::2020-08-29.11:37:28::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:37:28::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:37:28::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:37:28::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:37:28::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:37:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:37:28::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:37:28::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:37:28::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+LOG::2020-08-29.11:38:12::SCWPlatform::Started generating the artifacts platform QUARTZ
+TRACE::2020-08-29.11:38:12::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-08-29.11:38:12::SCWPlatform::Started generating the artifacts for system configuration QUARTZ
+LOG::2020-08-29.11:38:12::SCWSystem::Checking the domain standalone_domain
+LOG::2020-08-29.11:38:12::SCWSystem::Not a boot domain 
+LOG::2020-08-29.11:38:12::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-08-29.11:38:12::SCWDomain::Generating domain artifcats
+TRACE::2020-08-29.11:38:12::SCWMssOS::Generating standalone artifcats
+TRACE::2020-08-29.11:38:12::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-08-29.11:38:12::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:12::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:12::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:12::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:38:12::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:12::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:38:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:38:12::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:38:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:38:12::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:12::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:12::SCWMssOS::Completed writing the mss file at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp
+TRACE::2020-08-29.11:38:12::SCWMssOS::Mss edits present, copying mssfile into export location D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:12::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-08-29.11:38:12::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-08-29.11:38:12::SCWDomain::Building the domain :  standalone_domain
+TRACE::2020-08-29.11:38:12::SCWMssOS::doing bsp build ... 
+TRACE::2020-08-29.11:38:12::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make 
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:38:12::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:38:12::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-08-29.11:38:12::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FL
+TRACE::2020-08-29.11:38:12::SCWMssOS::AGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-08-29.11:38:12::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FL
+TRACE::2020-08-29.11:38:12::SCWMssOS::AGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:38:12::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:38:12::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-08-29.11:38:12::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPI
+TRACE::2020-08-29.11:38:12::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2020-08-29.11:38:12::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILE
+TRACE::2020-08-29.11:38:12::SCWMssOS::R_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make libs in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:38:12::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:38:12::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Compiling AXI_Timers..."
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-08-29.11:38:12::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FLAGS
+TRACE::2020-08-29.11:38:12::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:12::SCWMssOS::"Compiling bram"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-08-29.11:38:13::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_FLAGS
+TRACE::2020-08-29.11:38:13::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Compiling cpu"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:38:13::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:38:13::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Compiling PADS_SOUND..."
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-08-29.11:38:13::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER
+TRACE::2020-08-29.11:38:13::SCWMssOS::_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:13::SCWMssOS::"Compiling standalone";
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2020-08-29.11:38:15::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul" "EXTRA_COMPILER_F
+TRACE::2020-08-29.11:38:15::SCWMssOS::LAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::"Compiling uartlite"
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::Copying to export directory.
+TRACE::2020-08-29.11:38:15::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-08-29.11:38:15::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-08-29.11:38:15::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-08-29.11:38:15::SCWSystem::Completed Processing the sysconfig QUARTZ
+LOG::2020-08-29.11:38:15::SCWPlatform::Completed generating the artifacts for system configuration QUARTZ
+TRACE::2020-08-29.11:38:15::SCWPlatform::Started preparing the platform 
+TRACE::2020-08-29.11:38:15::SCWSystem::Writing the bif file for system config QUARTZ
+TRACE::2020-08-29.11:38:15::SCWSystem::dir created 
+TRACE::2020-08-29.11:38:15::SCWSystem::Writing the bif 
+TRACE::2020-08-29.11:38:15::SCWPlatform::Started writing the spfm file 
+TRACE::2020-08-29.11:38:15::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-08-29.11:38:15::SCWPlatform::Completed generating the platform
+TRACE::2020-08-29.11:38:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:38:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:38:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:38:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:38:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:38:15::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:15::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:15::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/QUARTZ_4.xsa",
+	"platIntHandOff":	"<platformDir>/hw/QUARTZ_4.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"c75f72556caf5aa79b604749d52e15a4",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-08-29.11:38:15::SCWPlatform::updated the xpfm file.
+TRACE::2020-08-29.11:38:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-08-29.11:38:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUARTZ_4.xsa
+TRACE::2020-08-29.11:38:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-08-29.11:38:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-08-29.11:38:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-08-29.11:38:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-08-29.11:38:15::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-08-29.11:38:15::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-08-29.11:38:15::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss

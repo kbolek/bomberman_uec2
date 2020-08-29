@@ -16,6 +16,12 @@ void putHex(uint32_t inputHex, uint32_t x, uint32_t y)
 	}
 }
 
+uint8_t zeroSpriteActionFunction (uint8_t spriteId)
+{
+	setSpriteColor(0,COLOR_GREEN);
+	return 1;
+}
+
 int main()
 {
 	//rubbish code
@@ -37,23 +43,31 @@ int main()
 
     ClockInit();
 
+    initSprites();
+    setSpriteTexture(0,sprTransistor);
+    setSpriteColor(0,COLOR_WHITE);
+    moveSpriteAbs(0,1,1);
+    assignSpriteActionFunction(0,zeroSpriteActionFunction);
+    startSpriteTimer(0,5000);
+
 
     while(1)
     {
     	ShowTime();
     	PadsRead();
-    	putHex(sPads[0].buttons,0,18);
-    	putHex(sPads[1].buttons,0,19);
 
     	if (isButtonPressed(&sPads[0],PAD_ENTER_BIT)!=0)
     	{
     		GpuPutBlock(0,0,COLOR_WHITE,2,0,0); //1 na pozycji 0,0
+    		moveSprite(0,1,0);
     	}
     	else
     	{
     		GpuPutBlock(0,0,COLOR_WHITE,1,0,0); //0 na pozycji 0,0
     	}
 
+    	refreshSprites();
+    	usleep(250000);
     }
 
     return 0;
