@@ -37,6 +37,13 @@ extern "C" {
 #define WallUsual 6
 #define WallFront 7
 
+#define AMPLIFIER_CHAR 57
+#define BOMB_CHAR 58
+#define CHAR_BACK_CHAR 59
+#define CHAR_FRONT_CHAR 60
+#define TRANSISTOR_CHAR 61
+#define EMPTY_CHAR 0
+
 ////////////////////////////////////////////////////
 typedef enum
 {
@@ -60,20 +67,20 @@ typedef struct
 
 ////////////////////////////////////////////////////JAK KRZUCHY TU COS RUSZYSZ TO COS NIEDOBREGO CI ZROBIE
 
-uint32_t GpuPutBlock (uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
+uint8_t GpuPutBlock (uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y);
 
-uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock);
+uint8_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock);
 
-uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock);
+uint8_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock);
 
-uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor);
+uint8_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor);
 
-uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor);
+uint8_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor);
 
-uint32_t GpuNumberToChar (uint32_t number);
+uint8_t GpuNumberToChar (uint32_t number);
 
-uint32_t GpuAsciiToChar (char asciiChar);
+uint8_t GpuAsciiToChar (char asciiChar);
 
-uint32_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spriteColor);
+uint8_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spriteColor);
 
 #endif

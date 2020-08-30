@@ -2,7 +2,7 @@
 
 uint32_t *Gpu_Ptr = (uint32_t *) GPU_BLOCK_ADDR;
 
-uint32_t GpuPutBlock(uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y)
+uint8_t GpuPutBlock(uint32_t textureInversion, uint32_t textureType, uint32_t textColor, uint32_t textChar, uint32_t x, uint32_t y)
 {
 	if((x >= RESOLUTION_X) || (y >= RESOLUTION_Y))
 	{
@@ -23,7 +23,7 @@ uint32_t GpuPutBlock(uint32_t textureInversion, uint32_t textureType, uint32_t t
 	}
 }
 
-uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock)
+uint8_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock)
 {
 	if((x >= RESOLUTION_X) || (y >= RESOLUTION_Y))
 	{
@@ -44,7 +44,7 @@ uint32_t GpuPutBlockStruct (uint32_t x, uint32_t y, BlockStruct *sBlock)
 	}
 }
 
-uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock)
+uint8_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock)
 {
 	if((x >= RESOLUTION_X) || (y >= RESOLUTION_Y))
 	{
@@ -64,7 +64,7 @@ uint32_t GpuGetBlock (uint32_t x, uint32_t y, BlockStruct *sBlock)
 	}
 }
 
-uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor)
+uint8_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textColor)
 {
 	BlockStruct sBlock;
 
@@ -81,7 +81,7 @@ uint32_t GpuPutChar (uint32_t x, uint32_t y, uint32_t textChar, uint32_t textCol
 	}
 }
 
-uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor)
+uint8_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *textColor)
 {
 	BlockStruct sBlock;
 
@@ -97,12 +97,12 @@ uint32_t GpuReadChar (uint32_t x, uint32_t y, uint32_t *textChar, uint32_t *text
 	}
 }
 
-uint32_t GpuNumberToChar (uint32_t number)
+uint8_t GpuNumberToChar (uint32_t number)
 {
 	return (number+1);
 }
 
-uint32_t GpuAsciiToChar (char asciiChar)
+uint8_t GpuAsciiToChar (char asciiChar)
 {
 	if ((asciiChar >= 48) && (asciiChar <= 57))
 	{
@@ -186,7 +186,7 @@ uint32_t GpuAsciiToChar (char asciiChar)
 	}
 }
 
-uint32_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spriteColor)
+uint8_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spriteColor)
 {
 	BlockStruct sBlock;
 
@@ -199,23 +199,23 @@ uint32_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spri
 		switch(eSprite)
 		{
 		case sprAmplifier:
-			sBlock.textChar = 57;
+			sBlock.textChar = AMPLIFIER_CHAR;
 			break;
 		case sprBomb:
-			sBlock.textChar = 58;
+			sBlock.textChar = BOMB_CHAR;
 			break;
 		case sprCharBack:
-			sBlock.textChar = 59;
+			sBlock.textChar = CHAR_BACK_CHAR;
 			break;
 		case sprCharFront:
-			sBlock.textChar = 60;
+			sBlock.textChar = CHAR_FRONT_CHAR;
 			break;
 		case sprTransistor:
-			sBlock.textChar = 61;
+			sBlock.textChar = TRANSISTOR_CHAR;
 			break;
 		//sprite 62,63 empty
 		case sprEmpty:
-			sBlock.textChar = 0;
+			sBlock.textChar = EMPTY_CHAR;
 			break;
 		default:
 			return 1;
@@ -226,3 +226,4 @@ uint32_t GpuPutSprite (uint32_t x, uint32_t y, spriteChar eSprite, uint32_t spri
 		return 0;
 	}
 }
+

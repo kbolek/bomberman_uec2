@@ -24,6 +24,20 @@ uint8_t zeroSpriteActionFunction (uint8_t spriteId)
 	return 0;
 }
 
+uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
+{
+	uint32_t newX = asSprites[spriteId].oldX + deltaX;
+	uint32_t newY = asSprites[spriteId].oldY + deltaY;
+
+	if (checkCollision(newX, newY) == NO_COLLISION)
+	{
+		asSprites[spriteId].newX = newX;
+		asSprites[spriteId].newY = newY;
+	}
+
+	return 0;
+}
+
 int main()
 {
 	//rubbish code
@@ -46,10 +60,11 @@ int main()
     ClockInit();
 
     initSprites();
-    setSpriteTexture(0,sprTransistor);
+    setSpriteTexture(0,sprCharFront);
     setSpriteColor(0,COLOR_WHITE);
     moveSpriteAbs(0,1,1);
     assignSpriteActionFunction(0,zeroSpriteActionFunction);
+    assignSpriteMoveFunction(0,playerMoveFunction);
     startSpriteTimer(0,1000);
 
 

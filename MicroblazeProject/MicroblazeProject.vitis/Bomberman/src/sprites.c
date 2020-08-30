@@ -1,7 +1,5 @@
 #include "sprites.h"
 
-sprite asSprites[SPRITES_COUNT];
-
 void initSprites ()
 {
 	asSprites[0].assignedTimer = SPRITE0_TIMER_ID;
@@ -118,6 +116,84 @@ void assignSpriteActionFunction (uint8_t spriteId, uint8_t (*actionFunction)(uin
 void assignSpriteMoveFunction (uint8_t spriteId, uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY))
 {
 	asSprites[spriteId].moveFunction = moveFunction;
+}
+
+uint8_t checkCollision (uint32_t x, uint32_t y)
+{
+	BlockStruct sBlock;
+	GpuGetBlock(x,y,&sBlock);
+
+	switch(sBlock.textChar)
+	{
+	case AMPLIFIER_CHAR:
+		return BONUS_COLLISION;
+		break;
+
+	case BOMB_CHAR:
+		return BOMB_COLLISION;
+		break;
+
+	case CHAR_BACK_CHAR:
+		return PLAYER_COLLISION;
+		break;
+
+	case CHAR_FRONT_CHAR:
+		return PLAYER_COLLISION;
+		break;
+
+	case TRANSISTOR_CHAR:
+		return BONUS_COLLISION;
+		break;
+
+	case EMPTY_CHAR:
+		break;
+
+	default:
+		return CHAR_COLLISION;
+		break;
+	}
+	//empty char here, check for block collision
+
+	switch(sBlock.textureType)
+	{
+	case Background:
+		return NO_COLLISION;
+		break;
+
+	case FireCorner:
+		return FIRE_COLLISION;
+		break;
+
+	case FireVertical:
+		return FIRE_COLLISION;
+		break;
+
+	case FireHorizontal:
+		return FIRE_COLLISION;
+		break;
+
+	case Path:
+		return NO_COLLISION;
+		break;
+
+	case FireWall:
+		return BLOCK_COLLISION;
+		break;
+
+	case WallUsual:
+		return BLOCK_COLLISION;
+		break;
+
+	case WallFront:
+		return BLOCK_COLLISION;
+		break;
+
+	default:
+		return BLOCK_COLLISION;
+		break;
+	}
+
+	return NO_COLLISION;
 }
 
 uint8_t emptySpriteFunction (uint8_t spriteId)

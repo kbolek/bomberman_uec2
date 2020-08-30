@@ -6,6 +6,15 @@
 
 #define SPRITES_COUNT 8
 
+#define NO_COLLISION (uint8_t) 0 //no sprite, nor solid block in the way
+#define BOMB_COLLISION (uint8_t) 1 //only bomb collision
+#define PLAYER_COLLISION (uint8_t) 2 //any other sprite collision
+#define BONUS_COLLISION (uint8_t) 3
+#define BLOCK_COLLISION (uint8_t) 4 //collision with block (different than background)
+#define CHAR_COLLISION (uint8_t) 5 //collision with some char
+
+#define FIRE_COLLISION (uint8_t) 6 //self explanatory
+
 typedef struct
 {
 	uint32_t newX;
@@ -19,6 +28,8 @@ typedef struct
 	uint8_t (*actionFunction)(uint8_t spriteId);
 	uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 }sprite;
+
+sprite asSprites[SPRITES_COUNT];
 
 void initSprites ();
 
@@ -43,6 +54,8 @@ void restartSpriteTimer (uint8_t spriteId);
 void assignSpriteActionFunction (uint8_t spriteId, uint8_t (*actionFunction)(uint8_t spriteId));
 
 void assignSpriteMoveFunction (uint8_t spriteId, uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY));
+
+uint8_t checkCollision (uint32_t x, uint32_t y);
 
 uint8_t emptySpriteFunction (uint8_t spriteId);
 
