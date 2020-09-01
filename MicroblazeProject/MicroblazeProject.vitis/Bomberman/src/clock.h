@@ -19,7 +19,7 @@ extern TimeStruct asTimeStruct;
 
 void ClockInit();
 void Clock();
-void DrawClockFrame(BlockStruct *sBlock);
+void DrawClockFrame();
 void ShowTime();
 
 

@@ -1,0 +1,14 @@
+#ifndef ENDGAME_INFO_H
+#define ENDGANE_INFO_H
+#include "drawing.h"
+#include "gpu_drv.h"
+
+/*Info Frame*/
+#define XPOS_EG 8
+#define YPOS EG 6
+#define WIDTH_EG 16
+#define HEIGHT_EG 12
+
+
+
+#endif

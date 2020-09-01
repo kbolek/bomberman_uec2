@@ -13,11 +13,14 @@ void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBloc
 		}
 }
 
-void DrawBackground(BlockStruct *sBlock){
-	sBlock->textureType=Background;
+void DrawBackground(){
+	BlockStruct sBlock;
+	sBlock.textureInversion=0;
+	sBlock.textChar=0;
+	sBlock.textureType=Background;
 	for(uint32_t BgCounterV=0;BgCounterV<RESOLUTION_Y;BgCounterV++){
 			for(uint32_t BgCounterH=0;BgCounterH<RESOLUTION_X;BgCounterH++){
-				GpuPutBlockStruct(BgCounterH,BgCounterV,sBlock);
+				GpuPutBlockStruct(BgCounterH,BgCounterV,&sBlock);
 			}
 		}
 

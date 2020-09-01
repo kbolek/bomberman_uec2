@@ -5,7 +5,7 @@
 
 void DrawHLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBlock);
 void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBlock);
-void DrawBackground(BlockStruct *sBlock);
+void DrawBackground();
 void DrawFrame(uint32_t Xpos, uint32_t Ypos, uint32_t Length, uint32_t Width, BlockStruct *sBlock);
 
 /*Position is set up by upper line of outside border (clock in the centre)*/
