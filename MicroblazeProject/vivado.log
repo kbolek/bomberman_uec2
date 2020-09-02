@@ -32,3 +32,5 @@ open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:26 . Memory (MB): peak 
 INFO: [Vivado 12-8231] Launching Vitis
 INFO: [Vivado 12-417] Running vitis
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 16:10:36 2020...
