@@ -1,9 +1,6 @@
 #include "map.h"
 #include "drawing.h"
 
-ClockPositionStruct asClockPositionStruct;
-
-
 /*Function always Put WallFront Block at the top and rest WallUsual*/
 void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height){
 	BlockStruct sBlock;
@@ -33,11 +30,6 @@ void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height){
 			GpuPutBlockStruct(Xpos+2+(BlockedPathCounterH*2),(Ypos+2)+(BlockedPathCounterV*2),&sBlock);
 		}
 	}
-
-	//set up clock position
-	asClockPositionStruct.HXpos=Xpos;
-	asClockPositionStruct.HYpos=Ypos;
-	asClockPositionStruct.HLength=Width;
 
 }
 

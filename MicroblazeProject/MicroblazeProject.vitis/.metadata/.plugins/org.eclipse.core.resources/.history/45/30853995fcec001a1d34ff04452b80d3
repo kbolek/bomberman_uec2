@@ -1,0 +1,10 @@
+#include "game.h"
+
+void putHex(uint32_t inputHex, uint32_t x, uint32_t y)
+{
+	for (uint8_t i = 0; i < 8; i++)
+	{
+		uint32_t character = GpuNumberToChar((inputHex>>(28-4*i))&0xF);
+		GpuPutChar(x+i,y,(character),COLOR_WHITE);
+	}
+}

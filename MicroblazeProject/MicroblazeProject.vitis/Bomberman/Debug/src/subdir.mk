@@ -10,6 +10,7 @@ C_SRCS += \
 ../src/clock.c \
 ../src/drawing.c \
 ../src/endgame_info.c \
+../src/game.c \
 ../src/main.c \
 ../src/map.c \
 ../src/sprites.c 
@@ -18,6 +19,7 @@ OBJS += \
 ./src/clock.o \
 ./src/drawing.o \
 ./src/endgame_info.o \
+./src/game.o \
 ./src/main.o \
 ./src/map.o \
 ./src/sprites.o 
@@ -26,6 +28,7 @@ C_DEPS += \
 ./src/clock.d \
 ./src/drawing.d \
 ./src/endgame_info.d \
+./src/game.d \
 ./src/main.d \
 ./src/map.d \
 ./src/sprites.d 

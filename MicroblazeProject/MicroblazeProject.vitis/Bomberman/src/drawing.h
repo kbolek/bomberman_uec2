@@ -8,13 +8,5 @@ void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBloc
 void DrawBackground();
 void DrawFrame(uint32_t Xpos, uint32_t Ypos, uint32_t Length, uint32_t Width, BlockStruct *sBlock);
 
-/*Position is set up by upper line of outside border (clock in the centre)*/
-typedef struct{
-	uint32_t HXpos;
-	uint32_t HYpos;
-	uint32_t HLength;
-}ClockPositionStruct;
-
-extern ClockPositionStruct asClockPositionStruct;
 
 #endif
