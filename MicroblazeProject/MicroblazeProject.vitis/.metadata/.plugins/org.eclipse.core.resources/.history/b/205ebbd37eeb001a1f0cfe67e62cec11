@@ -1,0 +1,18 @@
+#include "endgame_info.h"
+
+uint32_t InfoFlag;
+
+void ShowTheInfo(){
+	InfoFlag=1;
+	BlockStruct sBlockShow;
+	sBlockShow.textureInversion=0;
+	sBlockShow.textureType=Background;
+	DrawBackground(&sBlockShow); //clear the screen
+	sBlockShow.textureType=WallFront;
+	DrawFrame(XPOS_EG, YPOS_EG,WIDTH_EG,LENGTH_EG, &sBlockShow);
+
+	while(isButtonPressed(&sPads[0],PAD_ENTER_BIT)!=0){
+	PadsRead();
+
+	}
+}

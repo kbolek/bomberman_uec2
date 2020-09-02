@@ -32,16 +32,3 @@ void DrawFrame(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height, Bl
     DrawVLine(Xpos+Width-1,Ypos+1,Height-1,sBlock);
 	DrawHLine(Xpos,Ypos+Height-1,Width,sBlock);
 }
-
-void ShowTheText(uint32_t Xpos, uint32_t Ypos, char *TextChar,uint32_t TextColor){
-	size_t TextLength = strlen(TextChar);
-	uint32_t CharCounter = 0;
-
-
-	for(CharCounter=0; CharCounter<TextLength; CharCounter++){
-		uint32_t ActualTextColor = (TextColor==COLORFUL) ? ((CharCounter)%8)+1: TextColor;
-		uint8_t cActualCharacter = GpuAsciiToChar(TextChar[CharCounter]);
-		GpuPutChar(Xpos+CharCounter,Ypos,cActualCharacter,ActualTextColor);
-	}
-
-}
