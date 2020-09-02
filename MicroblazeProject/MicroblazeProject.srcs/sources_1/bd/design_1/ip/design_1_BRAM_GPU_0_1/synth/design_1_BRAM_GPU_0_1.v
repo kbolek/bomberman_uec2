@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:1.7
-// IP Revision: 2
+// IP VLNV: xilinx.com:user:BRAM_GPU:2.0
+// IP Revision: 1
 
 (* X_CORE_INFO = "BRAM_GPU,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_BRAM_GPU_0_1,BRAM_GPU,{}" *)
-(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=1.7,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=2.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BRAM_GPU_0_1 (
@@ -67,7 +67,13 @@ module design_1_BRAM_GPU_0_1 (
   bram_en_blk,
   bram_clk_blk,
   bram_rst_blk,
-  bram_we_blk
+  bram_we_blk,
+  bram_addr_txtr,
+  bram_rdata_txtr,
+  bram_en_txtr,
+  bram_clk_txtr,
+  bram_rst_txtr,
+  bram_we_txtr
 );
 
 input wire vga_clk;
@@ -89,6 +95,19 @@ output wire bram_rst_blk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_blk, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_blk WE" *)
 output wire [3 : 0] bram_we_blk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr ADDR" *)
+output wire [31 : 0] bram_addr_txtr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr DOUT" *)
+input wire [31 : 0] bram_rdata_txtr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr EN" *)
+output wire bram_en_txtr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr CLK" *)
+output wire bram_clk_txtr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr RST" *)
+output wire bram_rst_txtr;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_txtr, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 bram_txtr WE" *)
+output wire [3 : 0] bram_we_txtr;
 
   BRAM_GPU inst (
     .vga_clk(vga_clk),
@@ -102,6 +121,12 @@ output wire [3 : 0] bram_we_blk;
     .bram_en_blk(bram_en_blk),
     .bram_clk_blk(bram_clk_blk),
     .bram_rst_blk(bram_rst_blk),
-    .bram_we_blk(bram_we_blk)
+    .bram_we_blk(bram_we_blk),
+    .bram_addr_txtr(bram_addr_txtr),
+    .bram_rdata_txtr(bram_rdata_txtr),
+    .bram_en_txtr(bram_en_txtr),
+    .bram_clk_txtr(bram_clk_txtr),
+    .bram_rst_txtr(bram_rst_txtr),
+    .bram_we_txtr(bram_we_txtr)
   );
 endmodule

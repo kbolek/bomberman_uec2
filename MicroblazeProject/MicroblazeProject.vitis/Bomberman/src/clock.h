@@ -1,8 +1,8 @@
 #ifndef CLOCK_H
 #define CLOCK_H
-#include "gpu_drv.h"
+#include "drv/gpu_drv.h"
 #include "drawing.h"
-#include "timers_drv.h"
+#include "drv/timers_drv.h"
 
 //size of the clock frame
 #define CLOCK_H_LENGTH 7

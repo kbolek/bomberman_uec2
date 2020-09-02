@@ -100,3 +100,23 @@ timestamp=[2020-09-01 09:56:16], mode=WORKBENCH_START, duration=0:00:20.678, dur
 timestamp=[2020-09-01 09:56:18], mode=WORKBENCH_UI_INIT, duration=0:00:02.488, duration_ms=2488, data={editors_count=12, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
 timestamp=[2020-09-02 11:00:16], mode=WORKBENCH_START, duration=0:00:33.401, duration_ms=33401, data={}
 timestamp=[2020-09-02 11:00:19], mode=WORKBENCH_UI_INIT, duration=0:00:03.547, duration_ms=3547, data={editors_count=13, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
+timestamp=[2020-09-02 17:32:14], mode=WORKBENCH_START, duration=0:00:07.736, duration_ms=7736, data={}
+timestamp=[2020-09-02 17:32:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.792, duration_ms=792, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
+timestamp=[2020-09-02 17:32:52], mode=PLATFORM_GENERATION, duration=0:00:03.119, duration_ms=3119, data={name=QUARTZ}
+timestamp=[2020-09-02 17:36:25], mode=PLATFORM_GENERATION, duration=0:00:02.422, duration_ms=2422, data={name=QUARTZ}
+timestamp=[2020-09-02 17:36:34], mode=PLATFORM_GENERATION, duration=0:00:02.285, duration_ms=2285, data={name=QUARTZ}
+timestamp=[2020-09-02 17:37:01], mode=PLATFORM_GENERATION, duration=0:00:02.157, duration_ms=2157, data={name=QUARTZ}
+timestamp=[2020-09-02 17:37:04], mode=PLATFORM_GENERATION, duration=0:00:02.303, duration_ms=2303, data={name=QUARTZ}
+timestamp=[2020-09-02 17:37:30], mode=PLATFORM_GENERATION, duration=0:00:02.244, duration_ms=2244, data={name=QUARTZ}
+timestamp=[2020-09-02 17:38:15], mode=PLATFORM_GENERATION, duration=0:00:02.181, duration_ms=2181, data={name=QUARTZ}
+timestamp=[2020-09-02 17:39:26], mode=PLATFORM_GENERATION, duration=0:00:02.109, duration_ms=2109, data={name=QUARTZ}
+timestamp=[2020-09-02 17:42:55], mode=WORKBENCH_START, duration=0:00:08.133, duration_ms=8133, data={}
+timestamp=[2020-09-02 17:42:56], mode=WORKBENCH_UI_INIT, duration=0:00:00.594, duration_ms=594, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Bomberman,Bomberman_system,QUARTZ,RemoteSystemsTempFiles}
+timestamp=[2020-09-02 17:43:45], mode=PLATFORM_GENERATION, duration=0:00:08.811, duration_ms=8811, data={name=QUARTZ}
+timestamp=[2020-09-02 17:45:40], mode=PLATFORM_GENERATION, duration=0:00:01.195, duration_ms=1195, data={name=QUARTZ}
+timestamp=[2020-09-02 17:45:59], mode=PLATFORM_GENERATION, duration=0:00:04.009, duration_ms=4009, data={name=QUARTZ}
+timestamp=[2020-09-02 17:47:09], mode=PLATFORM_GENERATION, duration=0:00:01.138, duration_ms=1138, data={name=QUARTZ}
+timestamp=[2020-09-02 17:47:15], mode=PLATFORM_GENERATION, duration=0:00:03.922, duration_ms=3922, data={name=QUARTZ}
+timestamp=[2020-09-02 18:03:39], mode=PLATFORM_GENERATION, duration=0:00:01.137, duration_ms=1137, data={name=QUARTZ}
+timestamp=[2020-09-02 18:03:52], mode=PLATFORM_GENERATION, duration=0:00:01.134, duration_ms=1134, data={name=QUARTZ}
+timestamp=[2020-09-02 18:03:56], mode=PLATFORM_GENERATION, duration=0:00:04.005, duration_ms=4005, data={name=QUARTZ}

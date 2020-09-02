@@ -1,8 +1,8 @@
 #ifndef SPRITES_H
 #define SPRITES_H
 
-#include "timers_drv.h"
-#include "gpu_drv.h"
+#include "drv/timers_drv.h"
+#include "drv/gpu_drv.h"
 
 #define SPRITES_COUNT 8
 

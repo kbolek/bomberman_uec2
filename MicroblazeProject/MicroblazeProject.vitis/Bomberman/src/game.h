@@ -3,8 +3,8 @@
 
 #include "sleep.h"
 
-#include "gpu_drv.h"
-#include "pad_drv.h"
+#include "drv/gpu_drv.h"
+#include "drv/pad_drv.h"
 #include "map.h"
 #include "clock.h"
 #include "sprites.h"

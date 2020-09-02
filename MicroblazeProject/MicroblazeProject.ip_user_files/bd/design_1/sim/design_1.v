@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Aug 19 23:08:23 2020
+//Date        : Wed Sep  2 17:21:53 2020
 //Host        : Marysia running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -271,6 +271,7 @@ module design_1
         .bram_clk_blk(BRAM_GPU_0_bram_blk_CLK),
         .bram_en_blk(BRAM_GPU_0_bram_blk_EN),
         .bram_rdata_blk(BRAM_GPU_0_bram_blk_DOUT),
+        .bram_rdata_txtr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
         .bram_rst_blk(BRAM_GPU_0_bram_blk_RST),
         .bram_we_blk(BRAM_GPU_0_bram_blk_WE),
         .g(BRAM_GPU_0_g),

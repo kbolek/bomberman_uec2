@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 create_project -in_memory -part xc7a35tcpg236-1
@@ -64,7 +64,10 @@ set_property used_in_implementation false [get_files -all d:/bomberman_uec2/Micr
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_mdm_0_0/design_1_mdm_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_2/design_1_blk_mem_gen_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_2/design_1_axi_bram_ctrl_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/bomberman_uec2/MicroblazeProject/MicroblazeProject.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf]
 

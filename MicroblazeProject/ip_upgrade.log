@@ -1,6 +1,57 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Sep  2 17:21:48 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.7 (Rev. 2) to xilinx.com:user:BRAM_GPU:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_BRAM_GPU_0_1'.
+
+
+-Upgrade has added interface 'bram_txtr' (xilinx.com:interface:bram:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'bram_addr_txtr'
+
+-Upgrade has added port 'bram_clk_txtr'
+
+-Upgrade has added port 'bram_en_txtr'
+
+-Upgrade has added port 'bram_rdata_txtr'
+
+-Upgrade has added port 'bram_rst_txtr'
+
+-Upgrade has added port 'bram_we_txtr'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Wed Aug 19 23:08:17 2020
 | Host         : Marysia running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

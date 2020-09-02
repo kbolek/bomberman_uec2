@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>BRAM_GPU</spirit:name>
-  <spirit:version>1.7</spirit:version>
+  <spirit:version>2.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>bram_blk</spirit:name>
@@ -61,6 +61,62 @@
         </spirit:portMap>
       </spirit:portMaps>
     </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>bram_txtr</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>EN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_en_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DOUT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rdata_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rst_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_clk_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_we_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_addr_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:model>
     <spirit:views>
@@ -76,7 +132,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>61a6b1fc</spirit:value>
+            <spirit:value>02745e92</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -92,7 +148,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>61a6b1fc</spirit:value>
+            <spirit:value>02745e92</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -106,7 +162,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f64a5dae</spirit:value>
+            <spirit:value>f92e9879</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -292,6 +348,96 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addr_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rdata_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_en_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_clk_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rst_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_we_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
@@ -324,7 +470,7 @@
       <spirit:file>
         <spirit:name>src/BRAM_GPU.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_c0ec472d</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_de41c04b</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -401,7 +547,7 @@
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:TIMING_GEN:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.0</xilinx:canUpgradeFrom>
@@ -410,8 +556,9 @@
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.4</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.5</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.6</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:BRAM_GPU:1.7</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-08-19T21:08:11Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-09-02T15:21:36Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@166d61b6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
@@ -635,13 +782,30 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@66991b36_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7b36827e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@733cd375_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fceb51e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a04accb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f24e4eb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e1757c3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c40d258_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32010d56_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5261f938_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@134b15fc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30bf7c1d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7057d65c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd566e5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ceadd6f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c331223_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa996df_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5f4c7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78af758e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26940582_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9cf04b45"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0b580152"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="9daf167c"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="823ff951"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="060b867b"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a39f2cb8"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="97ec376f"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

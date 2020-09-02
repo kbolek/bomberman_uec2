@@ -1,6 +1,6 @@
 #ifndef MAP_H
 #define MAP_H
-#include "gpu_drv.h"
+#include "drv/gpu_drv.h"
 #include "xil_types.h"
 
 
