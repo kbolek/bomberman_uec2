@@ -31,6 +31,8 @@ void Clock(){
 	 asTimeStruct.MinutesLSB = MinutesClear%10;
 	 asTimeStruct.MinutesMSB = MinutesClear/10;
 
+	 asTimeStruct.MiliSeconds = MiliSeconds;
+
 }
 
 void ShowTime(){
@@ -57,6 +59,7 @@ void ShowTime(){
 void DrawClockFrame(){
 	BlockStruct sBlock;
 	sBlock.textureInversion=0;
+	sBlock.textChar=0;
 	sBlock.textureType=WallFront;
 
 	uint32_t ClockXpos = MAP_XPOS + (MAP_WIDTH/2);

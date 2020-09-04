@@ -13,6 +13,7 @@ typedef struct{
 	uint32_t SecondsMSB;
 	uint32_t MinutesLSB;
 	uint32_t MinutesMSB;
+	uint32_t MiliSeconds;
 }TimeStruct;
 
 extern TimeStruct asTimeStruct;

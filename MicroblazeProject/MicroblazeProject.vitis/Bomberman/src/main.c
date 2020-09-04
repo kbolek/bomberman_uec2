@@ -1,18 +1,12 @@
 #include "xil_printf.h"
 #include "sleep.h"
 #include "game.h"
-#include "textures.h"
+
+#define DEBOUNCING 5
 
 int main()
 {
-	GpuSetTexture(0,texture0);
-	GpuSetTexture(1,texture1);
-	GpuSetTexture(2,texture2);
-	GpuSetTexture(3,texture3);
-	GpuSetTexture(4,texture4);
-	GpuSetTexture(5,texture5);
-	GpuSetTexture(6,texture6);
-	GpuSetTexture(7,texture7);
+
 
 	InitGame();
     while(1)
@@ -31,19 +25,11 @@ int main()
     			InfoFlag=0;
     		}
 
-    		if (isButtonPressed(&sPads[0],PAD_RIGHT_BIT)!=0){
-    		    moveSprite(0,1,0);
-    		}
-    		else if (isButtonPressed(&sPads[0],PAD_LEFT_BIT)!=0){
-    			moveSprite(0,-1,0);
-    		}
-    		else if (isButtonPressed(&sPads[0],PAD_UP_BIT)!=0){
-    		    moveSprite(0,0,-1);
-    		}
-    		else if (isButtonPressed(&sPads[0],PAD_DOWN_BIT)!=0){
-    		    moveSprite(0,0,1);
-    		}
 
+    	if(asTimeStruct.MiliSeconds%DEBOUNCING == 0){
+    		ChangePlayersPosition();
+    		PutTheBomb();
+    	}
     		refreshSprites();
     		usleep(20000);
 
