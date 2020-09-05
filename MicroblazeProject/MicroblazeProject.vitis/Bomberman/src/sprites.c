@@ -71,9 +71,9 @@ void clearSprite (uint8_t spriteId)
 	stopSpriteTimer(spriteId);
 }
 
-void moveSprite (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
+uint8_t moveSprite (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
 {
-	asSprites[spriteId].moveFunction(spriteId, deltaX, deltaY);
+	return asSprites[spriteId].moveFunction(spriteId, deltaX, deltaY);
 }
 
 void moveSpriteAbs (uint8_t spriteId, uint32_t newX, uint32_t newY)
@@ -194,6 +194,19 @@ uint8_t checkCollision (uint32_t x, uint32_t y)
 	}
 
 	return NO_COLLISION;
+}
+
+uint8_t findSpriteId (uint32_t X, uint32_t Y)
+{
+	for (uint8_t currentSprite = 0; currentSprite < SPRITES_COUNT; currentSprite++)
+		{
+			if ((asSprites[currentSprite].oldX == X) && (asSprites[currentSprite].oldY == Y))
+			{
+				return currentSprite;
+			}
+		}
+
+	return 255;
 }
 
 uint8_t emptySpriteFunction (uint8_t spriteId)

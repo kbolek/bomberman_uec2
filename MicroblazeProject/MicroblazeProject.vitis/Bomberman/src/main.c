@@ -19,19 +19,19 @@ int main()
     	if(asTimeStruct.MinutesLSB == (TIME_TO_DRAW+1) && InfoFlag == 0){
     			ShowTheInfo(remis);
     	}
-    	else{
-    		if(InfoFlag==1){
+    	else
+    	{
+    		if(InfoFlag==1)
+    		{
     			InitGame();
     			InfoFlag=0;
     		}
 
-
-    	if(asTimeStruct.MiliSeconds%DEBOUNCING == 0){
     		ChangePlayersPosition();
     		PutTheBomb();
-    	}
+
     		refreshSprites();
-    		usleep(20000);
+    		usleep(1001);
 
     	}
 

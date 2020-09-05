@@ -37,7 +37,7 @@ void refreshSprites ();
 
 void clearSprite (uint8_t spriteId);
 
-void moveSprite (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
+uint8_t moveSprite (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 
 void moveSpriteAbs (uint8_t spriteId, uint32_t newX, uint32_t newY);
 
@@ -56,6 +56,8 @@ void assignSpriteActionFunction (uint8_t spriteId, uint8_t (*actionFunction)(uin
 void assignSpriteMoveFunction (uint8_t spriteId, uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY));
 
 uint8_t checkCollision (uint32_t x, uint32_t y);
+
+uint8_t findSpriteId (uint32_t X, uint32_t Y);
 
 uint8_t emptySpriteFunction (uint8_t spriteId);
 
