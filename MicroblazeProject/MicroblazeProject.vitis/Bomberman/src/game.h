@@ -10,15 +10,14 @@
 #include "sprites.h"
 #include "endgame_info.h"
 
-
 #define TIME_TO_DRAW 5
 #define MAP_XPOS 7
 #define MAP_YPOS 3
 #define MAP_WIDTH 17
 #define MAP_HEIGHT 15
-#define MAX_BOMBS 10
+#define MAX_BOMBS 6
 #define BOMB_TIME_DURATION 5
-#define BOMBS_AVAILABLE_ON_START 4
+#define BOMBS_AVAILABLE_ON_START 3
 
 #define PLAYERS 2
 #define PLAYER_ZERO_START_POSITION_X (MAP_XPOS+1)
@@ -53,6 +52,7 @@ uint8_t zeroSpriteActionFunction (uint8_t spriteId);
 uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 void InitPlayers();
 void ChangePlayersPosition();
+void PutTheBomb();
 
 
 

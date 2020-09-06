@@ -176,27 +176,41 @@ void ChangePlayersPosition(){
 		}
 		else if ((isButtonPressed(&sPads[PlayersCounter],PAD_DOWN_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_DOWN_BIT)==0)!=0){
 			moveSprite(PlayersCounter,0,1);
-			sPlayers[PlayersCounter].PlayerXPosition += 1;
+			sPlayers[PlayersCounter].PlayerYPosition += 1;
 		}
 		oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
 	}
 }
 
+/*
+
+ */
 
 //it isn't working good for now :D
 void PutTheBomb(){
+	static PadStruct oldPads[PADS_COUNT];
+
 	for(uint8_t PlayersCounter=0; PlayersCounter<PLAYERS;PlayersCounter++){
-			if((isButtonPressed(&sPads[PlayersCounter],PAD_ENTER_BIT) != 0)){
+			if((isButtonPressed(&sPads[PlayersCounter],PAD_ENTER_BIT) != 0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_ENTER_BIT)==0)){
 				if(sPlayers[PlayersCounter].BombsAvailable > 0){
-					for(uint16_t BombIndexCounter=0;sBombs[BombIndexCounter].IsPuted != 0 || BombIndexCounter<MAX_BOMBS; BombIndexCounter++){
-						setSpriteTexture(BombIndexCounter,sprBomb);
-						setSpriteColor(BombIndexCounter+2,sPlayers[PlayersCounter].PlayerColor);
-						moveSpriteAbs(BombIndexCounter+2,sPlayers[PlayersCounter].PlayerXPosition,sPlayers[PlayersCounter].PlayerYPosition);
-						sBombs[BombIndexCounter].IsPuted = 1;
-						sPlayers[PlayersCounter].BombsAvailable  -= 1;
+					//find the first free space in the sBombs array
+					for(uint16_t BombsCounter=0; BombsCounter<MAX_BOMBS ; BombsCounter++){
+							if(sBombs[BombsCounter].IsPuted == 0){
+								sBombs[BombsCounter].IsPuted = 1;
+								setSpriteTexture(BombsCounter+2,sprBomb);
+								setSpriteColor(BombsCounter+2,sPlayers[PlayersCounter].PlayerColor);
+							    moveSpriteAbs(BombsCounter+2,sPlayers[PlayersCounter].PlayerXPosition,sPlayers[PlayersCounter].PlayerYPosition);
+							    //assignSpriteMoveFunction(BombsCounter+2,playerMoveFunctionBonus);
+							    break;
+							}
+
 					}
-				}
+
+				sPlayers[PlayersCounter].BombsAvailable -= 1;
+
+			   }
 			}
+			oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
 	}
 
 }

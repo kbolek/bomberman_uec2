@@ -2,11 +2,8 @@
 #include "sleep.h"
 #include "game.h"
 
-#define DEBOUNCING 5
-
 int main()
 {
-
 
 	InitGame();
     while(1)
