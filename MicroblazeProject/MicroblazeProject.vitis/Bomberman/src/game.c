@@ -1,8 +1,6 @@
 #include "game.h"
 #include "textures.h"
 
-/*SPOKOJNIE MORDO POTEM ZROBI SIE REFAKTURYZACJE TYCH FUNKCJI TUTAJ*/
-
 void putHex(uint32_t inputHex, uint32_t x, uint32_t y)
 {
 	for (uint8_t i = 0; i < 8; i++)
@@ -161,22 +159,29 @@ void ChangePlayersPosition(){
 
 	for(uint8_t PlayersCounter=0; PlayersCounter<PLAYERS;PlayersCounter++)
 	{
-		if ((isButtonPressed(&sPads[PlayersCounter],PAD_RIGHT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_RIGHT_BIT)==0)){
-			moveSprite(PlayersCounter,1,0);
-			sPlayers[PlayersCounter].PlayerXPosition += 1;
-		}
-		else if ((isButtonPressed(&sPads[PlayersCounter],PAD_LEFT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_LEFT_BIT)==0)!=0){
-			moveSprite(PlayersCounter,-1,0);
-			sPlayers[PlayersCounter].PlayerXPosition -= 1;
-		}
-		else if ((isButtonPressed(&sPads[PlayersCounter],PAD_UP_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_UP_BIT)==0)!=0){
-			moveSprite(PlayersCounter,0,-1);
-			sPlayers[PlayersCounter].PlayerYPosition -= 1;
-		}
-		else if ((isButtonPressed(&sPads[PlayersCounter],PAD_DOWN_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_DOWN_BIT)==0)!=0){
-			moveSprite(PlayersCounter,0,1);
-			sPlayers[PlayersCounter].PlayerYPosition += 1;
-		}
+		if(isButtonPressed(&sPads[PlayersCounter],PAD_ENTER_BIT) == 0)
+			{
+				if ((isButtonPressed(&sPads[PlayersCounter],PAD_RIGHT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_RIGHT_BIT)==0))
+				{
+					moveSprite(PlayersCounter,1,0);
+					sPlayers[PlayersCounter].PlayerXPosition += 1;
+				}
+				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_LEFT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_LEFT_BIT)==0)!=0)
+				{
+					moveSprite(PlayersCounter,-1,0);
+					sPlayers[PlayersCounter].PlayerXPosition -= 1;
+				}
+				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_UP_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_UP_BIT)==0)!=0)
+				{
+					moveSprite(PlayersCounter,0,-1);
+					sPlayers[PlayersCounter].PlayerYPosition -= 1;
+				}
+				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_DOWN_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_DOWN_BIT)==0)!=0)
+				{
+					moveSprite(PlayersCounter,0,1);
+					sPlayers[PlayersCounter].PlayerYPosition += 1;
+				}
+			}
 		oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
 	}
 }
@@ -197,20 +202,18 @@ uint8_t BombActionFunction(uint8_t spriteId){
 	//DOIT: FIRE ANIMATION !!!
 
 
-
-
 	return 0;
 
 }
 
-void HandlingTheBomb(uint8_t spriteId,uint8_t playerId){
+void HandlingTheBomb(uint8_t spriteId,uint8_t playerId)
+{
 	asSprites[spriteId].PlayerId = playerId;
 	assignSpriteActionFunction(spriteId,BombActionFunction);
 	startSpriteTimer(spriteId,BOMB_TIME_DURATION*1000);
-
 }
 
-
+/* Twoja niezmieniona wersja
 void PutTheBomb(){
 	static PadStruct oldPads[PADS_COUNT];
 
@@ -238,5 +241,54 @@ void PutTheBomb(){
 			}
 			oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
 	}
+} */
 
+// Moja napisana od zera wersja
+void PutTheBomb(){
+	static PadStruct oldPads[PADS_COUNT];
+
+	for(uint8_t PlayersCounter=0; PlayersCounter<PLAYERS;PlayersCounter++)
+	{
+		if(isButtonPressed(&sPads[PlayersCounter],PAD_ENTER_BIT) != 0)
+		{
+			if ((isButtonPressed(&sPads[PlayersCounter],PAD_RIGHT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_RIGHT_BIT)==0))
+			{
+				PlaceBomb(PlayersCounter,1,0);
+			}
+			else if ((isButtonPressed(&sPads[PlayersCounter],PAD_LEFT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_LEFT_BIT)==0)!=0)
+			{
+				PlaceBomb(PlayersCounter,-1,0);
+			}
+			else if ((isButtonPressed(&sPads[PlayersCounter],PAD_UP_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_UP_BIT)==0)!=0)
+			{
+				PlaceBomb(PlayersCounter,0,-1);
+			}
+			else if ((isButtonPressed(&sPads[PlayersCounter],PAD_DOWN_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_DOWN_BIT)==0)!=0)
+			{
+				PlaceBomb(PlayersCounter,0,1);
+			}
+		}
+		oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
+	}
+}
+
+void PlaceBomb (uint8_t playerNumber, int8_t deltaX, int8_t deltaY)
+{
+	if(sPlayers[playerNumber].BombsAvailable > 0)
+	{
+		for(uint16_t BombsCounter=0; BombsCounter<MAX_BOMBS ; BombsCounter++)
+		{
+			if(sBombs[BombsCounter].IsPuted == 0)
+			{
+				sBombs[BombsCounter].IsPuted = 1;
+				setSpriteTexture(BombsCounter+2,sprBomb);
+				setSpriteColor(BombsCounter+2,sPlayers[playerNumber].PlayerColor);
+				moveSpriteAbs(BombsCounter+2,sPlayers[playerNumber].PlayerXPosition+deltaX,sPlayers[playerNumber].PlayerYPosition+deltaY);
+				HandlingTheBomb(BombsCounter+2,playerNumber);
+				sPlayers[playerNumber].BombsAvailable -= 1;
+				break;
+			}
+
+		}
+	}
 }

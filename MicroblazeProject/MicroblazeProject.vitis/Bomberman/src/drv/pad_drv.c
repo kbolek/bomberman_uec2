@@ -1,6 +1,6 @@
 #include "pad_drv.h"
 
-uint32_t *Pad_Ptr = (uint32_t *) PAD_ADDR;
+volatile uint32_t *Pad_Ptr = (uint32_t *) PAD_ADDR;
 
 void decodePad (uint32_t inputData, PadStruct *Pad)
 {

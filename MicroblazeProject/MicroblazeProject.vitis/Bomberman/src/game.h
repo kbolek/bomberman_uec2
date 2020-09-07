@@ -55,6 +55,7 @@ void PutTheBomb();
 uint8_t BombActionFunction(uint8_t spriteId);
 void HandlingTheBomb(uint8_t spriteId,uint8_t playerId);
 
+void PlaceBomb (uint8_t playerNumber, int8_t deltaX, int8_t deltaY);
 
 
 #endif

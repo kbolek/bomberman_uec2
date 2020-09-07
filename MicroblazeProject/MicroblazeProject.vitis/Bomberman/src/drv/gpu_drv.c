@@ -1,7 +1,7 @@
 #include "gpu_drv.h"
 
-uint32_t *Gpu_Ptr = (uint32_t *) GPU_BLOCK_ADDR;
-uint32_t *Textures_Ptr = (uint32_t *) GPU_TEX_ADDR;
+volatile uint32_t *Gpu_Ptr = (uint32_t *) GPU_BLOCK_ADDR;
+volatile uint32_t *Textures_Ptr = (uint32_t *) GPU_TEX_ADDR;
 
 
 void GpuSetTexture (uint8_t textureNumber, uint16_t *texturePtr)

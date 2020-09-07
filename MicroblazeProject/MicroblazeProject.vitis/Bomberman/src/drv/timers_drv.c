@@ -1,7 +1,6 @@
 #include "timers_drv.h"
 
-uint32_t *Timer_Ptr = (uint32_t *) TIMER_ADDR;
-
+volatile uint32_t *Timer_Ptr = (uint32_t *) TIMER_ADDR;
 
 uint32_t TimerSet (uint8_t timerNumber)
 {
