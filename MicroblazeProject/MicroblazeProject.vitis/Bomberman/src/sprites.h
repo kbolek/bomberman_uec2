@@ -12,6 +12,7 @@
 #define BONUS_COLLISION (uint8_t) 3
 #define BLOCK_COLLISION (uint8_t) 4 //collision with block (different than background)
 #define CHAR_COLLISION (uint8_t) 5 //collision with some char
+#define WALL_COLLISION (uint8_t) 7 //collision with FireWall
 
 #define FIRE_COLLISION (uint8_t) 6 //self explanatory
 

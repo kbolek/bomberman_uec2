@@ -43,6 +43,14 @@ typedef struct{
 	uint8_t  IsPuted;
 } BombStruct;
 
+typedef enum
+{
+	WAITING,
+	EXPLODING,
+	BURNING,
+	DESTROYING
+}BombStates;
+
 BombStruct sBombs[MAX_BOMBS];
 
 void InitGame();
@@ -56,6 +64,6 @@ uint8_t BombActionFunction(uint8_t spriteId);
 void HandlingTheBomb(uint8_t spriteId,uint8_t playerId);
 
 void PlaceBomb (uint8_t playerNumber, int8_t deltaX, int8_t deltaY);
-
+void CrossPlacer (uint32_t centerX, uint32_t centerY, uint32_t inversion, int8_t distance);
 
 #endif

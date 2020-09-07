@@ -1,6 +1,8 @@
 #include "game.h"
 #include "textures.h"
 
+BombStates eBombStates [SPRITES_COUNT];
+
 void putHex(uint32_t inputHex, uint32_t x, uint32_t y)
 {
 	for (uint8_t i = 0; i < 8; i++)
@@ -27,6 +29,8 @@ uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
 	{
 		asSprites[spriteId].newX = newX;
 		asSprites[spriteId].newY = newY;
+		sPlayers[spriteId].PlayerXPosition = newX;
+		sPlayers[spriteId].PlayerYPosition = newY;
 		return 0;
 	}
 	else
@@ -123,23 +127,6 @@ void InitGame(){
 
 	    DrawMap(MAP_XPOS,MAP_YPOS,MAP_WIDTH,MAP_HEIGHT);
 
-
-	    /*rubbish code*/
-
-	    BlockStruct sBlock;
-	  	sBlock.textChar=0;
-	  	sBlock.textureInversion=0;
-	    sBlock.textureType=FireWall;
-	    GpuPutBlockStruct (12, 8,&sBlock);
-	    sBlock.textureType=FireVertical;
-	    GpuPutBlockStruct (12, 9,&sBlock);
-	    sBlock.textureType=FireCorner;
-	    GpuPutBlockStruct (12, 10,&sBlock);
-	    sBlock.textureType=FireHorizontal;
-	    GpuPutBlockStruct (13, 10,&sBlock);
-	    /*end of rubbish code*/
-
-
 	    DrawClockFrame();
 	    ClockInit();
 
@@ -151,6 +138,7 @@ void InitGame(){
 	    /*set up the bombs*/
 	    for(uint16_t BombIndexCounter = 0;BombIndexCounter < MAX_BOMBS; BombIndexCounter++){
 	    	sBombs[BombIndexCounter].IsPuted=0;
+	    	eBombStates[BombIndexCounter] = WAITING;
 	    }
 }
 
@@ -164,22 +152,18 @@ void ChangePlayersPosition(){
 				if ((isButtonPressed(&sPads[PlayersCounter],PAD_RIGHT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_RIGHT_BIT)==0))
 				{
 					moveSprite(PlayersCounter,1,0);
-					sPlayers[PlayersCounter].PlayerXPosition += 1;
 				}
 				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_LEFT_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_LEFT_BIT)==0)!=0)
 				{
 					moveSprite(PlayersCounter,-1,0);
-					sPlayers[PlayersCounter].PlayerXPosition -= 1;
 				}
 				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_UP_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_UP_BIT)==0)!=0)
 				{
 					moveSprite(PlayersCounter,0,-1);
-					sPlayers[PlayersCounter].PlayerYPosition -= 1;
 				}
 				else if ((isButtonPressed(&sPads[PlayersCounter],PAD_DOWN_BIT)!=0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_DOWN_BIT)==0)!=0)
 				{
 					moveSprite(PlayersCounter,0,1);
-					sPlayers[PlayersCounter].PlayerYPosition += 1;
 				}
 			}
 		oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
@@ -189,21 +173,52 @@ void ChangePlayersPosition(){
 
 
 
-uint8_t BombActionFunction(uint8_t spriteId){
+uint8_t BombActionFunction(uint8_t spriteId)
+{
 	uint8_t PlayerId = asSprites[spriteId].PlayerId;
-	uint32_t PlayerxPos = sPlayers[PlayerId].PlayerXPosition;
-	uint32_t PlayerYPos = sPlayers[PlayerId].PlayerXPosition;
-	uint8_t PlayerFirePower = sPlayers[PlayerId].FirePower;
+//	uint32_t PlayerxPos = sPlayers[PlayerId].PlayerXPosition;
+//	uint32_t PlayerYPos = sPlayers[PlayerId].PlayerXPosition;
+//	uint8_t PlayerFirePower = sPlayers[PlayerId].FirePower;
 
-	sBombs[spriteId].IsPuted = 0;
-	clearSprite(spriteId);
-	sPlayers[PlayerId].BombsAvailable += 1;
+	switch (eBombStates[spriteId])
+	{
+		case WAITING:
+			eBombStates[spriteId] = EXPLODING;
+			asSprites[spriteId].actionTime = 250;
+			return 0;
+			break;
 
-	//DOIT: FIRE ANIMATION !!!
+		case EXPLODING:
+			CrossPlacer(asSprites[spriteId].oldX,asSprites[spriteId].oldY,0,5);
+			asSprites[spriteId].actionTime = 250;
+			eBombStates[spriteId] = BURNING;
+			return 0;
+			break;
 
+		case BURNING:
+			CrossPlacer(asSprites[spriteId].oldX,asSprites[spriteId].oldY,1,5);
+			asSprites[spriteId].actionTime = 250;
+			eBombStates[spriteId] = DESTROYING;
+			return 0;
+			break;
 
-	return 0;
+		case DESTROYING:
+			CrossPlacer(asSprites[spriteId].oldX,asSprites[spriteId].oldY,0,-5);
+			asSprites[spriteId].actionTime = BOMB_TIME_DURATION*1000;
+			eBombStates[spriteId] = WAITING;
 
+			sBombs[spriteId-2].IsPuted = 0;
+			clearSprite(spriteId);
+			sPlayers[PlayerId].BombsAvailable += 1;
+			return 1;
+			break;
+
+		default:
+			asSprites[spriteId].actionTime = BOMB_TIME_DURATION*1000;
+			eBombStates[spriteId] = WAITING;
+			return 0;
+			break;
+	}
 }
 
 void HandlingTheBomb(uint8_t spriteId,uint8_t playerId)
@@ -278,7 +293,7 @@ void PlaceBomb (uint8_t playerNumber, int8_t deltaX, int8_t deltaY)
 	{
 		for(uint16_t BombsCounter=0; BombsCounter<MAX_BOMBS ; BombsCounter++)
 		{
-			if(sBombs[BombsCounter].IsPuted == 0)
+			if ((sBombs[BombsCounter].IsPuted == 0) && (checkCollision(sPlayers[playerNumber].PlayerXPosition+deltaX,sPlayers[playerNumber].PlayerYPosition+deltaY) == NO_COLLISION))
 			{
 				sBombs[BombsCounter].IsPuted = 1;
 				setSpriteTexture(BombsCounter+2,sprBomb);
@@ -291,4 +306,119 @@ void PlaceBomb (uint8_t playerNumber, int8_t deltaX, int8_t deltaY)
 
 		}
 	}
+}
+
+void CrossPlacer (uint32_t centerX, uint32_t centerY, uint32_t inversion, int8_t distance)
+{
+	BlockStruct sBlock;
+
+	GpuGetBlock(centerX, centerY, &sBlock);
+	sBlock.textureInversion = inversion;
+	if (distance < 0)
+	{
+		sBlock.textureType = Path;
+	}
+	else
+	{
+		sBlock.textureType = FireCorner;
+	}
+	GpuPutBlockStruct(centerX, centerY, &sBlock);
+
+
+	for (int8_t dxPlus = 1; dxPlus < abs(distance); dxPlus++)
+	{
+		GpuGetBlock(centerX+dxPlus, centerY, &sBlock);
+		sBlock.textureInversion = inversion;
+
+		if (distance < 0)
+		{
+			sBlock.textureType = Path;
+		}
+		else
+		{
+			sBlock.textureType = FireHorizontal;
+		}
+
+		if (checkCollision(centerX+dxPlus, centerY) == BLOCK_COLLISION)
+		{
+			break;
+		}
+		else
+		{
+			GpuPutBlockStruct(centerX+dxPlus, centerY, &sBlock);
+		}
+	}
+
+	for (int8_t dxMinus = 1; dxMinus < abs(distance); dxMinus++)
+	{
+		GpuGetBlock(centerX-dxMinus, centerY, &sBlock);
+		sBlock.textureInversion = inversion;
+
+		if (distance < 0)
+		{
+			sBlock.textureType = Path;
+		}
+		else
+		{
+			sBlock.textureType = FireHorizontal;
+		}
+
+		if (checkCollision(centerX-dxMinus, centerY) == BLOCK_COLLISION)
+		{
+			break;
+		}
+		else
+		{
+			GpuPutBlockStruct(centerX-dxMinus, centerY, &sBlock);
+		}
+	}
+
+	for (int8_t dyPlus = 1; dyPlus < abs(distance); dyPlus++)
+	{
+		GpuGetBlock(centerX, centerY+dyPlus, &sBlock);
+		sBlock.textureInversion = inversion;
+
+		if (distance < 0)
+		{
+			sBlock.textureType = Path;
+		}
+		else
+		{
+			sBlock.textureType = FireHorizontal;
+		}
+
+		if (checkCollision(centerX, centerY+dyPlus) == BLOCK_COLLISION)
+		{
+			break;
+		}
+		else
+		{
+			GpuPutBlockStruct(centerX, centerY+dyPlus, &sBlock);
+		}
+	}
+
+	for (int8_t dyMinus = 1; dyMinus < abs(distance); dyMinus++)
+	{
+		GpuGetBlock(centerX, centerY-dyMinus, &sBlock);
+		sBlock.textureInversion = inversion;
+
+		if (distance < 0)
+		{
+			sBlock.textureType = Path;
+		}
+		else
+		{
+			sBlock.textureType = FireHorizontal;
+		}
+
+		if (checkCollision(centerX, centerY-dyMinus) == BLOCK_COLLISION)
+		{
+			break;
+		}
+		else
+		{
+			GpuPutBlockStruct(centerX, centerY-dyMinus, &sBlock);
+		}
+	}
+
 }

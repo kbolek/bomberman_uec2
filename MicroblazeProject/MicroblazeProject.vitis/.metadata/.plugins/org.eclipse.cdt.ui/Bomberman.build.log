@@ -1,18 +1,12 @@
-19:33:52 **** Incremental Build of configuration Debug for project Bomberman ****
+20:35:02 **** Incremental Build of configuration Debug for project Bomberman ****
 make all 
 'Building file: ../src/game.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game.d" -MT"src/game.o" -o "src/game.o" "../src/game.c"
-../src/game.c: In function 'BombActionFunction':
-../src/game.c:196:10: warning: unused variable 'PlayerFirePower' [-Wunused-variable]
-  uint8_t PlayerFirePower = sPlayers[PlayerId].FirePower;
-          ^~~~~~~~~~~~~~~
-../src/game.c:195:11: warning: unused variable 'PlayerYPos' [-Wunused-variable]
-  uint32_t PlayerYPos = sPlayers[PlayerId].PlayerXPosition;
-           ^~~~~~~~~~
-../src/game.c:194:11: warning: unused variable 'PlayerxPos' [-Wunused-variable]
-  uint32_t PlayerxPos = sPlayers[PlayerId].PlayerXPosition;
-           ^~~~~~~~~~
+../src/game.c: In function 'CrossPlacer':
+../src/game.c:328:35: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  for (int8_t dxPlus = 1; dxPlus < abs(distance); dxPlus++)
+                                   ^~~
 'Finished building: ../src/game.c'
 ' '
 'Building target: Bomberman.elf'
@@ -23,9 +17,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/bomberman_uec2/MicroblazeProject/Microb
 'Invoking: MicroBlaze Print Size'
 mb-size Bomberman.elf  |tee "Bomberman.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  14120	  16732	   3604	  34456	   8698	Bomberman.elf
+  16060	  16732	   3640	  36432	   8e50	Bomberman.elf
 'Finished building: Bomberman.elf.size'
 ' '
 
-19:33:52 Build Finished (took 417ms)
+20:35:02 Build Finished (took 418ms)
 

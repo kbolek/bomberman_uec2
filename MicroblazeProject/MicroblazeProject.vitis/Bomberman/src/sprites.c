@@ -177,7 +177,7 @@ uint8_t checkCollision (uint32_t x, uint32_t y)
 		break;
 
 	case FireWall:
-		return BLOCK_COLLISION;
+		return WALL_COLLISION;
 		break;
 
 	case WallUsual:
