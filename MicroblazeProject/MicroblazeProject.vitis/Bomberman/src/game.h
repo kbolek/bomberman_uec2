@@ -40,7 +40,6 @@ PlayerStruct sPlayers[PLAYERS];
 typedef struct{
 	uint32_t BombXPosition;
 	uint32_t BombYPosition;
-	uint8_t  BombTimeDuration;
 	uint8_t  IsPuted;
 } BombStruct;
 
@@ -53,7 +52,8 @@ uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 void InitPlayers();
 void ChangePlayersPosition();
 void PutTheBomb();
-
+uint8_t BombActionFunction(uint8_t spriteId);
+void HandlingTheBomb(uint8_t spriteId,uint8_t playerId);
 
 
 

@@ -153,7 +153,6 @@ void InitGame(){
 	    /*set up the bombs*/
 	    for(uint16_t BombIndexCounter = 0;BombIndexCounter < MAX_BOMBS; BombIndexCounter++){
 	    	sBombs[BombIndexCounter].IsPuted=0;
-	    	sBombs[BombIndexCounter].BombTimeDuration=BOMB_TIME_DURATION;
 	    }
 }
 
@@ -182,11 +181,36 @@ void ChangePlayersPosition(){
 	}
 }
 
-/*
 
- */
 
-//it isn't working good for now :D
+
+uint8_t BombActionFunction(uint8_t spriteId){
+	uint8_t PlayerId = asSprites[spriteId].PlayerId;
+	uint32_t PlayerxPos = sPlayers[PlayerId].PlayerXPosition;
+	uint32_t PlayerYPos = sPlayers[PlayerId].PlayerXPosition;
+	uint8_t PlayerFirePower = sPlayers[PlayerId].FirePower;
+
+	sBombs[spriteId].IsPuted = 0;
+	clearSprite(spriteId);
+	sPlayers[PlayerId].BombsAvailable += 1;
+
+	//DOIT: FIRE ANIMATION !!!
+
+
+
+
+	return 0;
+
+}
+
+void HandlingTheBomb(uint8_t spriteId,uint8_t playerId){
+	asSprites[spriteId].PlayerId = playerId;
+	assignSpriteActionFunction(spriteId,BombActionFunction);
+	startSpriteTimer(spriteId,BOMB_TIME_DURATION*1000);
+
+}
+
+
 void PutTheBomb(){
 	static PadStruct oldPads[PADS_COUNT];
 
@@ -200,7 +224,9 @@ void PutTheBomb(){
 								setSpriteTexture(BombsCounter+2,sprBomb);
 								setSpriteColor(BombsCounter+2,sPlayers[PlayersCounter].PlayerColor);
 							    moveSpriteAbs(BombsCounter+2,sPlayers[PlayersCounter].PlayerXPosition,sPlayers[PlayersCounter].PlayerYPosition);
-							    //assignSpriteMoveFunction(BombsCounter+2,playerMoveFunctionBonus);
+							    HandlingTheBomb(BombsCounter+2,PlayersCounter);
+
+
 							    break;
 							}
 

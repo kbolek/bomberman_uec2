@@ -24,6 +24,7 @@ typedef struct
 	spriteChar spriteTexture;
 	uint32_t spriteColor;
 	uint8_t assignedTimer;
+	uint8_t PlayerId; //If you are unhappy with that give it as the additional argument to actionFunction
 	uint32_t actionTime;
 	uint8_t (*actionFunction)(uint8_t spriteId);
 	uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY);
