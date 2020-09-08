@@ -228,37 +228,7 @@ void HandlingTheBomb(uint8_t spriteId,uint8_t playerId)
 	startSpriteTimer(spriteId,BOMB_TIME_DURATION*1000);
 }
 
-/* Twoja niezmieniona wersja
-void PutTheBomb(){
-	static PadStruct oldPads[PADS_COUNT];
 
-	for(uint8_t PlayersCounter=0; PlayersCounter<PLAYERS;PlayersCounter++){
-			if((isButtonPressed(&sPads[PlayersCounter],PAD_ENTER_BIT) != 0) && (isButtonPressed(&oldPads[PlayersCounter],PAD_ENTER_BIT)==0)){
-				if(sPlayers[PlayersCounter].BombsAvailable > 0){
-					//find the first free space in the sBombs array
-					for(uint16_t BombsCounter=0; BombsCounter<MAX_BOMBS ; BombsCounter++){
-							if(sBombs[BombsCounter].IsPuted == 0){
-								sBombs[BombsCounter].IsPuted = 1;
-								setSpriteTexture(BombsCounter+2,sprBomb);
-								setSpriteColor(BombsCounter+2,sPlayers[PlayersCounter].PlayerColor);
-							    moveSpriteAbs(BombsCounter+2,sPlayers[PlayersCounter].PlayerXPosition,sPlayers[PlayersCounter].PlayerYPosition);
-							    HandlingTheBomb(BombsCounter+2,PlayersCounter);
-
-
-							    break;
-							}
-
-					}
-
-				sPlayers[PlayersCounter].BombsAvailable -= 1;
-
-			   }
-			}
-			oldPads[PlayersCounter].buttons = sPads[PlayersCounter].buttons;
-	}
-} */
-
-// Moja napisana od zera wersja
 void PutTheBomb(){
 	static PadStruct oldPads[PADS_COUNT];
 
