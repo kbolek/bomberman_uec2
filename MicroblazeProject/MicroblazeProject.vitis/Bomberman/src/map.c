@@ -1,6 +1,30 @@
 #include "map.h"
 
+/*WARNING: IT HAVE TO BE CHANGED IF YOU WANT TO CHANGE THE MAP SIZE*/
+uint32_t Bonuses[16][3] = {
+	/*SET UP EIGHT BOMBS */
+	{MAP_XPOS+15,MAP_YPOS+8,sprBomb},
+	{MAP_XPOS+11,MAP_YPOS+7,sprBomb},
+	{MAP_XPOS+6,MAP_YPOS+11,sprBomb},
+	{MAP_XPOS+7,MAP_YPOS+5,sprBomb},
+	{MAP_XPOS+13,MAP_YPOS+3,sprBomb},
+	{MAP_XPOS+1,MAP_YPOS+5,sprBomb},
+	{MAP_XPOS+3,MAP_YPOS+8,sprBomb},
+	{MAP_XPOS+4,MAP_YPOS+13,sprBomb},
+	//END OF BOMBS
 
+	/*SET UP SIX AMPLIFIERS*/
+	{MAP_XPOS+2,MAP_YPOS+13,sprAmplifier},
+	{MAP_XPOS+5,MAP_YPOS+7,sprAmplifier},
+	{MAP_XPOS+8,MAP_YPOS+3,sprAmplifier},
+	{MAP_XPOS+9,MAP_YPOS+7,sprAmplifier},
+	{MAP_XPOS+11,MAP_YPOS+10,sprAmplifier},
+	{MAP_XPOS+14,MAP_YPOS+7,sprAmplifier},
+
+	/*SET UP 2 TRANSISTORS*/
+	{MAP_XPOS+6,MAP_YPOS+2,sprTransistor},
+	{MAP_XPOS+8,MAP_YPOS+13,sprTransistor}
+	};
 
 void DrawFireWalls(){
 	//WARNING: IT HAVE TO BE CHANGED IF YOU WANT TO CHANGE THE MAP SIZE
@@ -36,77 +60,58 @@ void DrawFireWalls(){
 
 
 uint32_t CheckBonuses(uint32_t Xpos, uint32_t Ypos){
-
-	uint32_t Bonuses[17][3] = {
-				/*SET UP EIGHT BOMBS */
-				{MAP_XPOS+15,MAP_YPOS+8,sprBomb},
-				{MAP_XPOS+11,MAP_YPOS+7,sprBomb},
-				{MAP_XPOS+6,MAP_YPOS+11,sprBomb},
-				{MAP_XPOS+7,MAP_YPOS+5,sprBomb},
-				{MAP_XPOS+13,MAP_YPOS+3,sprBomb},
-				{MAP_XPOS+1,MAP_YPOS+5,sprBomb},
-				{MAP_XPOS+3,MAP_YPOS+8,sprBomb},
-				{MAP_XPOS+4,MAP_YPOS+13,sprBomb},
-				//END OF BOMBS
-
-				/*SET UP SIX AMPLIFIERS*/
-				{MAP_XPOS+2,MAP_YPOS+13,sprAmplifier},
-				{MAP_XPOS+5,MAP_YPOS+7,sprAmplifier},
-				{MAP_XPOS+8,MAP_YPOS+3,sprAmplifier},
-				{MAP_XPOS+9,MAP_YPOS+7,sprAmplifier},
-				{MAP_XPOS+11,MAP_YPOS+10,sprAmplifier},
-				{MAP_XPOS+14,MAP_YPOS+7,sprAmplifier},
-
-				/*SET UP 2 TRANSISTORS*/
-				{MAP_XPOS+6,MAP_YPOS+2,sprTransistor},
-				{MAP_XPOS+8,MAP_YPOS+13,sprTransistor}
-			};
-
-	spriteChar WhichBonus;
-	/*WARNING: IT HAVE TO BE CHANGED IF YOU WANT TO CHANGE THE MAP SIZE*/
 	for(uint16_t BonusesCounter=0; BonusesCounter<16; BonusesCounter++){
-		if(Bonuses[BonusesCounter][0] == Xpos && Bonuses[BonusesCounter][1] == Ypos){
-			WhichBonus = Bonuses[BonusesCounter][2];
-			return WhichBonus;
+			if(Bonuses[BonusesCounter][0] == Xpos && Bonuses[BonusesCounter][1] == Ypos){
+				return IsBonusHere;
+			}
 		}
-		else{
-			return 20;
-		}
-	}
-
-	return 20;
+	return 0;
 }
 
 void PutTheBonus(uint32_t Xpos, uint32_t Ypos){
-	spriteChar WhichBonus = CheckBonuses(Xpos,Ypos);
-	if(WhichBonus==sprAmplifier || WhichBonus == sprBomb || WhichBonus == sprTransistor){
-		GpuPutSprite(Xpos,Ypos,WhichBonus,COLOR_MAGENTA);
+	for(uint16_t BonusesCounter=0; BonusesCounter<16; BonusesCounter++){
+		if(Bonuses[BonusesCounter][0] == Xpos && Bonuses[BonusesCounter][1] == Ypos){
+			uint32_t WhichBonus = Bonuses[BonusesCounter][2];
+			GpuPutSprite(Xpos,Ypos,WhichBonus,COLOR_MAGENTA);
+		}
+	}
+}
+
+void ShowCollectedBonuses(uint8_t spriteId,uint8_t playerNumber){
+	//Draw Available Bombs
+	static uint8_t PlayerFirst;
+	static uint8_t PlayerSecond;
+
+	if(playerNumber == 0){
+		moveSpriteAbs(spriteId,MAP_XPOS+MAP_WIDTH+2,MAP_YPOS+PlayerFirst);
+		PlayerFirst++;
+	}
+	else if(playerNumber == 1){
+		moveSpriteAbs(spriteId,MAP_XPOS-2,MAP_YPOS+PlayerSecond);
+		PlayerSecond++;
 	}
 
 }
 
-
-
 void PickUpTheBonus(uint32_t Xpos, uint32_t Ypos,uint8_t playerNumber,uint8_t spriteId){
-	uint32_t WhichBonus = CheckBonuses(Xpos,Ypos);
-	switch(WhichBonus){
-		case sprAmplifier:
-			//YOU CAN DO AN APPRIOPRIATE ANIMATION INSTEAD OF CLEAR SPRITE
-			clearSprite(spriteId);
-			sPlayers[playerNumber].FirePower += 1;
-			break;
-		case sprBomb: //bomb
-			clearSprite(spriteId);
-			sPlayers[playerNumber].BombsAvailable += 1;
-			break;
-		case sprTransistor: //transistor
-			clearSprite(spriteId);
-			sPlayers[playerNumber].CanMoveBomb += 1;
-			break;
-		case 6:
-			break;
+	for(uint16_t BonusesCounter=0; BonusesCounter<16; BonusesCounter++){
+			if(Bonuses[BonusesCounter][0] == Xpos && Bonuses[BonusesCounter][1] == Ypos){
+				uint32_t WhichBonus = Bonuses[BonusesCounter][2];
+				switch(WhichBonus){
+						case sprAmplifier:
+							//YOU CAN DO AN APPRIOPRIATE ANIMATION INSTEAD OF CLEAR SPRITE
+							sPlayers[playerNumber].FirePower += 1;
+							break;
+						case sprBomb: //bomb
+							sPlayers[playerNumber].BombsAvailable += 1;
+							break;
+						case sprTransistor: //transistor
+							sPlayers[playerNumber].CanMoveBomb += 1;
+							break;
+					}
+				ShowCollectedBonuses(spriteId,playerNumber);
+			}
 	}
-
 
 
 }

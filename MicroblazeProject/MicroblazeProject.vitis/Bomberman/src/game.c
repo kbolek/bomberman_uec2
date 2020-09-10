@@ -20,6 +20,8 @@ uint8_t zeroSpriteActionFunction (uint8_t spriteId)
 	return 0;
 }
 
+
+
 uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
 {
 	uint32_t newX = asSprites[spriteId].oldX + deltaX;
@@ -46,8 +48,14 @@ uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
 			sPlayers[spriteId].PlayerYPosition = newY;
 			return 0;
 			break;
+
+		case BONUS_COLLISION:
+				PickUpTheBonus(newX,newY,spriteId,BonusSpriteId);
+				break;
+
+
 		case BOMB_COLLISION:
-			if(CheckBonuses(newX,newY) != 0 ){
+			if(CheckBonuses(newX,newY) == IsBonusHere && asSprites[BonusSpriteId].spriteTexture==sprBomb){
 				PickUpTheBonus(newX,newY,spriteId,BonusSpriteId);
 			}
 			else{
@@ -63,12 +71,11 @@ uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
 					}
 			}
 			break;
-		case BONUS_COLLISION:
-			PickUpTheBonus(newX,newY,spriteId,BonusSpriteId);
-			break;
 
+		default:
+			return 1;
 	}
-	return 1;
+
 }
 
 uint8_t playerMoveFunctionBonus (uint8_t spriteId, int8_t deltaX, int8_t deltaY)
