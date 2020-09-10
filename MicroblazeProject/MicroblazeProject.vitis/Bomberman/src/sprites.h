@@ -4,7 +4,7 @@
 #include "drv/timers_drv.h"
 #include "drv/gpu_drv.h"
 
-#define SPRITES_COUNT 8
+#define SPRITES_COUNT 20
 
 #define NO_COLLISION (uint8_t) 0 //no sprite, nor solid block in the way
 #define BOMB_COLLISION (uint8_t) 1 //only bomb collision
@@ -13,7 +13,6 @@
 #define BLOCK_COLLISION (uint8_t) 4 //collision with block (different than background)
 #define CHAR_COLLISION (uint8_t) 5 //collision with some char
 #define WALL_COLLISION (uint8_t) 7 //collision with FireWall
-
 #define FIRE_COLLISION (uint8_t) 6 //self explanatory
 
 typedef struct
@@ -25,7 +24,7 @@ typedef struct
 	spriteChar spriteTexture;
 	uint32_t spriteColor;
 	uint8_t assignedTimer;
-	uint8_t PlayerId; //If you are unhappy with that give it as the additional argument to actionFunction
+	uint8_t PlayerId;
 	uint32_t actionTime;
 	uint8_t (*actionFunction)(uint8_t spriteId);
 	uint8_t (*moveFunction)(uint8_t spriteId, int8_t deltaX, int8_t deltaY);

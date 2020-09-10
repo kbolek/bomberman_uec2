@@ -21,6 +21,18 @@ extern "C" {
 #define SPRITE5_TIMER_ID 6
 #define SPRITE6_TIMER_ID 7
 #define SPRITE7_TIMER_ID 8
+#define SPRITE8_TIMER_ID 9
+#define SPRITE9_TIMER_ID 10
+#define SPRITE10_TIMER_ID 11
+#define SPRITE11_TIMER_ID 12
+#define SPRITE12_TIMER_ID 13
+#define SPRITE13_TIMER_ID 14
+#define SPRITE14_TIMER_ID 15
+#define SPRITE15_TIMER_ID 16
+#define SPRITE16_TIMER_ID 17
+#define SPRITE17_TIMER_ID 18
+#define SPRITE18_TIMER_ID 19
+#define SPRITE19_TIMER_ID 20
 
 /////////////////////////////////////////////////////
 

@@ -1,0 +1,45 @@
+#ifndef MAP_H
+#define MAP_H
+#include "drv/gpu_drv.h"
+#include "xil_types.h"
+#include "drawing.h"
+#include "game.h"
+
+/*WARNING: IT HAVE TO BE CHANGED IF YOU WANT TO CHANGE THE MAP SIZE*/
+uint32_t Bonuses[16][3] = {
+			/*SET UP EIGHT BOMBS */
+			{MAP_XPOS+15,MAP_YPOS+8,1},
+			{MAP_XPOS+11,MAP_YPOS+7,1},
+			{MAP_XPOS+6,MAP_YPOS+11,1},
+			{MAP_XPOS+7,MAP_YPOS+5,1},
+			{MAP_XPOS+13,MAP_YPOS+3,1},
+			{MAP_XPOS+1,MAP_YPOS+5,1},
+			{MAP_XPOS+3,MAP_YPOS+8,1},
+			{MAP_XPOS+4,MAP_YPOS+13,1},
+			//END OF BOMBS
+
+			/*SET UP SIX AMPLIFIERS*/
+			{MAP_XPOS+2,MAP_YPOS+13,0},
+			{MAP_XPOS+5,MAP_YPOS+7,1},
+			{MAP_XPOS+8,MAP_YPOS+3,1},
+			{MAP_XPOS+9,MAP_YPOS+7,1},
+			{MAP_XPOS+11,MAP_YPOS+10,1},
+			{MAP_XPOS+14,MAP_YPOS+7,1},
+
+			/*SET UP 2 TRANSISTORS*/
+			{MAP_XPOS+6,MAP_YPOS+2,4},
+			{MAP_XPOS+8,MAP_YPOS+13,4}
+	};
+
+
+void DrawHLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBlock);
+void DrawVLine(uint32_t Xpos, uint32_t Ypos, uint32_t Length, BlockStruct *sBlock);
+void DrawMap(uint32_t Xpos, uint32_t Ypos, uint32_t Width, uint32_t Height);
+void DrawFireWalls(); //WARNING: IT HAVE TO BE CHANGED IF YOU WANT TO CHANGE THE MAP SIZE
+/*
+ * IMPORTANT: ARGUMENTS ARE NO ABSOLUTE (YOU HAVE TO TAKE INTO ACCOUNT ADDING THE XPOS,YPOS POSITION OF MAP
+ * */
+void CheckBonuses(uint32_t Xpos, uint32_t Ypos);
+
+
+#endif
