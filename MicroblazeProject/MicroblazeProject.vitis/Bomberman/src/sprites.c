@@ -41,11 +41,14 @@ void initSprites ()
 
 void redrawSprite (uint8_t spriteId)
 {
-	GpuPutSprite(asSprites[spriteId].oldX,asSprites[spriteId].oldY,sprEmpty,COLOR_BLACK);
-	GpuPutSprite(asSprites[spriteId].newX,asSprites[spriteId].newY,asSprites[spriteId].spriteTexture,asSprites[spriteId].spriteColor);
+//	if ((asSprites[spriteId].oldX != asSprites[spriteId].newX) || (asSprites[spriteId].oldY != asSprites[spriteId].newY))
+	//{
+		GpuPutSprite(asSprites[spriteId].oldX,asSprites[spriteId].oldY,sprEmpty,COLOR_BLACK);
+		GpuPutSprite(asSprites[spriteId].newX,asSprites[spriteId].newY,asSprites[spriteId].spriteTexture,asSprites[spriteId].spriteColor);
 
-	asSprites[spriteId].oldX = asSprites[spriteId].newX;
-	asSprites[spriteId].oldY = asSprites[spriteId].newY;
+		asSprites[spriteId].oldX = asSprites[spriteId].newX;
+		asSprites[spriteId].oldY = asSprites[spriteId].newY;
+	//}
 }
 
 void refreshSprite (uint8_t spriteId)
@@ -142,7 +145,14 @@ uint8_t checkCollision (uint32_t x, uint32_t y)
 		break;
 
 	case BOMB_CHAR:
-		return BOMB_COLLISION;
+		if(sBlock.textColor == BONUS_COLOR)
+		{
+			return BONUS_COLLISION;
+		}
+		else
+		{
+			return BOMB_COLLISION;
+		}
 		break;
 
 	case CHAR_BACK_CHAR:

@@ -57,6 +57,7 @@ void InitGame();
 void putHex(uint32_t inputHex, uint32_t x, uint32_t y);
 uint8_t zeroSpriteActionFunction (uint8_t spriteId);
 uint8_t playerMoveFunction (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
+uint8_t playerMoveFunctionBonus (uint8_t spriteId, int8_t deltaX, int8_t deltaY);
 void InitPlayers();
 void ChangePlayersPosition();
 void PutTheBomb();

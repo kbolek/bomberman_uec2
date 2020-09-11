@@ -6,6 +6,8 @@
 
 #define SPRITES_COUNT 20
 
+#define BONUS_COLOR COLOR_MAGENTA
+
 #define NO_COLLISION (uint8_t) 0 //no sprite, nor solid block in the way
 #define BOMB_COLLISION (uint8_t) 1 //only bomb collision
 #define PLAYER_COLLISION (uint8_t) 2 //any other sprite collision
