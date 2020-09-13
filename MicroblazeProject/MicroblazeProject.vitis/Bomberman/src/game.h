@@ -8,7 +8,7 @@
 #include "map.h"
 #include "clock.h"
 #include "sprites.h"
-#include "endgame_info.h"
+
 
 #define TIME_TO_DRAW 5
 #define MAP_XPOS 7
@@ -25,6 +25,9 @@
 #define PLAYER_ONE_START_POSITION_X (MAP_XPOS+MAP_WIDTH-2)
 #define PLAYER_ONE_START_POSITION_Y (MAP_YPOS+MAP_HEIGHT-2)
 
+
+uint8_t InfoFlag;
+
 typedef struct{
 	uint32_t PlayerXPosition;
 	uint32_t PlayerYPosition;
@@ -32,6 +35,7 @@ typedef struct{
 	uint8_t  BombsAvailable;
 	uint8_t  CanMoveBomb;
 	uint8_t  FirePower;
+	uint8_t  IfLose;
 
 }PlayerStruct;
 

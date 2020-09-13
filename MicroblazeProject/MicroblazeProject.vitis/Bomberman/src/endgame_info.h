@@ -1,8 +1,10 @@
 #ifndef ENDGAME_INFO_H
 #define ENDGANE_INFO_H
 #include "drawing.h"
+#include "game.h"
 #include "drv/gpu_drv.h"
 #include "drv/pad_drv.h"
+
 
 #define XPOS_EG 7
 #define YPOS_EG 6
@@ -12,13 +14,13 @@
 
 typedef enum{
 	remis,
-	win
+	fired
 }GameResult;
 
 
 void ShowTheInfo(GameResult eGameResult);
 
-uint8_t InfoFlag;
+
 
 
 #endif
