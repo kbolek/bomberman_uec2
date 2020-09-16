@@ -24,7 +24,7 @@ The procedure is highly simple - all you have to do is:
 
 And then click Program. 
 
-**In this project We created own pads which are essential to whole game. 
+**In this project We created own pads which are essential to whole game.** 
 
 ## Pads
 
@@ -36,7 +36,7 @@ And the PCB:
 
 ![PadPCB](/images/pad_pcb.PNG)
 
-**To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.
+**To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.**
 
 > An opto-isolator (also called an optocoupler, photocoupler, or optical isolator) is an electronic component that transfers electrical signals between two isolated circuits by using light. Opto-isolators prevent high voltages from affecting the system receiving the signal.[2] Commercially available opto-isolators withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 25 kV/μs. (https://en.wikipedia.org/wiki/Opto-isolator)
 
