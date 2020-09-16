@@ -74,7 +74,7 @@ More over the game is limited by time - after 5 minutes which players can check 
 <img src="/images/remis.PNG"/>
  </details>
 
-**Important: If the player wants to put the bomb, He/She have to click the bomb button and arrow button simultaneously!
+**Important: If the player wants to put the bomb, He/She have to click the bomb button and arrow button simultaneously!**
 
 **The thing We are proud of:**
 All the textures were designed in the Photoshop software - in the folder images/textures you can find the all PSD projects of the textures. 
