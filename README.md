@@ -19,8 +19,10 @@ The procedure is highly simple - all you have to do is:
 1. Select Tools -> Launch Vitis. 
 ** Make sure that in the Eclipse Launcher (which should open after Launch Vitis) Workspace is set up appriopriate -> bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis. If the path is OK click Launch.
 
-2. Select Xilinx -> Program FPGA.
+<details>
+ <summary>2. Select Xilinx -> Program FPGA.</summary>
 ![ProgramInstruction](/images/program.png)
+</details>
 
 And then click Program. 
 
