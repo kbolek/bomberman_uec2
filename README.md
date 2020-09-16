@@ -53,3 +53,11 @@ And then click Program.
 What is more for future development of the project We designed the circuit which containts the H1 Speaker which can be used to give the sound during the play. 
 
 ## The game
+<details>
+<summary>Click to show how to the game looks like/summary>
+<img src="/images/game.PNG"/>
+ </details>
+ 
+ First of all the game goal is to blow up the other player by put the bomb near to him. In this case players need to blow up first the ,,Fire Walls":
+ <img src="/images/textures/wall.png"/>. Under this fire walls players can find the bonuses:
+ 
