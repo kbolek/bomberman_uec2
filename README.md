@@ -62,5 +62,5 @@ What is more for future development of the project We designed the circuit which
  <img src="/images/textures/wall.png"/>. Under this fire walls players can find the bonuses:
  
 1. <img src="/images/amplifier.PNG"/> Amplifier, which boost our bomb firepower.
-2.<img src="/images/transistor.PNG"/> Transistor, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
+2. <img src="/images/transistor.PNG"/> Transistor, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
 3. <img src="/images/bomb.PNG"/> Bomb, which give possibility to set up more bombs at the same time. 
