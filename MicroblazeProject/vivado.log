@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Sep 13 11:55:58 2020
-# Process ID: 1228
+# Start of session at: Wed Sep 16 10:56:13 2020
+# Process ID: 2196
 # Current directory: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10864 C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT3.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9244 C:\Users\sarcasmisthere\Desktop\uec2project\repo\PROJEKT3.0\bomberman_uec2\MicroblazeProject\MicroblazeProject.xpr
 # Log file: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject/vivado.log
 # Journal file: C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject\vivado.jou
 #-----------------------------------------------------------
@@ -28,9 +28,7 @@ design_1_rst_clk_100M_0
 design_1_clk_wiz_0_0
 design_1_axi_uartlite_0_0
 
-open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 892.535 ; gain = 245.906
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 932.762 ; gain = 256.156
 INFO: [Vivado 12-8231] Launching Vitis
 INFO: [Vivado 12-417] Running vitis
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Sep 13 15:48:19 2020...
