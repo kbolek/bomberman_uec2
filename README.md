@@ -48,7 +48,7 @@ And then click Program.
 <details>
 <summary> Opto-isolator sound adapter</summary>
 <img src="/images/pads_sound.PNG"/>
-<img src="/images/pads_sound_pcb.PNG)
+<img src="/images/pads_sound_pcb.PNG"/>
  </details>
 What is more for future development of the project We designed the circuit which containts the H1 Speaker which can be used to give the sound during the play. 
 
