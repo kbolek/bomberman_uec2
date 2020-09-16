@@ -20,8 +20,8 @@ The procedure is highly simple - all you have to do is:
 ** Make sure that in the Eclipse Launcher (which should open after Launch Vitis) Workspace is set up appriopriate -> bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis. If the path is OK click Launch.
 
 <details>
- <summary>2. Select Xilinx -> Program FPGA.</summary>
-![ProgramInstruction](/images/program.png)
+<summary>2. Select Xilinx -> Program FPGA.</summary>
+<img src="/images/program.png"/>
 </details>
 
 And then click Program. 
@@ -30,19 +30,14 @@ And then click Program.
 
 ## Pads
 
-
 <details>
-  <summary> We designed pads using the EasyEDA platform. </summary>
- ```
-  ![PadSheet](/images/pad_sheet.PNG) 
- ```
+<summary> We designed pads using the EasyEDA platform. </summary>
+<img src="/images/pad_sheet.PNG"/>
 </details>
 
 <details>
- <summary> And the PCB: </summary>
- '''
- ![PadPCB](/images/pad_pcb.PNG)
- '''
+<summary> And the PCB: </summary>
+<img src="/images/pad_pcb.PNG"/>
 </details>
 
 
@@ -51,9 +46,9 @@ And then click Program.
 > An opto-isolator (also called an optocoupler, photocoupler, or optical isolator) is an electronic component that transfers electrical signals between two isolated circuits by using light. Opto-isolators prevent high voltages from affecting the system receiving the signal.[2] Commercially available opto-isolators withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 25 kV/μs. (https://en.wikipedia.org/wiki/Opto-isolator)
 
 <details>
- <summary> Opto-isolator sound adapter</summary>
- ![PadsSound](/images/pads_sound.PNG)
- ![PadsSoundPCB](/images/pads_sound_pcb.PNG)
+<summary> Opto-isolator sound adapter</summary>
+<img src="/images/pads_sound.PNG"/>
+<img src="/images/pads_sound_pcb.PNG)
  </details>
 What is more for future development of the project We designed the circuit which containts the H1 Speaker which can be used to give the sound during the play. 
 
