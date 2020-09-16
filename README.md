@@ -29,8 +29,11 @@ And then click Program.
 ## Pads
 
 We designed pads using the EasyEDA platform. 
+
 ![PadSheet](/images/pad_sheet.PNG)
+
 And the PCB:
+
 ![PadPCB](/images/pad_pcb.PNG)
 
 **To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.
