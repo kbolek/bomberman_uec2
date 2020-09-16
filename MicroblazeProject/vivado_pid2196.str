@@ -148,3 +148,16 @@ dismissDialog("Launch Vitis"); // bB (cr)
 // Elapsed time: 204 seconds
 selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
 dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 76 MB. Current time: 9/16/20, 11:29:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 11:59:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 12:29:59 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 12:59:59 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  193903 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1614 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 195190 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 196314 ms. Increasing delay to 588942 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 1:30:03 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3371890 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 2:26:31 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 80 ms. Decreasing delay to 2080 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 70 MB. Current time: 9/16/20, 2:56:31 PM CEST
