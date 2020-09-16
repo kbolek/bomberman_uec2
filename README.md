@@ -72,7 +72,7 @@ Offcourse the: <img src="/images/textures/wall_front.png"/> and the <img src="/i
 More over the game is limited by time - after 5 minutes which players can check in the clock above the game board it will have been shown
 <details>
  <summary> the message about the <b>Remis</b></summary>
-<img src="/images/remis.PNG"/>
+<img src="/images/remis.png"/>
  </details>
 
 **Important: If the player wants to put the bomb, He/She have to click the bomb button and arrow button simultaneously!**
