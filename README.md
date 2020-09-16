@@ -34,17 +34,20 @@ And then click Program.
   ![PadSheet](/images/pad_sheet.PNG) 
 </details>
 
+<details>
+ <summary> And the PCB: </summary>
+ ![PadPCB](/images/pad_pcb.PNG)
+<details>
 
-And the PCB:
-
-![PadPCB](/images/pad_pcb.PNG)
 
 **To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.**
 
 > An opto-isolator (also called an optocoupler, photocoupler, or optical isolator) is an electronic component that transfers electrical signals between two isolated circuits by using light. Opto-isolators prevent high voltages from affecting the system receiving the signal.[2] Commercially available opto-isolators withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 25 kV/μs. (https://en.wikipedia.org/wiki/Opto-isolator)
 
-![PadsSound](/images/pads_sound.PNG)
-![PadsSoundPCB](/images/pads_sound_pcb.PNG)
-
+<details>
+ <summary> Opto-isolator sound adapter</summary>
+ ![PadsSound](/images/pads_sound.PNG)
+ ![PadsSoundPCB](/images/pads_sound_pcb.PNG)
+ </details>
 What is more for future development of the project We designed the circuit which containts the H1 Speaker which can be used to give the sound during the play. 
 
