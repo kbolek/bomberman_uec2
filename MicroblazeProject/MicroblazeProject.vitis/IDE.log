@@ -4331,3 +4331,5 @@ con
 11:09:03 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
 11:13:30 INFO  : Bit file 'C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
 11:13:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795593A" && level==0} -index 0' command is executed.
+11:13:36 INFO  : FPGA configured successfully with bitstream "C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
