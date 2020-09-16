@@ -37,7 +37,7 @@ And then click Program.
 <details>
  <summary> And the PCB: </summary>
  ![PadPCB](/images/pad_pcb.PNG)
-<details>
+</details>
 
 
 **To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.**
