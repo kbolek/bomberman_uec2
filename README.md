@@ -33,12 +33,16 @@ And then click Program.
 
 <details>
   <summary> We designed pads using the EasyEDA platform. </summary>
+ ```
   ![PadSheet](/images/pad_sheet.PNG) 
+ ```
 </details>
 
 <details>
  <summary> And the PCB: </summary>
+ '''
  ![PadPCB](/images/pad_pcb.PNG)
+ '''
 </details>
 
 
