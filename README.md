@@ -28,9 +28,12 @@ And then click Program.
 
 ## Pads
 
-We designed pads using the EasyEDA platform. 
 
-![PadSheet](/images/pad_sheet.PNG)
+<details>
+  <summary> We designed pads using the EasyEDA platform. </summary>
+  ![PadSheet](/images/pad_sheet.PNG) 
+</details>
+
 
 And the PCB:
 
