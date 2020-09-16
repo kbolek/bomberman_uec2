@@ -61,6 +61,14 @@ What is more for future development of the project We designed the circuit which
  First of all the game goal is to blow up the other player by put the bomb near to him. In this case players need to blow up first the ,,Fire Walls":
  <img src="/images/textures/wall.png"/>. Under this fire walls players can find the bonuses:
  
-1. <img src="/images/amplifier.PNG"/> Amplifier, which boost our bomb firepower.
-2. <img src="/images/transistor.PNG"/> Transistor, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
-3. <img src="/images/bomb.PNG"/> Bomb, which give possibility to set up more bombs at the same time. 
+1. <img src="/images/amplifier.PNG"/>  **Amplifier**, which boost our bomb firepower.
+2. <img src="/images/transistor.PNG"/> **Transistor**, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
+3. <img src="/images/bomb.PNG"/> **Bomb**, which give possibility to set up more bombs at the same time. 
+
+More over the game is limited by time - after 5 minutes which players can check in the clock above the game board it will have been shown
+<details>
+ <summary> the message about the <b>Remis</b></summary>
+<img src="/images/game.PNG"/>
+ </details>
+
+**Important: If the player wants to put the bomb, He/She have to click the bomb button and arrow button simultaneously!
