@@ -59,11 +59,14 @@ What is more for future development of the project We designed the circuit which
  </details>
  
  First of all the game goal is to blow up the other player by put the bomb near to him. In this case players need to blow up first the ,,Fire Walls":
- <img src="/images/textures/wall.png"/> which next will be replaced by path texture <img src"/images/textures/path.png"/> . Under this fire walls players can find the bonuses:
+ <img src="/images/textures/wall.png"/> which next will be replaced by path texture <img src"/images/textures/path.png/"> . 
  
+ Under this fire walls players can find the bonuses:
 1. <img src="/images/amplifier.PNG"/>  **Amplifier**, which boost our bomb firepower.
 2. <img src="/images/transistor.PNG"/> **Transistor**, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
 3. <img src="/images/bomb.PNG"/> **Bomb**, which give possibility to set up more bombs at the same time. 
+
+Offcourse the: <img src="/images/textures/wall_front.png"/> and the <img src="/images/textures/blocked_path.png"/> are the place where player can't go. 
 
 More over the game is limited by time - after 5 minutes which players can check in the clock above the game board it will have been shown
 <details>
@@ -72,3 +75,36 @@ More over the game is limited by time - after 5 minutes which players can check 
  </details>
 
 **Important: If the player wants to put the bomb, He/She have to click the bomb button and arrow button simultaneously!
+
+**The thing We are proud of:**
+All the textures were designed in the Photoshop software - in the folder images/textures you can find the all PSD projects of the textures. 
+<details>
+ <summary> What is more We follow the motherboard color palette: </summary>
+ <img src="/images/textures/colorpalette.png"/>
+</details>
+
+**What is more the all icons (bonuses and players icons) which have to be done becaouse of the data limits on Basys3 We designed ourselves and coded:
+<details>
+ <summary> <b>Amplifier</b> </summary>
+ <img src="/images/font_icon/amplifier.jpg"/>
+</details>
+<details>
+ <summary> <b>Bomb</b> </summary>
+ <img src="/images/font_icon/bomb.jpg"/>
+</details>
+<details>
+ <summary> <b>Character Front</b> </summary>
+ <img src="/images/font_icon/character_front.jpg"/>
+</details>
+<details>
+ <summary> <b>Character Back</b> </summary>
+ <img src="/images/font_icon/character_back.png"/>
+</details>
+<details>
+ <summary> <b>Transistor</b> </summary>
+ <img src="/images/font_icon/transistor.png"/>
+</details>
+
+
+
+
