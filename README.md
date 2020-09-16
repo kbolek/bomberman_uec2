@@ -1,5 +1,5 @@
 ![BombermanQuartzEditionLogo](/images/logo.png)
-Format: ![Alt Text](url)
+
 
 Projekt jest przygotowywany w ramach przedmiotu elektroniki cyfrowej 2. Nasza gra jest zmodyfikowaną wersją kultowej gry Bomberman zrealizowaną na zestawie Basys3 z wykorzystaniem języka **Verilog**. 
 
