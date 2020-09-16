@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project is realized as part of UEC2 course by Dominik Chat and Krzysztof Bolek. This is a modification of oldschool game named ,,Bomberman" based on Basys3 FPGA Board and MicroBlaze processor design using the Vivado (**2019.2 version**). In this project it is used Vivado IP integrator to build a processor design, and then debug the design with the **Vitis** - 
+This project is realized as part of UEC2 course by Dominik Chat and Krzysztof Bolek. This is a modification of old school game named ,, Bomberman" based on Basys3 FPGA Board and MicroBlaze processor design using the Vivado (**2019.2 version**). In this project, it is used Vivado IP integrator to build a processor design, and then debug the design with the **Vitis** - 
 unified software platform and the Vivado Integrated Logic Analyzer.
 
  What is the MicroBlaze Processor?
@@ -17,7 +17,7 @@ peripherals, memory, and interfaces as needed.
 First of all - it is required a Vivado software (2019.2 or later) and the Vitis software platform.
 The procedure is highly simple - all you have to do is:
 1. Select Tools -> Launch Vitis. 
-** Make sure that in the Eclipse Launcher (which should open after Launch Vitis) Workspace is set up appriopriate -> bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis. If the path is OK click Launch.
+** Make sure that in the Eclipse Launcher (which should open after Launch Vitis) Workspace is set up appropriate -> bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis. If the path is OK click Launch.
 
 <details>
 <summary>2. Select Xilinx -> Program FPGA.</summary>
@@ -26,7 +26,7 @@ The procedure is highly simple - all you have to do is:
 
 And then click Program. 
 
-**In this project We created own pads which are essential to whole game.** 
+**In this project We created own pads which are essential to the whole game.** 
 
 ## Pads
 
@@ -41,9 +41,9 @@ And then click Program.
 </details>
 
 
-**To prevent high voltages from affecting the Basys3 board  We designed the opto-isolator adapter.**
+**To prevent high voltages from affecting the Basys3 board  We designed the optoisolator adapter.**
 
-> An opto-isolator (also called an optocoupler, photocoupler, or optical isolator) is an electronic component that transfers electrical signals between two isolated circuits by using light. Opto-isolators prevent high voltages from affecting the system receiving the signal.[2] Commercially available opto-isolators withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 25 kV/μs. (https://en.wikipedia.org/wiki/Opto-isolator)
+> An optoisolator (also called an optocoupler, photocoupler, or optical isolator) is an electronic component that transfers electrical signals between two isolated circuits by using light. Opto-isolators prevent high voltages from affecting the system receiving the signal.[2] Commercially available optoisolators withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 25 kV/μs. (https://en.wikipedia.org/wiki/Opto-isolator)
 
 <details>
 <summary> Opto-isolator sound adapter</summary>
@@ -52,3 +52,4 @@ And then click Program.
  </details>
 What is more for future development of the project We designed the circuit which containts the H1 Speaker which can be used to give the sound during the play. 
 
+## The game
