@@ -83,7 +83,7 @@ All the textures were designed in the Photoshop software - in the folder images/
  <img src="/images/textures/colorpalette.png"/>
 </details>
 
-**What is more the all icons (bonuses and players icons) which have to be done becaouse of the data limits on Basys3 We designed ourselves and coded:
+**What is more the all icons (bonuses and players icons) which have to be done becaouse of the data limits on Basys3 We designed ourselves and coded:**
 <details>
  <summary> <b>Amplifier</b> </summary>
  <img src="/images/font_icon/amplifier.jpg"/>
