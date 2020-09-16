@@ -58,12 +58,13 @@ What is more for future development of the project We designed the circuit which
 <img src="/images/game.PNG"/>
  </details>
  
- First of all the game goal is to blow up the other player by put the bomb near to him. In this case players need to blow up first the ,,Fire Walls":
+ First of all the game goal is to blow up the other player by put the bomb near to him. In this case, players need to blow up first the,, Fire Walls":
  <img src="/images/textures/wall.png"/> which next will be replaced by path texture <img src"/images/textures/path.png/"> . 
  
- Under this fire walls players can find the bonuses:
+ Under this firewalls players can find the bonuses:
 1. <img src="/images/amplifier.PNG"/>  **Amplifier**, which boost our bomb firepower.
-2. <img src="/images/transistor.PNG"/> **Transistor**, which allows  to transfer the bomb (bomb blow up after 3 seconds). 
+2. <img src="/images/transistor.PNG"/> **Transistor**, which allows  to transfer the bomb which blow up after 3 seconds and the fire looks like:
+<img src="/images/textures/fire_horizontal.png"/><img src="/images/textures/fire_corner.png"/><img src="/images/textures/fire_vertical.png"/>
 3. <img src="/images/bomb.PNG"/> **Bomb**, which give possibility to set up more bombs at the same time. 
 
 Offcourse the: <img src="/images/textures/wall_front.png"/> and the <img src="/images/textures/blocked_path.png"/> are the place where player can't go. 
@@ -98,13 +99,14 @@ All the textures were designed in the Photoshop software - in the folder images/
 </details>
 <details>
  <summary> <b>Character Back</b> </summary>
- <img src="/images/font_icon/character_back.png"/>
+ <img src="/images/font_icon/character_back.jpg"/>
 </details>
 <details>
  <summary> <b>Transistor</b> </summary>
- <img src="/images/font_icon/transistor.png"/>
+ <img src="/images/font_icon/transistor.jpg"/>
 </details>
 
+## The film 
 
-
-
+## Summary
+During the project, We put our whole hearts and We are so proud of the result. What is more, We learn a lot of stuff about making development of embedded software on FPGA and We polish our C programming skill. 
