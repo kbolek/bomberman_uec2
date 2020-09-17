@@ -11559,3 +11559,9 @@ java.lang.Error
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-09-17 22:22:36.061
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/hw/poprawkav2.xsa ], Result: [null, axi_bram_ctrl_0 blk_ram_ctrl microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-09-17 22:26:36.399
+!MESSAGE Executing command: cmd /C B:\Vitis\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-09-17 22:26:36.414
+!MESSAGE Executed Webtalk command
