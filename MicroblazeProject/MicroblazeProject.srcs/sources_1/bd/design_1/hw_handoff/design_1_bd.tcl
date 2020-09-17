@@ -266,7 +266,7 @@ proc create_root_design { parentCell } {
   set AXI_Timers_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:AXI_Timers:1.2 AXI_Timers_0 ]
 
   # Create instance: BRAM_GPU_0, and set properties
-  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:2.0 BRAM_GPU_0 ]
+  set BRAM_GPU_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BRAM_GPU:2.2 BRAM_GPU_0 ]
 
   # Create instance: PADS_SOUND_0, and set properties
   set PADS_SOUND_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PADS_SOUND:1.0 PADS_SOUND_0 ]
@@ -460,7 +460,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net mdm_0_Debug_SYS_Rst [get_bd_pins mdm_0/Debug_SYS_Rst] [get_bd_pins rst_clk_100M/mb_debug_sys_rst]
   connect_bd_net -net pad_a_1 [get_bd_ports pad_a] [get_bd_pins PADS_SOUND_0/pad_a]
   connect_bd_net -net pad_b_1 [get_bd_ports pad_b] [get_bd_pins PADS_SOUND_0/pad_b]
-  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_100M/ext_reset_in]
+  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins BRAM_GPU_0/rst] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_100M/ext_reset_in]
   connect_bd_net -net rst_clk_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_clk_100M/mb_reset]
   connect_bd_net -net rst_clk_100M_peripheral_aresetn [get_bd_pins AXI_Timers_0/s_axi_aresetn] [get_bd_pins PADS_SOUND_0/axi_lite_aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins blk_ram_ctrl/s_axi_aresetn] [get_bd_pins mdm_0/S_AXI_ARESETN] [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/M05_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_100M/peripheral_aresetn]

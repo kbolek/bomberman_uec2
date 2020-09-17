@@ -1,2 +1,110 @@
-2020-09-16T11:09:03.6361653000-Nothing to build in platform 'QUARTZ'
+2020-09-17T22:21:19.163239800255-22:21:19 **** Build of project QUARTZ ****
+000-buildplatform.bat 50787 QUARTZ  
+000-XSDB Server Channel: tcfchan#3
+000-Building the BSP Library for domain  - standalone_domain on processor microblaze_0
+000-"Running Make include in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+000-nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+000--mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+000--mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+000-nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+000-nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conv
+000-ert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+000-rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling AXI_Timers..."
+000-
+000-AXI_Timers_selftest.c: In function 'AXI_TIMERS_Reg_SelfTest':
+000/QUARTZ52-1-1comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]1-AXI_Timers_selftest.c:52:59: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+000-    if ( AXI_TIMERS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+000-                                                           ^~
+000/QUARTZ36-1-1unused variable 'Index' [-Wunused-variable]1-AXI_Timers_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+000-  int Index;
+000-      ^~~~~
+000-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+000-l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling bram"
+000-
+000-"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+000-l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling cpu"
+000-
+000-"Running Make libs in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+000-
+000-make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+000-rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling PADS_SOUND..."
+000-
+000-PADS_SOUND_selftest.c: In function 'PADS_SOUND_Reg_SelfTest':
+000/QUARTZ52-1-1comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]1-PADS_SOUND_selftest.c:52:59: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+000-    if ( PADS_SOUND_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+000-                                                           ^~
+000/QUARTZ36-1-1unused variable 'Index' [-Wunused-variable]1-PADS_SOUND_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+000-  int Index;
+000-      ^~~~~
+000-"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+000-rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling standalone";
+000-
+000/QUARTZ/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/standalone_v7_1/src/microblaze_sleep.c75-1-1#pragma message: For the sleep routines, assembly instructions are used0-microblaze_sleep.c:75:9: note: #pragma message: For the sleep routines, assembly instructions are used
+000- #pragma message ("For the sleep routines, assembly instructions are used")
+000-         ^~~~~~~
+000-"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert
+000- -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+000-
+000-"Compiling uartlite"
+000-
+000-'Finished building libraries'
+000-
+00255-
+22:21:23 Build Finished (took 3s.994ms)
 

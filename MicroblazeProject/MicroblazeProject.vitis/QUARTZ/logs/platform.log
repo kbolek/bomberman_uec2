@@ -17496,3 +17496,1106 @@ TRACE::2020-09-13.11:57:48::SCWMssOS::Checking the sw design at  C:/Users/sarcas
 TRACE::2020-09-13.11:57:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2020-09-13.11:57:48::SCWMssOS::Sw design exists and opened at  C:/Users/sarcasmisthere/Desktop/uec2project/repo/PROJEKT3.0/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:25::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:25::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:25::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.21:17:27::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWReader::Active system found as  QUARTZ
+TRACE::2020-09-17.21:17:27::SCWReader::Handling sysconfig QUARTZ
+TRACE::2020-09-17.21:17:27::SCWDomain::checking for install qemu data   : 
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:27::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:27::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-09-17.21:17:27::SCWMssOS::No sw design opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:27::SCWMssOS::mss exists loading the mss file  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:27::SCWMssOS::Opened the sw design from mss  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:27::SCWMssOS::Adding the swdes entry D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-09-17.21:17:27::SCWMssOS::updating the scw layer about changes
+TRACE::2020-09-17.21:17:28::SCWMssOS::Opened the sw design.  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-09-17.21:17:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-09-17.21:17:28::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:28::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:28::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:28::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:28::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:28::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:28::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:28::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:28::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:28::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:17:28::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:28::SCWReader::No isolation master present  
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform location is D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:34::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/QUART_NOWY2.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.21:17:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.21:17:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:34::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:34::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:17:34::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:34::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.21:17:34::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:34::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.21:17:34::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.21:17:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:34::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:34::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:17:34::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:34::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/Poprawkav1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Poprawkav1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-09-17.21:17:41::SCWMssOS::cleaning the bsp 
+TRACE::2020-09-17.21:17:41::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2020-09-17.21:17:41::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s clean 
+
+ERROR::2020-09-17.21:17:41::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2020-09-17.21:17:47::SCWMssOS::cleaning the bsp 
+TRACE::2020-09-17.21:17:47::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2020-09-17.21:17:47::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s clean 
+
+ERROR::2020-09-17.21:17:47::SCWSystem::Error in Processing the domain standalone_domain
+LOG::2020-09-17.21:17:56::SCWPlatform::Started generating the artifacts platform QUARTZ
+TRACE::2020-09-17.21:17:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-09-17.21:17:56::SCWPlatform::Started generating the artifacts for system configuration QUARTZ
+LOG::2020-09-17.21:17:56::SCWSystem::Checking the domain standalone_domain
+LOG::2020-09-17.21:17:56::SCWSystem::Not a boot domain 
+LOG::2020-09-17.21:17:56::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-09-17.21:17:56::SCWDomain::Generating domain artifcats
+TRACE::2020-09-17.21:17:56::SCWMssOS::Generating standalone artifcats
+TRACE::2020-09-17.21:17:56::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-09-17.21:17:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:17:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:17:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:17:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.21:17:56::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.21:17:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:17:56::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:56::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:56::SCWMssOS::Completed writing the mss file at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp
+TRACE::2020-09-17.21:17:56::SCWMssOS::Mss edits present, copying mssfile into export location D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:17:56::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-09-17.21:17:56::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-09-17.21:17:56::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-09-17.21:17:56::SCWMssOS::doing bsp build ... 
+TRACE::2020-09-17.21:17:56::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make 
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.21:17:56::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.21:17:56::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-09-17.21:17:56::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+TRACE::2020-09-17.21:17:56::SCWMssOS::-mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-09-17.21:17:56::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+TRACE::2020-09-17.21:17:56::SCWMssOS::-mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.21:17:56::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.21:17:56::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.21:17:56::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.21:17:56::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2020-09-17.21:17:56::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conv
+TRACE::2020-09-17.21:17:56::SCWMssOS::ert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Running Make libs in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.21:17:56::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.21:17:56::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:56::SCWMssOS::"Compiling AXI_Timers..."
+
+TRACE::2020-09-17.21:17:58::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-09-17.21:17:58::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-09-17.21:17:58::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+TRACE::2020-09-17.21:17:58::SCWMssOS::l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:58::SCWMssOS::"Compiling bram"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-09-17.21:17:59::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+TRACE::2020-09-17.21:17:59::SCWMssOS::l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Compiling cpu"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.21:17:59::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.21:17:59::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Compiling PADS_SOUND..."
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.21:17:59::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.21:17:59::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:17:59::SCWMssOS::"Compiling standalone";
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2020-09-17.21:18:01::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert
+TRACE::2020-09-17.21:18:01::SCWMssOS:: -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::"Compiling uartlite"
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::Copying to export directory.
+TRACE::2020-09-17.21:18:01::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-09-17.21:18:01::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-09-17.21:18:01::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-09-17.21:18:01::SCWSystem::Completed Processing the sysconfig QUARTZ
+LOG::2020-09-17.21:18:01::SCWPlatform::Completed generating the artifacts for system configuration QUARTZ
+TRACE::2020-09-17.21:18:01::SCWPlatform::Started preparing the platform 
+TRACE::2020-09-17.21:18:01::SCWSystem::Writing the bif file for system config QUARTZ
+TRACE::2020-09-17.21:18:01::SCWSystem::dir created 
+TRACE::2020-09-17.21:18:01::SCWSystem::Writing the bif 
+TRACE::2020-09-17.21:18:01::SCWPlatform::Started writing the spfm file 
+TRACE::2020-09-17.21:18:01::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-09-17.21:18:01::SCWPlatform::Completed generating the platform
+TRACE::2020-09-17.21:18:01::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:18:01::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:18:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.21:18:01::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.21:18:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:18:01::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:18:01::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:18:01::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/Poprawkav1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Poprawkav1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-09-17.21:18:01::SCWPlatform::updated the xpfm file.
+TRACE::2020-09-17.21:18:01::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.21:18:01::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.21:18:01::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.21:18:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.21:18:01::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.21:18:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.21:18:01::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.21:18:01::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.21:18:01::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:49::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:49::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:49::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.22:20:51::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWReader::Active system found as  QUARTZ
+TRACE::2020-09-17.22:20:51::SCWReader::Handling sysconfig QUARTZ
+TRACE::2020-09-17.22:20:51::SCWDomain::checking for install qemu data   : 
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:51::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-09-17.22:20:51::SCWMssOS::No sw design opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWMssOS::mss exists loading the mss file  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWMssOS::Opened the sw design from mss  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWMssOS::Adding the swdes entry D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-09-17.22:20:51::SCWMssOS::updating the scw layer about changes
+TRACE::2020-09-17.22:20:51::SCWMssOS::Opened the sw design.  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-09-17.22:20:51::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:51::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:51::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:20:51::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:51::SCWReader::No isolation master present  
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform location is D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:56::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/Poprawkav1.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2020-09-17.22:20:56::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2020-09-17.22:20:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:56::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:56::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:20:56::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:56::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.22:20:56::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:20:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:20:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.22:20:56::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.22:20:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:20:56::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:56::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:20:56::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:20:56::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/poprawkav2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/poprawkav2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-09-17.22:21:01::SCWPlatform::Started generating the artifacts platform QUARTZ
+TRACE::2020-09-17.22:21:01::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-09-17.22:21:01::SCWPlatform::Started generating the artifacts for system configuration QUARTZ
+LOG::2020-09-17.22:21:01::SCWSystem::Checking the domain standalone_domain
+LOG::2020-09-17.22:21:01::SCWSystem::Not a boot domain 
+LOG::2020-09-17.22:21:01::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-09-17.22:21:01::SCWDomain::Generating domain artifcats
+TRACE::2020-09-17.22:21:01::SCWMssOS::Generating standalone artifcats
+TRACE::2020-09-17.22:21:01::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:01::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:01::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWMssOS::Completed writing the mss file at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp
+TRACE::2020-09-17.22:21:01::SCWMssOS::Mss edits present, copying mssfile into export location D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-09-17.22:21:01::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-09-17.22:21:01::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-09-17.22:21:01::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-09-17.22:21:01::SCWMssOS::Copying to export directory.
+TRACE::2020-09-17.22:21:01::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-09-17.22:21:01::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-09-17.22:21:01::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-09-17.22:21:01::SCWSystem::Completed Processing the sysconfig QUARTZ
+LOG::2020-09-17.22:21:01::SCWPlatform::Completed generating the artifacts for system configuration QUARTZ
+TRACE::2020-09-17.22:21:01::SCWPlatform::Started preparing the platform 
+TRACE::2020-09-17.22:21:01::SCWSystem::Writing the bif file for system config QUARTZ
+TRACE::2020-09-17.22:21:01::SCWSystem::dir created 
+TRACE::2020-09-17.22:21:01::SCWSystem::Writing the bif 
+TRACE::2020-09-17.22:21:01::SCWPlatform::Started writing the spfm file 
+TRACE::2020-09-17.22:21:01::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-09-17.22:21:01::SCWPlatform::Completed generating the platform
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:01::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:01::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/poprawkav2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/poprawkav2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-09-17.22:21:01::SCWPlatform::updated the xpfm file.
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:01::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-09-17.22:21:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:01::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:01::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:01::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:06::SCWMssOS::cleaning the bsp 
+TRACE::2020-09-17.22:21:06::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2020-09-17.22:21:06::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s clean 
+
+ERROR::2020-09-17.22:21:06::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2020-09-17.22:21:13::SCWPlatform::Clearing the existing platform
+TRACE::2020-09-17.22:21:13::SCWSystem::Clearing the existing sysconfig
+TRACE::2020-09-17.22:21:13::SCWMssOS::Removing the swdes entry for  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWSystem::Clearing the domains completed.
+TRACE::2020-09-17.22:21:13::SCWPlatform::Clearing the opened hw db.
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform location is D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Removing the HwDB with name D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.22:21:13::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWReader::Active system found as  QUARTZ
+TRACE::2020-09-17.22:21:13::SCWReader::Handling sysconfig QUARTZ
+TRACE::2020-09-17.22:21:13::SCWDomain::checking for install qemu data   : 
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:13::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-09-17.22:21:13::SCWMssOS::No sw design opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWMssOS::mss exists loading the mss file  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWMssOS::Opened the sw design from mss  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWMssOS::Adding the swdes entry D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-09-17.22:21:13::SCWMssOS::updating the scw layer about changes
+TRACE::2020-09-17.22:21:13::SCWMssOS::Opened the sw design.  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-09-17.22:21:13::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:13::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:13::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:13::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:13::SCWReader::No isolation master present  
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform location is D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:15::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:15::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2020-09-17.22:21:15::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2020-09-17.22:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:15::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:15::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:15::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/tempdsa/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::update - Opened existing hwdb design_1_wrapper_3
+TRACE::2020-09-17.22:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:15::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-09-17.22:21:15::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-09-17.22:21:15::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-09-17.22:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:15::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:15::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:15::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/poprawkav2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/poprawkav2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-09-17.22:21:20::SCWPlatform::Started generating the artifacts platform QUARTZ
+TRACE::2020-09-17.22:21:20::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-09-17.22:21:20::SCWPlatform::Started generating the artifacts for system configuration QUARTZ
+LOG::2020-09-17.22:21:20::SCWSystem::Checking the domain standalone_domain
+LOG::2020-09-17.22:21:20::SCWSystem::Not a boot domain 
+LOG::2020-09-17.22:21:20::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-09-17.22:21:20::SCWDomain::Generating domain artifcats
+TRACE::2020-09-17.22:21:20::SCWMssOS::Generating standalone artifcats
+TRACE::2020-09-17.22:21:20::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-09-17.22:21:20::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:20::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:20::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:20::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:20::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:20::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-09-17.22:21:20::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-09-17.22:21:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:20::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:20::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:20::SCWMssOS::Completed writing the mss file at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp
+TRACE::2020-09-17.22:21:20::SCWMssOS::Mss edits present, copying mssfile into export location D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:20::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-09-17.22:21:20::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-09-17.22:21:20::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-09-17.22:21:20::SCWMssOS::doing bsp build ... 
+TRACE::2020-09-17.22:21:20::SCWMssOS::System Command Ran  D: & cd  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp & make 
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.22:21:20::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.22:21:20::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-09-17.22:21:20::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+TRACE::2020-09-17.22:21:20::SCWMssOS::-mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2020-09-17.22:21:20::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert 
+TRACE::2020-09-17.22:21:20::SCWMssOS::-mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.22:21:20::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.22:21:20::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2020-09-17.22:21:20::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-co
+TRACE::2020-09-17.22:21:20::SCWMssOS::nvert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2020-09-17.22:21:20::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conv
+TRACE::2020-09-17.22:21:20::SCWMssOS::ert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make libs in microblaze_0/libsrc/AXI_Timers_v1_0/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/AXI_Timers_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.22:21:20::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.22:21:20::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Compiling AXI_Timers..."
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-09-17.22:21:20::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+TRACE::2020-09-17.22:21:20::SCWMssOS::l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Compiling bram"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2020-09-17.22:21:20::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert -mx
+TRACE::2020-09-17.22:21:20::SCWMssOS::l-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:20::SCWMssOS::"Compiling cpu"
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PADS_SOUND_v1_0/src"
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::make -C microblaze_0/libsrc/PADS_SOUND_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.22:21:21::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.22:21:21::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::"Compiling PADS_SOUND..."
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2020-09-17.22:21:21::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-conve
+TRACE::2020-09-17.22:21:21::SCWMssOS::rt -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:21::SCWMssOS::"Compiling standalone";
+
+TRACE::2020-09-17.22:21:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2020-09-17.22:21:22::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2020-09-17.22:21:22::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-reorder -mno-xl-soft-div -mno-xl-soft-mul -mxl-float-convert
+TRACE::2020-09-17.22:21:22::SCWMssOS:: -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2020-09-17.22:21:22::SCWMssOS::"Compiling uartlite"
+
+TRACE::2020-09-17.22:21:23::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-09-17.22:21:23::SCWMssOS::Copying to export directory.
+TRACE::2020-09-17.22:21:23::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-09-17.22:21:23::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-09-17.22:21:23::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-09-17.22:21:23::SCWSystem::Completed Processing the sysconfig QUARTZ
+LOG::2020-09-17.22:21:23::SCWPlatform::Completed generating the artifacts for system configuration QUARTZ
+TRACE::2020-09-17.22:21:23::SCWPlatform::Started preparing the platform 
+TRACE::2020-09-17.22:21:23::SCWSystem::Writing the bif file for system config QUARTZ
+TRACE::2020-09-17.22:21:23::SCWSystem::dir created 
+TRACE::2020-09-17.22:21:23::SCWSystem::Writing the bif 
+TRACE::2020-09-17.22:21:23::SCWPlatform::Started writing the spfm file 
+TRACE::2020-09-17.22:21:23::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-09-17.22:21:23::SCWPlatform::Completed generating the platform
+TRACE::2020-09-17.22:21:23::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:23::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-09-17.22:21:23::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-09-17.22:21:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:23::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:23::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:23::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:23::SCWWriter::formatted JSON is {
+	"platformName":	"QUARTZ",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"QUARTZ",
+	"platHandOff":	"D:/bomberman_uec2/MicroblazeProject/poprawkav2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/poprawkav2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"QUARTZ",
+	"systems":	[{
+			"systemName":	"QUARTZ",
+			"systemDesc":	"QUARTZ",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"QUARTZ",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"6688d5b0cdb7489baffbffc7e7112624",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-09-17.22:21:23::SCWPlatform::updated the xpfm file.
+TRACE::2020-09-17.22:21:23::SCWPlatform::Trying to open the hw design at D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA given D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA absoulate path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform::DSA directory D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw
+TRACE::2020-09-17.22:21:23::SCWPlatform:: Platform Path D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/hw/poprawkav2.xsa
+TRACE::2020-09-17.22:21:23::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2020-09-17.22:21:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2020-09-17.22:21:23::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2020-09-17.22:21:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-09-17.22:21:23::SCWMssOS::Checking the sw design at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-09-17.22:21:23::SCWMssOS::DEBUG:  swdes dump  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-09-17.22:21:23::SCWMssOS::Sw design exists and opened at  D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/microblaze_0/standalone_domain/bsp/system.mss

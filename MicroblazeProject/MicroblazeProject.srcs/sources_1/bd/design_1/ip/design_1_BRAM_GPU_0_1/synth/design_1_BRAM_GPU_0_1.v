@@ -47,16 +47,17 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:2.0
-// IP Revision: 1
+// IP VLNV: xilinx.com:user:BRAM_GPU:2.2
+// IP Revision: 2
 
 (* X_CORE_INFO = "BRAM_GPU,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_BRAM_GPU_0_1,BRAM_GPU,{}" *)
-(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=2.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_BRAM_GPU_0_1,BRAM_GPU,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=BRAM_GPU,x_ipVersion=2.2,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BRAM_GPU_0_1 (
   vga_clk,
+  rst,
   r,
   g,
   b,
@@ -77,6 +78,9 @@ module design_1_BRAM_GPU_0_1 (
 );
 
 input wire vga_clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vga_rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 vga_rst RST" *)
+input wire rst;
 output wire [3 : 0] r;
 output wire [3 : 0] g;
 output wire [3 : 0] b;
@@ -111,6 +115,7 @@ output wire [3 : 0] bram_we_txtr;
 
   BRAM_GPU inst (
     .vga_clk(vga_clk),
+    .rst(rst),
     .r(r),
     .g(g),
     .b(b),

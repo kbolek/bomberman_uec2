@@ -97,13 +97,14 @@
   "../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/5061/src/BLOCK_GEN.v" \
-  "../../../bd/design_1/ipshared/5061/src/CHAR_ROM.v" \
-  "../../../bd/design_1/ipshared/5061/src/CLOCKER.v" \
-  "../../../bd/design_1/ipshared/5061/src/GRAM_DECODER.v" \
-  "../../../bd/design_1/ipshared/5061/src/TEXT_GEN.v" \
-  "../../../bd/design_1/ipshared/5061/src/TIMING_GEN.v" \
-  "../../../bd/design_1/ipshared/5061/src/BRAM_GPU.v" \
+  "../../../bd/design_1/ipshared/37b1/src/BLOCK_GEN.v" \
+  "../../../bd/design_1/ipshared/37b1/src/CHAR_ROM.v" \
+  "../../../bd/design_1/ipshared/37b1/src/CLOCKER.v" \
+  "../../../bd/design_1/ipshared/37b1/src/FRAME_GENERATOR.v" \
+  "../../../bd/design_1/ipshared/37b1/src/GRAM_DECODER.v" \
+  "../../../bd/design_1/ipshared/37b1/src/TEXT_GEN.v" \
+  "../../../bd/design_1/ipshared/37b1/src/TIMING_GEN.v" \
+  "../../../bd/design_1/ipshared/37b1/src/BRAM_GPU.v" \
   "../../../bd/design_1/ip/design_1_BRAM_GPU_0_1/sim/design_1_BRAM_GPU_0_1.v" \
 -endlib
 -makelib ies_lib/axi_bram_ctrl_v4_1_2 \
@@ -118,12 +119,17 @@
   "../../../bd/design_1/ipshared/9981/src/Timer.v" \
   "../../../bd/design_1/ipshared/9981/hdl/AXI_Timers_v1_0.v" \
   "../../../bd/design_1/ip/design_1_AXI_Timers_0_0/sim/design_1_AXI_Timers_0_0.v" \
+  "../../../bd/design_1/ip/design_1_blk_mem_gen_0_2/sim/design_1_blk_mem_gen_0_2.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_2/sim/design_1_axi_bram_ctrl_0_2.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_20 \
   "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

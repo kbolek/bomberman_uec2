@@ -1,6 +1,87 @@
-11:09:04 **** Incremental Build of configuration Debug for project Bomberman ****
+22:21:23 **** Incremental Build of configuration Debug for project Bomberman ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/drv/gpu_drv.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/drv/gpu_drv.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drv/gpu_drv.d" -MT"src/drv/gpu_drv.o" -o "src/drv/gpu_drv.o" "../src/drv/gpu_drv.c"
+'Finished building: ../src/drv/gpu_drv.c'
+' '
+'Building file: ../src/drv/pad_drv.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/drv/pad_drv.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drv/pad_drv.d" -MT"src/drv/pad_drv.o" -o "src/drv/pad_drv.o" "../src/drv/pad_drv.c"
+'Finished building: ../src/drv/pad_drv.c'
+' '
+'Building file: ../src/drv/timers_drv.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/drv/timers_drv.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drv/timers_drv.d" -MT"src/drv/timers_drv.o" -o "src/drv/timers_drv.o" "../src/drv/timers_drv.c"
+'Finished building: ../src/drv/timers_drv.c'
+' '
+'Building file: ../src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT"src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -o "src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+'Finished building: ../src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+' '
+'Building file: ../src/clock.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/clock.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/clock.d" -MT"src/clock.o" -o "src/clock.o" "../src/clock.c"
+'Finished building: ../src/clock.c'
+' '
+'Building file: ../src/drawing.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/drawing.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drawing.d" -MT"src/drawing.o" -o "src/drawing.o" "../src/drawing.c"
+../src/drawing.c: In function 'ShowTheText':
+../src/drawing.c:37:22: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  size_t TextLength = strlen(TextChar);
+                      ^~~~~~
+../src/drawing.c:37:22: warning: incompatible implicit declaration of built-in function 'strlen'
+../src/drawing.c:37:22: note: include '<string.h>' or provide a declaration of 'strlen'
+../src/drawing.c:2:1:
++#include <string.h>
+ 
+../src/drawing.c:37:22:
+  size_t TextLength = strlen(TextChar);
+                      ^~~~~~
+'Finished building: ../src/drawing.c'
+' '
+'Building file: ../src/endgame_info.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/endgame_info.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/endgame_info.d" -MT"src/endgame_info.o" -o "src/endgame_info.o" "../src/endgame_info.c"
+'Finished building: ../src/endgame_info.c'
+' '
+'Building file: ../src/game.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game.d" -MT"src/game.o" -o "src/game.o" "../src/game.c"
+../src/game.c: In function 'CrossPlacer':
+../src/game.c:335:35: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  for (int8_t dxPlus = 1; dxPlus < abs(distance); dxPlus++)
+                                   ^~~
+'Finished building: ../src/game.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/map.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/map.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/map.d" -MT"src/map.o" -o "src/map.o" "../src/map.c"
+'Finished building: ../src/map.c'
+' '
+'Building file: ../src/sprites.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sprites.o" -ID:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sprites.d" -MT"src/sprites.o" -o "src/sprites.o" "../src/sprites.c"
+'Finished building: ../src/sprites.c'
+' '
+'Building target: Bomberman.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/QUARTZ/export/QUARTZ/sw/QUARTZ/standalone_domain/bsplib/lib -mlittle-endian -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "Bomberman.elf"  ./src/drv/gpu_drv.o ./src/drv/pad_drv.o ./src/drv/timers_drv.o  ./src/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./src/clock.o ./src/drawing.o ./src/endgame_info.o ./src/game.o ./src/main.o ./src/map.o ./src/sprites.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Bomberman.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Bomberman.elf  |tee "Bomberman.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20756	  16924	   4176	  41856	   a380	Bomberman.elf
+'Finished building: Bomberman.elf.size'
+' '
 
-11:09:04 Build Finished (took 504ms)
+22:21:25 Build Finished (took 1s.527ms)
 

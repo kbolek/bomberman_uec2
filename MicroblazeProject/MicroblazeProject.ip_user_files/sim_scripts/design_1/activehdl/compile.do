@@ -144,13 +144,14 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_mdm_0_0/sim/design_1_mdm_0_0.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ipshared/5061/src/BLOCK_GEN.v" \
-"../../../bd/design_1/ipshared/5061/src/CHAR_ROM.v" \
-"../../../bd/design_1/ipshared/5061/src/CLOCKER.v" \
-"../../../bd/design_1/ipshared/5061/src/GRAM_DECODER.v" \
-"../../../bd/design_1/ipshared/5061/src/TEXT_GEN.v" \
-"../../../bd/design_1/ipshared/5061/src/TIMING_GEN.v" \
-"../../../bd/design_1/ipshared/5061/src/BRAM_GPU.v" \
+"../../../bd/design_1/ipshared/37b1/src/BLOCK_GEN.v" \
+"../../../bd/design_1/ipshared/37b1/src/CHAR_ROM.v" \
+"../../../bd/design_1/ipshared/37b1/src/CLOCKER.v" \
+"../../../bd/design_1/ipshared/37b1/src/FRAME_GENERATOR.v" \
+"../../../bd/design_1/ipshared/37b1/src/GRAM_DECODER.v" \
+"../../../bd/design_1/ipshared/37b1/src/TEXT_GEN.v" \
+"../../../bd/design_1/ipshared/37b1/src/TIMING_GEN.v" \
+"../../../bd/design_1/ipshared/37b1/src/BRAM_GPU.v" \
 "../../../bd/design_1/ip/design_1_BRAM_GPU_0_1/sim/design_1_BRAM_GPU_0_1.v" \
 
 vcom -work axi_bram_ctrl_v4_1_2 -93 \
@@ -165,12 +166,17 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sou
 "../../../bd/design_1/ipshared/9981/src/Timer.v" \
 "../../../bd/design_1/ipshared/9981/hdl/AXI_Timers_v1_0.v" \
 "../../../bd/design_1/ip/design_1_AXI_Timers_0_0/sim/design_1_AXI_Timers_0_0.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_2/sim/design_1_blk_mem_gen_0_2.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_2/sim/design_1_axi_bram_ctrl_0_2.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_20  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/4fba" "+incdir+../../../../MicroblazeProject.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
 "../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \

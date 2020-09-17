@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:BRAM_GPU:2.0
-// IP Revision: 1
+// IP VLNV: xilinx.com:user:BRAM_GPU:2.2
+// IP Revision: 2
 
 `timescale 1ns/1ps
 
@@ -56,6 +56,7 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_BRAM_GPU_0_1 (
   vga_clk,
+  rst,
   r,
   g,
   b,
@@ -76,6 +77,9 @@ module design_1_BRAM_GPU_0_1 (
 );
 
 input wire vga_clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vga_rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 vga_rst RST" *)
+input wire rst;
 output wire [3 : 0] r;
 output wire [3 : 0] g;
 output wire [3 : 0] b;
@@ -110,6 +114,7 @@ output wire [3 : 0] bram_we_txtr;
 
   BRAM_GPU inst (
     .vga_clk(vga_clk),
+    .rst(rst),
     .r(r),
     .g(g),
     .b(b),
