@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_vitis.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Sep 17 22:26:38 2020'>
+<webTalkData  fileName='usage_statistics_ext_vitis.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Sep 18 20:57:47 2020'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="false" description="" />
   <keyValuePair key="build_version" value="2019.2" description="" />
-  <keyValuePair key="date_generated" value="2020-09-17 22:26:36" description="" />
+  <keyValuePair key="date_generated" value="2020-09-18 20:57:44" description="" />
   <keyValuePair key="os_platform" value="amd64" description="" />
   <keyValuePair key="product_version" value="Vitis v2019.2" description="" />
-  <keyValuePair key="project_id" value="2019.2_15" description="" />
-  <keyValuePair key="project_iteration" value="15" description="" />
-  <keyValuePair key="random_id" value="ca0cabr8m8eq8fn8e52rm6uu2k" description="" />
+  <keyValuePair key="project_id" value="2019.2_16" description="" />
+  <keyValuePair key="project_iteration" value="16" description="" />
+  <keyValuePair key="random_id" value="gr1s27iq05rrt8778ukqnsv1io" description="" />
   <keyValuePair key="registration_id" value="NA" description="" />
   <keyValuePair key="route_design" value="NA" description="" />
   <keyValuePair key="target_device" value="NA" description="" />
@@ -27,13 +27,13 @@
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="vitis" level="1" order="3" description="">
-  <section name="tool/1600374396391" level="2" order="1" description="">
+  <section name="tool/1600455464289" level="2" order="1" description="">
    <keyValuePair key="application_platform_change_count" value="0" description="" />
    <keyValuePair key="application_sys_config_change_count" value="0" description="" />
    <keyValuePair key="bootgen_count" value="0" description="" />
    <keyValuePair key="cross_trigger_count" value="0" description="" />
    <keyValuePair key="estimation_debug_count" value="0" description="" />
-   <keyValuePair key="flash_count" value="0" description="" />
+   <keyValuePair key="flash_count" value="3" description="" />
    <keyValuePair key="gdb_debug_count" value="0" description="" />
    <keyValuePair key="move_app_to_system_count" value="0" description="" />
    <keyValuePair key="performance_analysis_count" value="0" description="" />

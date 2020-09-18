@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Sep 17 22:11:04 2020
+//Date        : Fri Sep 18 20:22:57 2020
 //Host        : Marysia running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -267,10 +267,10 @@ module design_1
   wire microblaze_0_ilmb_1_WAIT;
   wire [5:0]pad_a_1;
   wire [5:0]pad_b_1;
-  wire reset_1;
   wire [0:0]rst_clk_100M_bus_struct_reset;
   wire rst_clk_100M_mb_reset;
   wire [0:0]rst_clk_100M_peripheral_aresetn;
+  wire util_ds_buf_0_BUFH_O;
 
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
   assign b[3:0] = BRAM_GPU_0_b;
@@ -282,10 +282,10 @@ module design_1
   assign pad_b_1 = pad_b[5:0];
   assign pad_b_plug = PADS_SOUND_0_pad_b_plug;
   assign r[3:0] = BRAM_GPU_0_r;
-  assign reset_1 = reset;
   assign sound_a = PADS_SOUND_0_sound_a;
   assign sound_b = PADS_SOUND_0_sound_b;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
+  assign util_ds_buf_0_BUFH_O = reset;
   assign vs = BRAM_GPU_0_vs;
   design_1_AXI_Timers_0_0 AXI_Timers_0
        (.s_axi_aclk(clk_wiz_0_clk_cpu),
@@ -326,7 +326,7 @@ module design_1
         .g(BRAM_GPU_0_g),
         .hs(BRAM_GPU_0_hs),
         .r(BRAM_GPU_0_r),
-        .rst(reset_1),
+        .rst(util_ds_buf_0_BUFH_O),
         .vga_clk(clk_wiz_0_clk_gpu),
         .vs(BRAM_GPU_0_vs));
   design_1_PADS_SOUND_0_0 PADS_SOUND_0
@@ -485,7 +485,7 @@ module design_1
         .clk_gpu(clk_wiz_0_clk_gpu),
         .clk_in1(clk_1),
         .locked(clk_wiz_0_locked),
-        .reset(reset_1));
+        .reset(util_ds_buf_0_BUFH_O));
   design_1_mdm_0_0 mdm_0
        (.Dbg_Capture_0(mdm_0_MBDEBUG_0_CAPTURE),
         .Dbg_Clk_0(mdm_0_MBDEBUG_0_CLK),
@@ -766,7 +766,7 @@ module design_1
        (.aux_reset_in(1'b1),
         .bus_struct_reset(rst_clk_100M_bus_struct_reset),
         .dcm_locked(clk_wiz_0_locked),
-        .ext_reset_in(reset_1),
+        .ext_reset_in(util_ds_buf_0_BUFH_O),
         .mb_debug_sys_rst(mdm_0_Debug_SYS_Rst),
         .mb_reset(rst_clk_100M_mb_reset),
         .peripheral_aresetn(rst_clk_100M_peripheral_aresetn),

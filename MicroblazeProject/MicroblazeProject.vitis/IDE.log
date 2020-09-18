@@ -4384,3 +4384,41 @@ Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors
 22:22:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 22:22:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
 22:22:35 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+20:36:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\temp_xsdb_launch_script.tcl
+20:36:22 INFO  : XSCT server has started successfully.
+20:36:22 INFO  : Successfully done setting XSCT server connection channel  
+20:36:22 INFO  : plnx-install-location is set to ''
+20:36:22 INFO  : Successfully done setting workspace for the tool. 
+20:36:25 INFO  : Registering command handlers for Vitis TCF services
+20:36:32 INFO  : Successfully done query RDI_DATADIR 
+20:49:23 INFO  : Hardware specification for platform project 'QUARTZ' is updated.
+20:49:28 INFO  : Checking for BSP changes to sync application flags for project 'Bomberman'...
+20:49:32 INFO  : The hardware specfication used by project 'Bomberman' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:49:32 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\download.bit' stored in project is removed.
+20:49:32 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\poprawkav2.bit' stored in project is removed.
+20:49:32 INFO  : The file 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream\poprawkav2.mmi' stored in project is removed.
+20:49:32 INFO  : The updated bitstream files are copied from platform to folder 'D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.vitis\Bomberman\_ide\bitstream' in project 'Bomberman'.
+20:50:03 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+20:50:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:47 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+20:50:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183795574A" && level==0} -index 0' command is executed.
+20:50:49 INFO  : FPGA configured successfully with bitstream "D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit"
+20:51:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:51:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:18 INFO  : Invoking Bootgen: bootgen -arch fpga -image D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman_system/_ide/flash/bootimage.bif -w -o D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman_system/_ide/flash/BOOT.bin  -interface spi
+20:52:19 INFO  : Bootgen command execution is done.
+20:52:44 INFO  : Bit file 'D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/bitstream/download.bit' is generated.
+20:53:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:10 INFO  : Invoking Bootgen: bootgen -arch fpga -image D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/flash/bootimage.bif -w -o D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman/_ide/flash/BOOT.bin  -interface bpix16
+20:53:11 INFO  : Bootgen command execution is done.
+20:53:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:43 INFO  : Invoking Bootgen: bootgen -arch fpga -image D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman_system/_ide/flash/bootimage.bif -w -o D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.vitis/Bomberman_system/_ide/flash/BOOT.bin  -interface spi
+20:53:44 INFO  : Bootgen command execution is done.
