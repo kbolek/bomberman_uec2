@@ -67,11 +67,11 @@ What is more for future development of the project We designed the circuit which
 <img src="/images/textures/fire_horizontal.png"/><img src="/images/textures/fire_corner.png"/><img src="/images/textures/fire_vertical.png"/>
 3. <img src="/images/bomb.PNG"/> **Bomb**, which give possibility to set up more bombs at the same time. 
 
-Offcourse the: <img src="/images/textures/wall_front.png"/> and the <img src="/images/textures/blocked_path.png"/> are the place where player can't go. 
+Off course the: <img src="/images/textures/wall_front.png"/> and the <img src="/images/textures/blocked_path.png"/> are the place where player can't go. 
 
 More over the game is limited by time - after 5 minutes which players can check in the clock above the game board it will have been shown
 <details>
- <summary> the message about the <b>Remis</b></summary>
+ <summary> the message about the <b>Draw</b></summary>
 <img src="/images/remis.png"/>
  </details>
 
