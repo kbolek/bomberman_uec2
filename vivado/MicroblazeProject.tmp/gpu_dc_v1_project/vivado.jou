@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Aug  7 17:55:04 2020
+# Process ID: 9640
+# Current directory: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.tmp/gpu_dc_v1_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8752 D:\bomberman_uec2\MicroblazeProject\MicroblazeProject.tmp\gpu_dc_v1_project\GPU_DC_v1_project.xpr
+# Log file: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.tmp/gpu_dc_v1_project/vivado.log
+# Journal file: D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.tmp/gpu_dc_v1_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/bomberman_uec2/MicroblazeProject/MicroblazeProject.tmp/gpu_dc_v1_project/GPU_DC_v1_project.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\bomberman_uec2\ip_repo\GPU_DC_1.0\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface vga_clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/bomberman_uec2/ip_repo/GPU_DC_1.0
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\bomberman_uec2\ip_repo\GPU_DC_1.0\xilinx.com_user_GPU_DC_1.2.zip} [ipx::current_core]

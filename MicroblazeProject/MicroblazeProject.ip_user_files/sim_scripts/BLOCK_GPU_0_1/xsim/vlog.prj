@@ -1,8 +1,0 @@
-verilog xil_defaultlib --include "../../../../MicroblazeProject.srcs/sources_1/ip/BLOCK_GPU_0_1/drivers/BLOCK_GPU_v1_0/src" --include "../../../../MicroblazeProject.srcs/sources_1/ip/BLOCK_GPU_0_1/src" \
-"../../../../MicroblazeProject.srcs/sources_1/ip/BLOCK_GPU_0_1/hdl/BLOCK_GPU_v1_0_AXI_LITE.v" \
-"../../../../MicroblazeProject.srcs/sources_1/ip/BLOCK_GPU_0_1/hdl/BLOCK_GPU_v1_0.v" \
-"../../../../MicroblazeProject.srcs/sources_1/ip/BLOCK_GPU_0_1/sim/BLOCK_GPU_0.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

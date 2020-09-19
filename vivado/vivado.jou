@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 19 22:20:09 2020
+# Process ID: 2668
+# Current directory: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12016 C:\Users\sarcasmisthere\Desktop\UEC2_PROJECT\repo\projekt\bomberman_uec2\vivado\MicroblazeProject.xpr
+# Log file: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/vivado.log
+# Journal file: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/MicroblazeProject.xpr
+archive_project C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/backup/10_09_2020.xpr.zip -temp_dir C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/.Xil/Vivado-2668-DESKTOP-515IPPL -force -exclude_run_results -include_local_ip_cache

@@ -1,0 +1,568 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Sep 18 17:47:13 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:2.2 (Rev. 2) to xilinx.com:user:BRAM_GPU:2.3 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep 17 22:09:10 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:2.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep 17 22:04:08 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:2.1 (Rev. 3) to xilinx.com:user:BRAM_GPU:2.2 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_BRAM_GPU_0_1'.
+
+
+-Upgrade has removed interface 'n_rst'
+
+-Upgrade has added interface 'vga_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'nrst'
+
+-Upgrade has added port 'rst'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep 17 21:48:49 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:2.1) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_BRAM_GPU_0_1'.
+
+
+-Upgrade has added interface 'n_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'nrst'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep 17 11:26:48 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:2.1) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Sep 17 11:18:41 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:2.0 (Rev. 1) to xilinx.com:user:BRAM_GPU:2.1 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Sep  2 17:21:48 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.7 (Rev. 2) to xilinx.com:user:BRAM_GPU:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_BRAM_GPU_0_1'.
+
+
+-Upgrade has added interface 'bram_txtr' (xilinx.com:interface:bram:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'bram_addr_txtr'
+
+-Upgrade has added port 'bram_clk_txtr'
+
+-Upgrade has added port 'bram_en_txtr'
+
+-Upgrade has added port 'bram_rdata_txtr'
+
+-Upgrade has added port 'bram_rst_txtr'
+
+-Upgrade has added port 'bram_we_txtr'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Aug 19 23:08:17 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.7) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Aug 19 22:47:45 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.6 (Rev. 2) to xilinx.com:user:BRAM_GPU:1.7 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Aug 18 18:14:49 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.6) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_BRAM_GPU_0_1'.
+
+
+-Upgrade has added interface 'bram_blk' (xilinx.com:interface:bram:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'bram_blk_addr'
+
+-Upgrade has removed port 'bram_blk_data'
+
+-Upgrade has removed port 'bram_clk'
+
+-Upgrade has removed port 'bram_en'
+
+-Upgrade has removed port 'bram_rst'
+
+-Upgrade has removed port 'bram_we'
+
+-Upgrade has added port 'bram_addr_blk'
+
+-Upgrade has added port 'bram_clk_blk'
+
+-Upgrade has added port 'bram_en_blk'
+
+-Upgrade has added port 'bram_rdata_blk'
+
+-Upgrade has added port 'bram_rst_blk'
+
+-Upgrade has added port 'bram_we_blk'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Aug 18 18:06:47 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.5 (Rev. 1) to xilinx.com:user:BRAM_GPU:1.6 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'bram_addr'
+
+-Upgrade has removed port 'bram_data'
+
+-Upgrade has added port 'bram_blk_addr'
+
+-Upgrade has added port 'bram_blk_data'
+
+-Upgrade has added port 'bram_clk'
+
+-Upgrade has added port 'bram_en'
+
+-Upgrade has added port 'bram_rst'
+
+-Upgrade has added port 'bram_we'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Aug 18 17:48:47 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_Timers_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_Timers_0_0 from xilinx.com:user:AXI_Timers:1.1 (Rev. 1) to xilinx.com:user:AXI_Timers:1.2 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Aug 18 17:20:56 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_Timers_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_Timers_0_0 from xilinx.com:user:AXI_Timers:1.0 (Rev. 2) to xilinx.com:user:AXI_Timers:1.1 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 19:14:01 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.4 (Rev. 1) to xilinx.com:user:BRAM_GPU:1.5 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 19:00:02 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.3 (Rev. 2) to xilinx.com:user:BRAM_GPU:1.4 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'bram_addr' width 32 differs from original width 10
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 18:40:18 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.3) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 18:29:29 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_BRAM_GPU_0_1 from xilinx.com:user:BRAM_GPU:1.1 (Rev. 3) to xilinx.com:user:BRAM_GPU:1.3 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Aug 17 18:04:51 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.1) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'bram_addr' width 10 differs from original width 32
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Aug 16 21:49:38 2020
+| Host         : Marysia running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_BRAM_GPU_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_BRAM_GPU_0_1 (xilinx.com:user:BRAM_GPU:1.1) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_BRAM_GPU_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'bram_addr' width 32 differs from original width 10
+
+

@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_BRAM_GPU_0_1</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>bram_blk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>EN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_en_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_we_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_addr_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_clk_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rst_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DOUT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rdata_blk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>MEM_SIZE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.MEM_SIZE">8192</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MEM_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.MEM_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MEM_ECC</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.MEM_ECC">NONE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MASTER_TYPE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.MASTER_TYPE">BRAM_CTRL</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.READ_WRITE_MODE"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_LATENCY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_BLK.READ_LATENCY">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>bram_txtr</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="bram_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>EN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_en_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DOUT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rdata_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_rst_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_clk_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_we_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bram_addr_txtr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>MEM_SIZE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_SIZE">8192</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MEM_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MEM_ECC</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_ECC">NONE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MASTER_TYPE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.MASTER_TYPE">BRAM_CTRL</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.READ_WRITE_MODE"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_LATENCY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_TXTR.READ_LATENCY">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>vga_rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.VGA_RST.POLARITY">ACTIVE_HIGH</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.VGA_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>BRAM_GPU</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 18 15:47:18 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a3c8bcdb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a3c8bcdb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_BRAM_GPU_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 18 15:47:18 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a3c8bcdb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>BRAM_GPU</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 18 15:47:18 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1211da43</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_BRAM_GPU_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Sep 18 15:47:18 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1211da43</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>vga_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>r</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>g</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hs</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vs</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addr_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rdata_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_en_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_clk_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rst_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_we_blk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addr_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rdata_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_en_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_clk_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rst_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_we_txtr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/BLOCK_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/CHAR_ROM.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/CLOCKER.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/FRAME_GENERATOR.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/GRAM_DECODER.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/TEXT_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/TIMING_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/BRAM_GPU.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_BRAM_GPU_0_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/BLOCK_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/CHAR_ROM.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/CLOCKER.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/FRAME_GENERATOR.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/GRAM_DECODER.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/TEXT_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/TIMING_GEN.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/cd2f/src/BRAM_GPU.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_BRAM_GPU_0_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>GPU supporting 32x32px 2D textured blocks with external BRAM block memory</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_BRAM_GPU_0_1</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>BRAM_GPU</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@166d61b6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6becf33b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb07935_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e70956e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c24dff_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c886d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c84a7f1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23e89795_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11d932bb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f27012c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42a11893_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@153dc00b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ab49f24_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589c39c2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19f540e1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61c8bcf9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e30c875_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ba9e0c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41b7fb7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e3fcc0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c50778_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da9d96b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f28d1dd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6228d4c7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f9e1f0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4feea9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c3a3c48_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7acaa40b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@331a3e61_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@646db1c2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df88827_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29835c56_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be898e7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fc59827_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@271f92ac_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2786d55e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b4a2fcf_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17a197e6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7060da0b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b095b66_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eba0111_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc73ee9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e7c523_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8b96ba5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c665833_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cf7439_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d2b032_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b2a5e53_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f9f0aa9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0a320c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11019587_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714e8fcf_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cd1b817_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b1806cd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a5c7e51_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4c030f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b22de4b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762e4b73_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d35de36_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f050ce_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6204ff1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2855f675_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c40b94c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4150eb87_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@385aee7f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@167671a0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ecb5722_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dee0104_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3227887f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a5365aa_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45547df9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fdcfca2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24259041_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46d915d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@168578bf_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78c407dd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fdaf553_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ba89e26_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3330a99d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7548c367_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48211746_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13ef5d83_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@369f0674_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3934a389_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d6b5d99_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fd44f30_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d8ece56_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6842ad0a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6862218e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da820e1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38cdfbb9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15afdc31_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b3b4370_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ab1d54a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23fdfb3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@709a350e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a2c0d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2523a66e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c9179d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@775fc4ac_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@362277c9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d2eeacd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@592ffc99_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cb9fa89_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1608ec94_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d44210a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cbb8f33_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bca6112_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15762bb1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56e2e81d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b618544_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dca875a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ecf01d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44250e0e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@271e237b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f2890bd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a63dc1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ca8202_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@206922d2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29019578_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d1b5dda_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aded0cc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d89b5b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb4a549_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c812423_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e0ba9df_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a3a937a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30e1e769_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20be5839_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a76e6cb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22fe31fd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f4a5ed_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@476d655c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48abe243_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47f53026_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df14e86_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56de3f78_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76f6feec_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d592126_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@484c952a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df7926a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39157acc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c6a257_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7976a638_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@235f18b8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c375a8b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@412adf29_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ab0d6ad_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d130249_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6098b48e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b4889f2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@625aacf6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a8368f0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55aaf2aa_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b50501d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2037c03e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59324922_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a4cbbf1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f3fbff_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55a8142e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a4e4dc1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d6ed3a0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd19c0d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a55e32_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4adf68b7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a4a21a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6672684b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@798da53f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27e318c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67e36a02_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f30130b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cfbb716_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@703b577a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d4f4b5e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18226104_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cb8918f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162114f6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@324494e3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@639addf5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3157d974_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@320755b3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16311f61_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47273883_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11457a40_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f024354_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f3bed8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ede7a88_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ba6a80_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4446c41_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cefe7fc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28e538c0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@611bf882_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6beeca7e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb18ff2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26fd2ed3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@294982bb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b6145b6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2367b8b5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c4db639_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58502862_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ca24c8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d1c52d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34a915d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ed5e3b1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c888384_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658ab550_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b7175aa_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16bc2237_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f98cef6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe7edee_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d8dbf3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@814e1a4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65e8c4f0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762a2882_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6127456a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54305674_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@715ca484_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b39c2b9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66991b36_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b36827e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@733cd375_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fceb51e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a04accb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f24e4eb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e1757c3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c40d258_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32010d56_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5261f938_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@134b15fc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30bf7c1d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7057d65c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd566e5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ceadd6f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c331223_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa996df_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5f4c7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78af758e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26940582_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69673d92_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@383abee3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@507ed3c4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34bbad38_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7cb69b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37cbca6e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8ee5c5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205dea11_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b03a9d8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@684cf106_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f6255bd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a1aff7c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cea711_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28944c04_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37a6b387_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc4abdc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d9c1a2_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b26f918_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d6ff447_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5193bb58_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27601240_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fe83e96_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72331c61_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f044f6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58286dc9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b20aa8a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40e94d1f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27bb738f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36f1d73c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ead680_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d2517d5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7399086b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f5349ea_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413c743d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49a10e66_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@739f4717_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5410ae32_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa35f1c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10419b2a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3f3c0b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2babd6cb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d431ea_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@156aca32_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24c8d494_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2765ce5b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@626ce87e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ebef42a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cc45264_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aaee836_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6365578e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@565c1c08_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b24695e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d7659d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@452439c1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57458f31_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ebcd79a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52f04681_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d8726bd_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e015371_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@524f299a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@447ba2d1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61dfd4f9_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71c6f49d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e0e879c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55607358_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37fd28a5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e20c9bc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a27a5e5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20e7ac32_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@726d7c44_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddec50c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c85dbe3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@758840ff_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cafa9dc_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1be22bee_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d97f07_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@308d930_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b52a945_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba3e1a8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c9a962_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c177ef_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66fefc33_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b5c80ae_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0dfd6a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@293db97a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@181f7ea8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341d015b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e18e5a6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ba503e3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7803406e_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d8c5ea_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c182fa_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a6fc15_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3151af86_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a6f07f1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e70b981_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5985e523_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@295f6a7f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@300f931_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a35defb_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28c925b0_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c6f23f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@767b6e81_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12bf3b4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2081821c_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e48f9d3_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393508f8_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55a25dc5_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dd13ef6_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@722f810d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29afdbd4_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1387c30a_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48aa19ad_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@308d7626_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a2cb901_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ccd05c7_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456aed0f_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@265bdfc1_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fb9f325_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a27233d_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bd9212b_ARCHIVE_LOCATION">d:/bomberman_uec2/ip_repo/GPU_BRAM</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.MASTER_TYPE" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.MEM_ECC" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.MEM_SIZE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.MEM_WIDTH" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.READ_LATENCY" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_BLK.READ_WRITE_MODE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.MASTER_TYPE" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_ECC" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_SIZE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.MEM_WIDTH" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.READ_LATENCY" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BRAM_TXTR.READ_WRITE_MODE" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.VGA_RST.POLARITY" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a0fdb63"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="351559c5"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="e4da1adc"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="97ec376f"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

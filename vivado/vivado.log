@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 19 22:20:09 2020
+# Process ID: 2668
+# Current directory: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12016 C:\Users\sarcasmisthere\Desktop\UEC2_PROJECT\repo\projekt\bomberman_uec2\vivado\MicroblazeProject.xpr
+# Log file: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/vivado.log
+# Journal file: C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/MicroblazeProject.xpr
+INFO: [Project 1-313] Project file moved from 'D:/bomberman_uec2/MicroblazeProject' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/AXI_Timers_1.0', nor could it be found using path 'D:/bomberman_uec2/ip_repo/AXI_Timers_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/GPU_BRAM', nor could it be found using path 'D:/bomberman_uec2/ip_repo/GPU_BRAM'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/PADS_SOUND_1.0', nor could it be found using path 'D:/bomberman_uec2/ip_repo/PADS_SOUND_1.0'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/AXI_Timers_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/GPU_BRAM'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/PADS_SOUND_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vitis/Vivado/2019.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_rst_clk_100M_0
+design_1_clk_wiz_0_0
+design_1_PADS_SOUND_0_0
+design_1_axi_uartlite_0_0
+design_1_BRAM_GPU_0_1
+design_1_AXI_Timers_0_0
+
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 903.398 ; gain = 254.891
+archive_project C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/backup/10_09_2020.xpr.zip -temp_dir C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/.Xil/Vivado-2668-DESKTOP-515IPPL -force -exclude_run_results -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/.Xil/Vivado-2668-DESKTOP-515IPPL' for archiving project
+INFO: [Project 1-313] Project file moved from 'D:/bomberman_uec2/MicroblazeProject' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/AXI_Timers_1.0', nor could it be found using path 'D:/bomberman_uec2/ip_repo/AXI_Timers_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/GPU_BRAM', nor could it be found using path 'D:/bomberman_uec2/ip_repo/GPU_BRAM'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/PADS_SOUND_1.0', nor could it be found using path 'D:/bomberman_uec2/ip_repo/PADS_SOUND_1.0'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/AXI_Timers_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/GPU_BRAM'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/ip_repo/PADS_SOUND_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vitis/Vivado/2019.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_rst_clk_100M_0
+design_1_clk_wiz_0_0
+design_1_PADS_SOUND_0_0
+design_1_axi_uartlite_0_0
+design_1_BRAM_GPU_0_1
+design_1_AXI_Timers_0_0
+
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/vivado/.Xil/Vivado-2668-DESKTOP-515IPPL/PrjAr/_X_'.
+WARNING: [IP_Flow 19-2162] IP 'design_1_rst_clk_100M_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'design_1_rst_clk_100M_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_clk_wiz_0_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'design_1_clk_wiz_0_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_PADS_SOUND_0_0' is locked:
+* IP definition 'PADS_SOUND (1.0)' for IP 'design_1_PADS_SOUND_0_0' (customized with software release 2019.2) was not found in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_axi_uartlite_0_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'design_1_axi_uartlite_0_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'design_1_BRAM_GPU_0_1' is locked:
+* IP definition 'BRAM_GPU (2.3)' for IP 'design_1_BRAM_GPU_0_1' (customized with software release 2019.2) was not found in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'design_1_AXI_Timers_0_0' is locked:
+* IP definition 'AXI_Timers (1.2)' for IP 'design_1_AXI_Timers_0_0' (customized with software release 2019.2) was not found in the IP Catalog.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_rst_clk_100M_0
+design_1_clk_wiz_0_0
+design_1_PADS_SOUND_0_0
+design_1_axi_uartlite_0_0
+design_1_BRAM_GPU_0_1
+design_1_AXI_Timers_0_0
+
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/sarcasmisthere/Desktop/UEC2_PROJECT/repo/projekt/bomberman_uec2/backup/10_09_2020.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1226.613 ; gain = 249.563
