@@ -1,6 +1,5 @@
 module TEXT_GEN(
     input wire clk,
-    input wire rst,
     
     input wire hsync,
     input wire vsync,
@@ -57,18 +56,6 @@ end
 
 always @(posedge clk)
 begin
-    if (rst)
-    begin
-    vsync_out <= 0;
-    hsync_out <= 0;
-    hblank_out <= 0;
-    vblank_out <= 0;
-    vcount_out <= 0;
-    hcount_out <= 0;
-    rgb_out <= 0;
-    end
-    else
-    begin
     vsync_out <= vsync;
     hsync_out <= hsync;
     hblank_out <= hblank;
@@ -76,7 +63,6 @@ begin
     vcount_out <= vcount;
     hcount_out <= hcount;
     rgb_out <= rgb_out_nxt;
-    end
 end
 
 assign pixel_addr = (31 - (hcount % 32));

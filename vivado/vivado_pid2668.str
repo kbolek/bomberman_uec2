@@ -237,3 +237,4 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
 // 'a' command handler elapsed time: 121 seconds
 // Elapsed time: 52 seconds
 selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,086 MB. GUI used memory: 68 MB. Current time: 9/19/20, 10:52:17 PM CEST

@@ -22,7 +22,6 @@
 
 module TIMING_GEN(
     input wire clk,
-    input wire rst,
     output reg hsync_out,
     output reg vsync_out,
     output wire [11:0] rgb_out,
@@ -50,26 +49,12 @@ reg [10:0] hcount_nxt, vcount_nxt;
 
 always @(posedge clk)
 begin
-    if (rst)
-    begin
-        vsync_out <= 0;
-        hsync_out <= 0;
-        hblank_out <= 0;
-        vblank_out <= 0;
-        hcount <= 0;
-        vcount <= 0;
-    end
-    else
-    begin
-        
-        vsync_out <= vs_nxt;
-        hsync_out <= hs_nxt;
-        hblank_out <= hblank_nxt;
-        vblank_out <= vblank_nxt;
-        hcount <= hcount_nxt;
-        vcount <= vcount_nxt;
-    end
-
+    vsync_out <= vs_nxt;
+    hsync_out <= hs_nxt;
+    hblank_out <= hblank_nxt;
+    vblank_out <= vblank_nxt;
+    hcount <= hcount_nxt;
+    vcount <= vcount_nxt;
 end
     
 always @*

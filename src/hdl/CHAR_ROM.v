@@ -27,6 +27,7 @@ module CHAR_ROM
 )
 
 (
+    input wire clk,
     input wire [5:0] char_number,
     input wire [4:0] char_line,
     output wire [31:0] line_data
@@ -36,7 +37,7 @@ wire [ADDR_WIDTH:0] addr;
 
 reg [DATA_WIDTH-1:0] font[0:2**ADDR_WIDTH-1];
 
-initial $readmemh("fonts.mem",font);    
+initial $readmemh("D:/bomberman_uec2/font.dat",font);    
 
 assign addr = char_number*32 + char_line;
 assign line_data = font[addr];
