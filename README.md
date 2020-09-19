@@ -107,6 +107,10 @@ All the textures were designed in the Photoshop software - in the folder images/
 </details>
 
 ## The film 
+<video>
+  <source src="https://youtu.be/RpiZsyzj7h8" type=video/mp4>
+ </source>
+ </video>
 
 ## Summary
 During the project, We put our whole hearts and We are so proud of the result. What is more, We learn a lot of stuff about making development of embedded software on FPGA and We polish our C programming skill. 
